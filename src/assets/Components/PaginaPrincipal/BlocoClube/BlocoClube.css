@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.containergratis {
+  color: #1a237e;
+  flex: 1 1 300px;
+  max-width: 320px;
+  padding: 30px;
+  border: 8px solid  #ff9800;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #ffffff, #f0f4ff);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.containerpessoal {
+  color: #1a237e;
+  flex: 1 1 300px;
+  max-width: 320px;
+  padding: 30px;
+  border: 8px solid #ff9800;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #ffffff, #f0f4ff);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.containerempresarial {
+  color: #1a237e;
+  flex: 1 1 300px;
+  max-width: 320px;
+  padding: 30px;
+  border: 8px solid #1976d2;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #f4f6f8, #e9ebf0);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*HOVER NOS CONTAINERS EMPRESARIAIS ,PESSOAIS E GRATIS*/
+.containergratis:hover,
+.containerpessoal:hover,
+.containerempresarial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.principaisInfo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.tituloClube {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.valor {
+  font-size: 20px;
+  font-weight: 600;
+  color: #388e3c;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.informacoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 0px;
+  background-color: #ffffffd5;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  transition: background-color 0.2s ease;
+}
+
+.informacoes img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  padding: 3px;
+}
+.blocoBotao {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+.botaoPlano{
+  all: unset;
+}
+
+.containerempresarial .botaoPlano {
+  margin: 3.5rem;
+  padding: 12px 24px;
+  background-color: #0A55D5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.containerpessoal .botaoPlano {
+  margin: 2rem;
+  padding: 12px 24px;
+  background-color: #FF7900;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.containergratis .botaoPlano {
+  display: none;
+}
+
+.containerempresarial .botaoPlano:hover {
+  background-color: #083bbd;
+}
+ .containerpessoal .botaoPlano:hover {
+  background-color: #e28736;
+}
+

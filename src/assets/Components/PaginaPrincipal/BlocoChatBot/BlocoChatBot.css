@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.containerChatbot {
+  display: flex;
+  background-color: #304fe5;
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 1000px;
+  margin: 20px auto;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.parteFundoChatbot {
+  position: relative;
+  width: 60%;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 250px;
+}
+
+.parteFundoChatbot img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parteFundoChatbot img:nth-child(2) {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40%;
+}
+
+.parteFundoChatbot p {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  right: 10px;
+  background-color: #000c3f;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.imagemRoboComCelular_chatbot {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 50%;
+}
+
+.parteCelularConversa {
+  width: 40%;
+  background-color: #f4f6fb;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  min-width: 250px;
+}
+
+.parteCelularConversa img {
+  width: 25px;
+}
+
+.mensagemUsarChatbot,
+.mensagemCliente,
+.mensagemRobo {
+  font-weight: 700;
+}
+
+.mensagemCliente {
+  background-color: #845ef7;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px 0px 10px 10px;
+  align-self: flex-end;
+  font-weight: 500;
+}
+
+.mensagemRobo {
+  background-color: #ff7900;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 0px 10px 10px 10px;
+  align-self: flex-start;
+  font-weight: 500;
+}
+
+.campoMensagemChatbot {
+  width: 100%;
+  height: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+  .containerChatbot {
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+  }
+
+  .parteFundoChatbot,
+  .parteCelularConversa {
+    width: 90%;
+    min-width: unset;
+  }
+
+  .parteFundoChatbot img:nth-child(2) {
+    width: 30%;
+    top: 5px;
+    left: 5px;
+  }
+
+  .parteFundoChatbot p {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .parteCelularConversa {
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .mensagemCliente, .mensagemRobo {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  .campoMensagemChatbot {
+    height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerChatbot {
+    max-width: 690px;
+  }
+  .parteFundoChatbot img:nth-child(2) {
+    width: 40%;
+  }
+
+  .mensagemUsarChatbot {
+    font-size: 0.8rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .containerChatbot {
+    max-width: 420px;
+  }
+  .parteFundoChatbot img:nth-child(2) {
+    width: 40%;
+  }
+
+  .mensagemUsarChatbot {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+

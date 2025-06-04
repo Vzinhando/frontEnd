@@ -1,0 +1,21 @@
+.Nome2 {
+  color: #200c80;
+}
+
+.type {
+width: 430px;
+margin: 0 0 13px 0;
+outline: none;
+font-family: "Poppins", sans-serif;
+ border-radius: 6px;
+ border: none;
+ padding: 4px;
+}
+
+/* input:focus {
+    border-color: #FF7900;
+  } */
+
+.AoLado .type {
+    width: 200px;
+}

@@ -1,0 +1,162 @@
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+.Pai1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+main .H2Genero,
+main .LocalTipo {
+  color: #200c80;
+}
+
+.round-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 2px solid #000C4C;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.round-checkbox:checked {
+  background-color: #FF7900;
+  border-color: #FF7900;
+}
+
+.round-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.informacoesPessoais {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  color: #000C4C;
+}
+
+.cartao1,
+.cartao2 {
+  background-color: #FFDBA8;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.Nome {
+  width: 100%;
+  margin: 0 0 13px 0;
+}
+
+.Numero {
+  margin-right: 30px;
+  flex: 1;
+}
+
+.Bairro {
+  flex: 1;
+}
+
+.AoLado {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.Genero,
+.local {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+  color: #200c80;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Outros,
+.comercial {
+  margin-right: 0;
+}
+
+.continuar {
+  font-family: "Poppins", sans-serif;
+  background-color: #FF7900;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 15px auto;
+  display: block;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.continuar:hover {
+  background-color: #000C4C;
+  transform: scale(0.95);
+}
+
+.Pai2 {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #informacoesPessoais {
+    font-size: 36px;
+  }
+
+  .cartao1,
+  .cartao2 {
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  .AoLado {
+    flex-direction: column;
+  }
+
+  .Genero,
+  .local {
+    flex-direction: column;
+  }
+
+  .continuar {
+    width: 100%;
+    max-width: 300px;
+  }
+}

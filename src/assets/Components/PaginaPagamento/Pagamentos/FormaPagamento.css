@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.pagamentoContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  background-color: #FFF8ED;
+  font-family: 'Arial', sans-serif;
+  gap: 2rem;
+}
+
+.formaPagamento {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #1a237e;
+}
+
+.menuMetodosPagamento {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+  max-width: 50%;
+}
+
+.menuMetodosPagamento h2 {
+  font-size: 2.2rem;
+  color: #1a237e;
+  margin-bottom: 1rem;
+}
+
+.menuMetodosPagamento div {
+  display: flex;
+  align-items: center;
+  background-color: #ffd89f;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  gap: 1rem;
+}
+
+.menuMetodosPagamento div:hover {
+  background-color: #ffc877;
+}
+
+.formaPagamentoBoleto,
+.formaPagamentoCredito,
+.formaPagamentoDebito,
+.formaPagamentoPix{
+  text-decoration: none;
+}
+
+.menuMetodosPagamento h3 {
+  font-size: 1rem;
+  color: #1a237e;
+  margin: 0;
+}
+
+.detalhesDoPagamento {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 25%;
+  background-color: #ffe4c2;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 0.95rem;
+  color: #1a237e;
+}
+
+.detalhesDoPagamento h4 {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.detalhesDoPagamento p {
+  color: #615757;
+  margin-bottom: 1.5rem;
+}

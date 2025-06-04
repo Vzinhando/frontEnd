@@ -1,0 +1,99 @@
+.pesquisarBuscaPrestador {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.formBuscaPrestador{
+  display: flex;
+}
+
+.inputPesquisarBuscaPrestador {
+  border: none;
+  background-color: #ffa452;
+  padding: 10px 16px;
+  font-size: 17px;
+  color: #200c80;
+  outline: none;
+  flex-grow: 1;
+  border-radius: 10px;
+  height: 45px;
+  width: 350px;
+}
+
+.inputPesquisarBuscaPrestador::placeholder {
+  color: #200c80;
+}
+
+.inputPesquisarBuscaPrestador:hover{
+  background-color: #fab374;
+}
+
+.botaoPesquisarBuscaPrestador{
+  right: 20px;
+  position: relative;
+}
+
+.botaoPesquisarBuscaPrestador img{
+  width: 40px;
+  height: 30px;
+  color: white;
+}
+
+.botaoPesquisarBuscaPrestador,
+.filtroBuscaPrestador {
+  background-color: #ff7900;
+  border: none;
+  border-radius: 10px;
+  width: 56px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botaoPesquisarBuscaPrestador:hover ,
+.filtroBuscaPrestador:hover{
+  background-color: #200c80;
+
+}
+
+.filtroBuscaPrestador button{
+  font-size: 50px;
+}
+
+.botaoPesquisarBuscaPrestador{
+  border-radius: 0px 10px 10px 0px;
+}
+
+@media (max-width: 768px){
+  .inputPesquisarBuscaPrestador{
+    height: 45px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+  }
+
+  .botaoPesquisarBuscaPrestador, .filtroBuscaPrestador{
+    width: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inputPesquisarBuscaPrestador{
+    height: 35px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+  }
+
+  .botaoPesquisarBuscaPrestador, .filtroBuscaPrestador{
+    height: 35px;
+    width: 30px;
+    font-size: 15px;
+  }
+}

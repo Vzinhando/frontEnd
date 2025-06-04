@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.sobreContainer {
+  background-color: #FFEDD5;
+}
+
+.sobreContainerConteudo {
+  margin: 0px 60px;
+}
+
+.sobreSubtitulo,
+.sobreTextoImpacto,
+.sobreTextoSlogan {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  color: #273E59;
+  text-align: center;
+  padding: 18px 0px;
+}
+
+.sobreTextoImpacto {
+  color: #FF7900;
+  font-size: 25px;
+}
+
+.sobreTextoSlogan {
+  color: #200C80;
+  font-size: 25px;
+}
+
+.sobreTexto {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #273E59;
+  text-align: center;
+}
+
+.devsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.sobreImagemDevs {
+  width: 150px;
+  border-radius: 100%;
+}
+
+.textoDevCargo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  color: #273E59;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+}
+
+.textoDevCargo p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+  max-width: 100%;
+}
+
+/*== Responsividade ==*/
+
+/* MOBILE: até 767px */
+@media (max-width: 767px) {
+  .sobreContainerConteudo {
+    margin: 0px 20px;
+  }
+
+  .sobreSubtitulo,
+  .sobreTextoImpacto,
+  .sobreTextoSlogan {
+    font-size: 22px;
+    padding: 12px 0;
+  }
+
+  .sobreTexto {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .devsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .sobreImagemDevs {
+    width: 100px;
+  }
+
+  .textoDevCargo {
+    font-size: 13px;
+    width: 100px;
+  }
+
+  .textoDevCargo p {
+    font-size: 12px;
+  }
+}
+
+
+/* TABLET: 768px até 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sobreContainerConteudo {
+    margin: 0px 40px;
+  }
+
+  .sobreSubtitulo,
+  .sobreTextoImpacto,
+  .sobreTextoSlogan {
+    font-size: 30px;
+    padding: 14px 0;
+  }
+
+  .sobreTextoImpacto,
+  .sobreTextoSlogan {
+    font-size: 20px;
+  }
+
+  .sobreTexto {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .devsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .sobreImagemDevs {
+    width: 120px;
+  }
+
+  .textoDevCargo {
+    font-size: 14px;
+    width: 120px;
+  }
+
+  .textoDevCargo p {
+    font-size: 13px;
+  }
+}
+
+/* DESKTOP: a partir de 1024px */
+@media (min-width: 1024px) {
+  .sobreContainerConteudo {
+    margin: 0px 80px;
+  }
+
+  .devsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

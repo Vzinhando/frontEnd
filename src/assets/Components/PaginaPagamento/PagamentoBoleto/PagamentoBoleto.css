@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.pagamentoBoletoContainer {
+  background-color: #ffe2b3;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.pagamentoBoletoContainer img {
+  background-color: #FF7900;
+  border-radius: 20%;
+  padding: 1rem;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pagamentoBoletoTitulo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #1e1e1e;
+}
+
+.pagamentoBoletoTexto {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #333;
+}
+
+.pagamentoBoletoBotoes {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.pagamentoBoletoVisualizar,
+.pagamentoBoletoFinalizar {
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+}
+
+.pagamentoBoletoVisualizar {
+  background-color: #2e008b;
+  color: white;
+}
+
+.pagamentoBoletoFinalizar {
+  background-color: #FF7900;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .pagamentoBoletoContainer {
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .pagamentoBoletoContainer img {
+    width: 70px;
+    height: 70px;
+    top: -25px;
+  }
+
+  .pagamentoBoletoTitulo {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+
+  .pagamentoBoletoTexto {
+    font-size: 0.95rem;
+  }
+
+  .pagamentoBoletoVisualizar,
+  .pagamentoBoletoFinalizar {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagamentoBoletoContainer {
+    padding: 1rem;
+  }
+
+  .pagamentoBoletoContainer img {
+    width: 60px;
+    height: 60px;
+    top: -20px;
+  }
+
+  .pagamentoBoletoTitulo {
+    font-size: 1.2rem;
+  }
+
+  .pagamentoBoletoTexto {
+    font-size: 0.9rem;
+  }
+
+  .pagamentoBoletoBotoes {
+    gap: 1.5rem;
+  }
+
+  .pagamentoBoletoVisualizar,
+  .pagamentoBoletoFinalizar {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,233 @@
+.titulo1 {
+    margin: 2rem 1.2rem 1.2rem 6rem;
+    color: #200c80;
+}
+.titulo2 {
+    margin: 2.5rem 1.8rem 0 6rem;
+    color: #200c80;
+
+}
+
+.quadroGeral {
+    height: 380px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quadroGeral img {
+    width: 380px;
+    margin-left: 200px;
+}
+
+.esquerda {
+    width: 45%;
+}
+
+.esquerda img {
+    width: 90%;
+    max-width: 300px;
+}
+
+.direita {
+    width: 37%;
+    height: 50%;
+    margin: 0 0 80px 400px;
+    background-color: #FFDBA8;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(10, 10, 10, 0.1);
+}
+
+.direita h3 {
+    margin: 0 0 0 40px;
+    color: #200c80;
+}
+
+.valor {
+    margin-left: 50px;
+    color: #2b215b;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+    padding: 32px 40px;
+    color: #312764;
+}
+
+.texto {
+    margin-left: 40px;
+}
+
+.pagamentoPix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.codigoPix {
+    display: flex;
+}
+
+.codigoPix p {
+    color: rgba(0, 0, 0, 0.2);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    background: #FFDBA8;
+    border-radius: 20px 0px 0px 20px;
+    width: 40%;
+    padding: 0 24px;
+    margin: 20px 0 0 100px;
+}
+
+.codigoPix .btnCopiar {
+    height: 3rem;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 0 1.2rem 1.2rem 0;
+    background: #FF7A00;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: filter .2s;
+    margin-top: 1.2rem;
+}
+
+.btnCopiar:hover {
+    filter: brightness(1.1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 40px;
+    margin-right: 50px;
+}
+
+.buttons .buttonVoltar {
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    margin: 80px 40px 40px 0;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 10px;
+    background: #FFDBA8;
+    color: #FF7A00;
+    font-weight: 600;
+    cursor: pointer;
+    transition: filter .2s;
+}
+
+.buttons .buttonPagamento {
+    height: 50px;
+    width: 400px;
+    font-size: 18px;
+    margin: 80px 80px 0 0;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 10px;
+    background: #FF7A00;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: filter .2s;
+}
+
+@media (max-width: 900px) {
+
+    #titulo1,
+    #titulo2 {
+        text-align: center;
+    }
+
+    .quadroGeral {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+    }
+
+    .quadroGeral img {
+        width: 90%;
+        max-width: 300px;
+        margin-left: 0;
+    }
+    .esquerda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .esquerda,
+    .direita {
+        width: 90%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .direita {
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .direita h3 {
+        margin-left: 0;
+    }
+
+    .valor {
+        margin-left: 0;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .texto {
+        margin-left: 0;
+    }
+
+    .codigoPix {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .codigoPix p {
+        width: 90%;
+        margin: 10px 0;
+        border-radius: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .codigoPix .btnCopiar {
+        width: 80%;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0 0 0;
+        padding: 0;
+    }
+
+    .buttons .buttonVoltar,
+    .buttons .buttonPagamento {
+        width: 80%;
+        margin: 10px 0;
+    }
+}

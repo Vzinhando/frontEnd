@@ -1,0 +1,46 @@
+
+.setaEsquerdaCardAvaliacao,
+.setaDireitaCardAvaliacao {
+  margin: 0rem 0rem 0rem 3rem;
+  background-color: #ff7900;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  align-items: center;
+  justify-content: flex-start;
+  height: 3.5rem;
+  width: 3.5rem;
+  pointer-events: auto;
+  transition: background-color 0.3s ease;
+}
+.setaEsquerdaCardAvaliacao:hover,
+.setaDireitaCardAvaliacao:hover {
+  background-color: #200c80;
+}
+
+.carrosselContainer {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.carrosselContainer>* {
+  flex: 0 0 calc(100% / 1 - 2rem);
+}
+
+/*-- Responsividade --*/
+
+@media screen and (min-width: 768px) {
+  .carrosselContainer>* {
+    flex: 0 0 calc(100% / 2 - 2rem);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .carrosselContainer>* {
+    flex: 0 0 calc(100% / 3 - 2rem);
+  }
+}

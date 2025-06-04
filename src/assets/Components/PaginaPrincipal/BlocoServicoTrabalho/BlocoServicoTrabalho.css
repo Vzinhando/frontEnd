@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.servicoTrabalhoContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px auto;
+    font-family: 'Poppins', sans-serif;
+    flex-wrap: wrap;
+}
+
+.blocoServicoAzul,
+.blocoTrabalheLaranja {
+    width: 490px;
+    padding: 20px;
+    border-radius: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.blocoServicoAzul {
+    background: linear-gradient(135deg, #586ff4, #3c49db);
+}
+
+.blocoTrabalheLaranja {
+    background: linear-gradient(135deg, #ff9900, #f17c0a);
+}
+
+.servicoTexto,
+.trabalheTexto {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.blocoImagemServicoMapa,
+.blocoImagemTrabalhePessoas {
+    width: 100%;              
+    max-width: 260px;         
+    height: 170px;           
+    object-fit: contain; 
+    border-radius: 12px;
+    margin-bottom: 20px;
+} 
+
+.botaoServicoAzul,
+.botaoTrabalheLaranja {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.botaoServicoAzul {
+    background-color: #445be9;
+    color: white;
+    text-decoration: none;
+}
+
+.botaoTrabalheLaranja {
+    background-color: #d16000;
+    color: white;
+    text-decoration: none;
+}
+
+.botaoServicoAzul:hover,
+.botaoTrabalheLaranja:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .blocoServicoAzul,
+    .blocoTrabalheLaranja {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .servicoTexto,
+    .trabalheTexto {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .blocoImagemServicoMapa,
+    .blocoImagemTrabalhePessoas {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .botaoServicoAzul,
+    .botaoTrabalheLaranja {
+        font-size: 18px;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicoTrabalhoContainer {
+        gap: 15px;
+        margin: 30px auto;
+    }
+
+    .servicoTexto,
+    .trabalheTexto {
+        font-size: 18px;
+    }
+
+    .botaoServicoAzul,
+    .botaoTrabalheLaranja {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+

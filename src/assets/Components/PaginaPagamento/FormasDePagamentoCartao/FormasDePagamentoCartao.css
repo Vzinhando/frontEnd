@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.formasDePagamento {
+  background-color: #FFF8ED;
+  padding: 2.5rem 5rem;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+.tituloFormasDePagamento {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 1.875rem;
+}
+
+.formularioPagamento {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.containerEsquerdaFormasDePagamento,
+.containerDireitaFormasDePagamento {
+  background-color: #FFE2BA;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  flex: 1;
+  min-width: 18.75rem;
+}
+
+.dadosFormasDePagamento label {
+  font-weight: 500;
+  display: block;
+  margin-top: 0.9375rem;
+}
+
+.dadosFormasDePagamento input,
+.dadosFormasDePagamento select {
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 0.3125rem;
+  font-size: 0.875rem;
+  background-color: #FFCD95;
+}
+
+.legenda {
+  font-size: 0.75rem;
+  color: #200C80;
+}
+
+.inputComIcone {
+  position: relative;
+}
+
+.iconeCartao {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  color: #200C80;
+}
+
+.linhaInputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.9375rem;
+}
+
+.codigoPrincialFormasDePagamento {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.documentoTitularFormasDePagamento {
+  font-weight: 500;
+}
+
+.linhaDocumento {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.documentoFormasDePagamento,
+.cpfFormasDePagamento {
+  flex: 1;
+  background-color: #ffcc8a;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+}
+
+.documentoFormasDePagamento {
+  flex: 0.4;
+}
+
+.cpfFormasDePagamento {
+  flex: 7;
+}
+
+
+.containerDireitaFormasDePagamento {
+  background-color: #FFE2BA;
+  border-radius: 0.625rem;
+  flex: 1;
+  height: 15rem;
+}
+
+.containerDireitaFormasDePagamento h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+
+.totalFormaDePagamento {
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  margin-top: 1.25rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.botoesFormasDePagamento {
+  margin-top: 1.875rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.25rem;
+}
+
+.voltarFormasDePagamento,
+.continuarFormasDePagamento {
+  padding: 0.6rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.0625rem;
+}
+
+.voltarFormasDePagamento {
+  background-color: #ffe1bb;
+  color: #ff8000;
+}
+
+.voltarFormasDePagamento:hover {
+  background-color: #ff8000;
+  color: #200C80;
+}
+
+.continuarFormasDePagamento {
+  background-color: #ff7a00;
+  color: white;
+}
+
+.continuarFormasDePagamento:hover {
+  background-color: #200C80;
+  color: #ff8000;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+@media (max-width: 1024px) {
+  .formularioPagamento {
+    gap: 1.5rem;
+  }
+
+  .botoesFormasDePagamento {
+    justify-content: center;
+    margin-top: 2rem;
+    position: static;
+  }
+ 
+}
+
+
+@media (max-width: 768px) {
+  .formularioPagamento {
+    flex-direction: column;
+  }
+
+  .containerDireitaFormasDePagamento,
+  .containerEsquerdaFormasDePagamento {
+    width: 100%;
+  }
+
+  .tituloFormasDePagamento {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .containerDireitaFormasDePagamento h2 {
+    text-align: center;
+  }
+
+  .botoesFormasDePagamento {
+    justify-content: center;
+    margin-top: 2rem;
+    position: static;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .tituloFormasDePagamento {
+    font-size: 1.5rem;
+  }
+
+  .containerDireitaFormasDePagamento h2 {
+    font-size: 1.25rem;
+  }
+
+  .dadosFormasDePagamento input,
+  .dadosFormasDePagamento select {
+    font-size: 0.8rem;
+  }
+
+  .voltarFormasDePagamento,
+  .continuarFormasDePagamento {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

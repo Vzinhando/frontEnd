@@ -1,0 +1,145 @@
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.descrevaS {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3rem;
+    color: #000C4C;
+}
+
+.Pai3 {
+    background-color: #FFDBA8;
+    width: 75vw;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto 50px auto;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.descricao {
+    width: 100%;
+    height: 35vh;
+    margin-bottom: 13px;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    padding: 8px;
+    resize: none;
+    overflow-y: auto;
+    font-size: 1rem;
+}
+
+.palavrasChaves {
+    width: 100%;
+    height: 6vh;
+    margin-bottom: 13px;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.H2descricao,
+.H2palavrasChaves {
+    color: #200c80;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.Finalizar {
+    background-color: #FF7900;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Finalizar:hover {
+    background-color: #000C4C;
+    transform: scale(0.95);
+}
+
+.AdicionarImagens {
+    background-color: #FF7900;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.AdicionarImagens:hover {
+    background-color: #000C4C;
+    transform: scale(0.95);
+}
+
+.containerBotaoFinalizar {
+    width: 75vw;
+    margin: 0 auto 40px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .Pai3 {
+        width: 90vw;
+        padding: 15px;
+    }
+
+    .descrevaS {
+        font-size: 2.2rem;
+    }
+
+    .Finalizar {
+        font-size: 1rem;
+        padding: 10px 16px;
+    }
+
+    .AdicionarImagens {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .descrevaS {
+        font-size: 1.8rem;
+    }
+
+    .descricao {
+        height: 25vh;
+        font-size: 0.95rem;
+    }
+
+    .palavrasChaves {
+        height: 5.5vh;
+        font-size: 0.95rem;
+    }
+
+    .H2descricao,
+    .H2palavrasChaves {
+        font-size: 1.1rem;
+    }
+
+    .Finalizar {
+        font-size: 1rem;
+        padding: 10px 16px;
+    }
+
+    .AdicionarImagens {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+}

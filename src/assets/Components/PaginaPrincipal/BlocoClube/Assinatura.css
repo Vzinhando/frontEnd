@@ -1,0 +1,16 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.BlocosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 100px;
+}
+@media (max-width: 768px) {
+  .container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
