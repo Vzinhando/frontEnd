@@ -24,7 +24,7 @@ function Assinatura() {
         <BlocoClube
           paraQuemEOPlano="Usúario"
           TituloClube="Clube Vizinhando"
-          valor="R$ 19,90"
+          valor="R$ 19,99"
           tipo={Aproved}
           tipo2={Aproved}
           info1="Acesso total a plataforma"
@@ -38,7 +38,7 @@ function Assinatura() {
         <BlocoClube
           paraQuemEOPlano="Prestador de serviço"
           TituloClube="Clube Vizinhando"
-          valor="R$ 19,90"
+          valor="R$ 19,99"
           tipo={Aproved}
           tipo2={Aproved}
           info1="Sem anúncios"
