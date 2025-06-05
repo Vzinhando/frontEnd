@@ -1,4 +1,3 @@
-import Search from "../../../../../public/img/search.svg";
 import "./PesquisarPrestador.css";
 
 function PesquisarPrestador() {
@@ -12,34 +11,10 @@ function PesquisarPrestador() {
             className="inputPesquisarBuscaPrestador"
           />
           <button type="submit" className="botaoPesquisarBuscaPrestador">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2.5}
-                d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314"
-              ></path>
-            </svg>
+            <img src="./img/BuscaPrestadorIcon/pesquisarBotaoPrestador.svg" alt="" />
           </button>
           <button className="filtroBuscaPrestador">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M22 18.605a.75.75 0 0 1-.75.75h-5.1a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h7.74a2.93 2.93 0 0 1 5.66 0h5.1a.75.75 0 0 1 .75.75m0-13.21a.75.75 0 0 1-.75.75H18.8a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h10.39a2.93 2.93 0 0 1 5.66 0h2.45a.74.74 0 0 1 .75.75m0 6.6a.74.74 0 0 1-.75.75H9.55a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h1.14a2.93 2.93 0 0 1 5.66 0h11.7a.75.75 0 0 1 .75.75"
-              ></path>
-            </svg>
+          <img src="./img/BuscaPrestadorIcon/filtroBotaoPrestador.svg" alt="" />
           </button>
         </form>
       </div>

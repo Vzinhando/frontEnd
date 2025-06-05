@@ -29,6 +29,7 @@
   margin-left: 0;
   margin: 10px 0px 0px 150px;
   color: #200C80;
+  font-size: 20px;
 }
 
 .prestadoresBuscaPrestador {
@@ -75,7 +76,7 @@
 
   .subTituloBuscaPrestador {
     margin: 10px 0px 0px 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .prestadoresBuscaPrestador {

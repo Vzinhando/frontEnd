@@ -10,7 +10,7 @@
 }
 .textosCarrossel {
   width: 50%;
-  height: 80%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   align-items: start;
