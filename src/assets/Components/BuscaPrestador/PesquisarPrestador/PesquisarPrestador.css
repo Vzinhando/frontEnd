@@ -34,21 +34,15 @@
   position: relative;
 }
 
-.botaoPesquisarBuscaPrestador img{
-  width: 40px;
-  height: 30px;
-  color: white;
-}
 
 .botaoPesquisarBuscaPrestador,
 .filtroBuscaPrestador {
   background-color: #ff7900;
   border: none;
   border-radius: 10px;
-  width: 56px;
+  width: 59px;
   height: 45px;
   cursor: pointer;
-  font-size: 25px;
   color: white;
   display: flex;
   align-items: center;
