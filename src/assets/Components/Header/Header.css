@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.sobre{
+.sobre {
   text-decoration: none;
   color: white;
 }
 .sobre:hover {
-  color: #FD7708;
+  color: #fd7708;
 }
-#container {
-  background-color: #200C80;
+.container {
+  background-color: #200c80;
   color: white;
   padding: 10px 40px;
   display: flex;
@@ -23,43 +23,43 @@
   font-family: "Poppins", sans-serif;
 }
 
-#logo {
+.logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-#menu {
+.menu {
   display: flex;
   gap: 30px;
   font-weight: 600;
   font-size: 16px;
 }
 
-#usuario {
+.usuario {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.botao_login {
-  background: linear-gradient(90deg, #FD7708 0%, #FF914D 100%);
+.botaoLogin {
+  background: linear-gradient(90deg, #fd7708 0%, #ff914d 100%);
   color: white;
   padding: 8px 20px;
   border-radius: 20px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
 }
-.loginClick{
+.loginClick {
   all: unset;
 }
-.botao_login:hover {
+.botaoLogin:hover {
   filter: brightness(1.1);
 }
 
-.botao_cadastro {
+.botaoCadastro {
   display: none;
 }
 
@@ -94,8 +94,8 @@
   margin: 10px 0;
 }
 
-.botao_login,
-.botao_cadastro {
+.botaoLogin,
+.botaoCadastro {
   background: linear-gradient(to right, #ff7e00, #ff5100);
   padding: 8px 16px;
   border-radius: 20px;

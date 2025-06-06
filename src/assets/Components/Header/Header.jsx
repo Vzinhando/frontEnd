@@ -16,8 +16,8 @@ function Header() {
                 <p>Ajuda</p>
             </div>
             <div className="usuario">
-                <p className="botao_login"><NavLink to = "login" className={'loginClick'}>Login</NavLink></p>
-                <p className="botao_cadastro">Cadastro</p>
+                <a className="botaoLogin"><NavLink to = "login" className={'loginClick'}>Login</NavLink></a>
+                <a className="botaoCadastro">Cadastro</a>
             </div>
         </section>
 
