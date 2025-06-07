@@ -23,7 +23,7 @@ function PaginaBoleto() {
 
                 <section className="dadosBoletoBotoes">
                     <button className="dadosBoletoBotaoVoltar">Voltar</button>
-                    <NavLink to = "/pagamentoboleto" className="dadosBoletoBotaoFinalizar">Finalizar pagamento</NavLink>
+                    <NavLink to = "/pagamento-boleto" className="dadosBoletoBotaoFinalizar">Finalizar pagamento</NavLink>
                 </section>
             </section>
 

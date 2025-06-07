@@ -4,14 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-.sobre {
+.sobreHeader {
   text-decoration: none;
   color: white;
 }
-.sobre:hover {
+.sobreHeader:hover {
   color: #fd7708;
 }
-.container {
+.containerHeader {
   background-color: #200c80;
   color: white;
   padding: 10px 40px;
@@ -23,26 +23,26 @@
   font-family: "Poppins", sans-serif;
 }
 
-.logo {
+.logoHeader {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.menu {
+.menuHeader {
   display: flex;
   gap: 30px;
   font-weight: 600;
   font-size: 16px;
 }
 
-.usuario {
+.usuarioHeader {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.botaoLogin {
+.botaoLoginHeader {
   background: linear-gradient(90deg, #fd7708 0%, #ff914d 100%);
   color: white;
   padding: 8px 20px;
@@ -52,50 +52,48 @@
   cursor: pointer;
   transition: 0.3s;
 }
-.loginClick {
+.loginClickHeader {
   all: unset;
 }
-.botaoLogin:hover {
+.botaoLoginHeader:hover {
   filter: brightness(1.1);
 }
 
-.botaoCadastro {
+.botaoCadastroHeader {
   display: none;
 }
 
-/*== Responsividade ==*/
-
-/* MOBILE: até 767px */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #1a0a82;
-  padding: 10px 20px;
-  text-align: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.menu,
-.usuario {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #ffffff;
-  font-size: 20px;
-  display: flex;
-  gap: 20px;
-  margin: 10px 0;
-}
-
-.botaoLogin,
-.botaoCadastro {
+@media(max-width: 767px){
+  .containerHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a0a82;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .logoHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .menuHeader,
+  .usuarioHeader {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+  }
+  
+  .botaoLoginHeader,
+  .botaoCadastroHeader {
   background: linear-gradient(to right, #ff7e00, #ff5100);
   padding: 8px 16px;
   border-radius: 20px;
@@ -104,46 +102,30 @@
   font-weight: bold;
   cursor: pointer;
 }
+}
 
-/* TABLET: 768px até 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container {
+  .containerHeader {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: left;
   }
-
-  .logo {
+  
+  .logoHeader {
     margin-bottom: 0;
   }
-
-  .menu,
-  .usuario {
+  
+  .menuHeader,
+  .usuarioHeader {
     margin: 0;
   }
-
-  .menu {
+  
+  .menuHeader {
     order: 2;
   }
 
-  .usuario {
+  .usuarioHeader {
     order: 3;
-  }
-}
-
-/* DESKTOP: a partir de 1024px */
-@media (min-width: 1024px) {
-  .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-  }
-
-  .logo,
-  .menu,
-  .usuario {
-    margin: 0;
   }
 }

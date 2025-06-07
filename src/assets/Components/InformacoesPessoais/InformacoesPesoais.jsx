@@ -1,5 +1,5 @@
 import "./InformacoesPessoais.css";
-import CampoDigitar from "../CampoDeDigitar/campoDigitar";
+import CampoDigitar from "./CampoDeDigitar/campoDigitar";
 
 function InformacoesPessoais() {
   return (

@@ -21,21 +21,21 @@ function FormaPagamento() {
             <section className="menuMetodosPagamento">
                 <h2 className="formaPagamento">Como você prefere pagar?</h2>
 
-                <NavLink to = "/paginadebito" className="formaPagamentoDebito">
+                <NavLink to = "/pagina-debito" className="formaPagamentoDebito">
                 <div className="formaPagamentoDebito">
                     <img src="./img/Pagamentos/cartao.svg" alt="Desenho de um cartão" />
                     <h3>Cartão de débito</h3>
                 </div>
                 </NavLink>
 
-                <NavLink to = "/paginacredito" className="formaPagamentoCredito">
+                <NavLink to = "/pagina-credito" className="formaPagamentoCredito">
                 <div className="formaPagamentoCredito">
                     <img src="./img/Pagamentos/cartao.svg" alt="Desenho de um cartão" />
                     <h3>Cartão de Crédito</h3>
                 </div>
                 </NavLink>
 
-                <NavLink to = "/confirmarpagamento" className="formaPagamentoPix">
+                <NavLink to = "/confirmar-pagamento" className="formaPagamentoPix">
                 <div className="formaPagamentoPix">
                     <img src="./img/Pagamentos/pix.svg" alt="Desenho do pix" />
                     <h3>Pix</h3>
@@ -43,7 +43,7 @@ function FormaPagamento() {
                 </div>
                 </NavLink>
 
-                 <NavLink to="/paginaboleto" className="formaPagamentoBoleto">
+                 <NavLink to="/pagina-boleto" className="formaPagamentoBoleto">
                     <div className="formaPagamentoBoleto">
                         <img src="./img/Pagamentos/boleto.svg" alt="Desenho de um boleto" />
                        <h3>Boleto</h3>

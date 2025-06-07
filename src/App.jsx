@@ -19,6 +19,8 @@ import PaginaPreCadastro from "./assets/Components/PaginaPreCadastro/PaginaPreCa
 import PaginaServico from "./assets/Components/PaginaServico/PaginaServico";
 import PaginaPerfilPrestador from "./assets/Components/PaginaPerfilPrestador/PaginaPerfilPrestador";
 import PaginaPerfilCliente from "./assets/Components/PaginaPerfilCliente/PaginaPerfilCliente";
+import CampoDigitar from "./assets/Components/InformacoesPessoais/CampoDeDigitar/campoDigitar";
+import InformacoesPessoais from "./assets/Components/InformacoesPessoais/InformacoesPesoais";
 
 function App() {
   return (
@@ -58,7 +60,8 @@ function App() {
         <Route path="/pagina-prestador" element={<PaginaPerfilPrestador />} />
         {/*Pagina para mudar className se o class name estiver sem o nome do 
         componente no final colocar ex: "container" mudar para => "containerNomeComponente" 
-         */}
+        */}
+        <Route path="/informacoes-pessoais" element={<InformacoesPessoais />} />
       </Routes>
       <Footer />
     </BrowserRouter>

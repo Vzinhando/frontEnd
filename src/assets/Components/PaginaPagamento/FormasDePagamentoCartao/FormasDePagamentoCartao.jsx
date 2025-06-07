@@ -79,7 +79,7 @@ function FormasDePagamentoCartao() {
         </div>
         <div className="botoesFormasDePagamento">
           <button className="voltarFormasDePagamento">Voltar</button>
-          <NavLink to = "/confirmarpagamento" className="continuarFormasDePagamento">Continuar</NavLink>
+          <NavLink to = "/confirmar-pagamento" className="continuarFormasDePagamento">Continuar</NavLink>
         </div>
       </main>
     </>
