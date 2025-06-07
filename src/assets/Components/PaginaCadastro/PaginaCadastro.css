@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .containerCadastro {
-    margin: 0 5rem 5rem 5rem;
+  margin: 0 1rem 5rem 3rem;
   display: flex;
   border-radius: 12px;
-  padding: 50px 0px;
+  padding: 1.7rem 0;
 }
 
 .dadosCadastro {
@@ -37,14 +37,17 @@
   font-size: 2rem;
   color: #4932DC;
 }
-.loginClick{
+
+.loginClick {
   cursor: pointer;
   font-weight: 600;
   color: #200C80;
 }
+
 .loginClick:hover {
   text-decoration: underline;
 }
+
 .campoNome,
 .campoEmail,
 .campoSenha,
@@ -56,7 +59,7 @@
 
 .campoInput {
   width: 100%;
-  padding: 10px;
+  padding: 1rem;
   margin-bottom: 20px;
   border-radius: 20px;
   border: none;
@@ -67,18 +70,43 @@ input::placeholder {
   font-size: 18px;
 }
 
+.grupoBotoesPaginaCadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grupoBotoesPaginaCadastro p{
+  font-weight: 600;
+  font-style: normal;
+  color: #200C80;
+  margin-bottom: 1rem;
+}
 .botaoEntrarCadastro {
+  text-decoration: none;
   width: 100%;
-  padding: 15px;
-  border: none;
-  border-radius: 20px;
-  margin-top: 50px;
-  background: linear-gradient(to right, #5f74f4, #6db3f2);
-  color: white;
-  font-size: 1.2rem;
   cursor: pointer;
+  font-weight: 700;
+  background-color: #FF7900;
+  color: white;
+  margin-bottom: 2rem;
+  padding: 1rem 20rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
+.botaoEntrarCadastro:hover {
+  color: #FF7900;
+  background-color: #200C80;
+  transform: scale(0.95);
+}
+
+.botaoEntrarCadastroGoogle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .textoLogin {
   font-weight: 500;
   font-style: normal;
@@ -93,11 +121,7 @@ input::placeholder {
   font-weight: 500;
   font-style: normal;
   color: #200C80;
-}
-
-span {
-  color: #7045E6;
-  text-decoration: underline;
+  margin: 0rem 0 3rem 0rem;
 }
 
 /*== Responsividade ==*/
@@ -192,6 +216,7 @@ span {
   .botaoEntrarCadastro {
     font-size: 1rem;
     padding: 12px;
+    display: flex;
   }
 
   .textoLogin,
