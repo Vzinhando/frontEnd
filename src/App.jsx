@@ -62,6 +62,7 @@ function App() {
         componente no final colocar ex: "container" mudar para => "containerNomeComponente" 
         */}
         <Route path="/informacoes-pessoais" element={<InformacoesPessoais />} />
+        <Route path="/informacoes-pessoais" element={<InformacoesPessoais />} />
       </Routes>
       <Footer />
     </BrowserRouter>
