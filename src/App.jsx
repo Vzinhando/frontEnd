@@ -19,7 +19,6 @@ import PaginaPreCadastro from "./assets/Components/PaginaPreCadastro/PaginaPreCa
 import PaginaServico from "./assets/Components/PaginaServico/PaginaServico";
 import PaginaPerfilPrestador from "./assets/Components/PaginaPerfilPrestador/PaginaPerfilPrestador";
 import PaginaPerfilCliente from "./assets/Components/PaginaPerfilCliente/PaginaPerfilCliente";
-import CampoDigitar from "./assets/Components/InformacoesPessoais/CampoDeDigitar/campoDigitar";
 import InformacoesPessoais from "./assets/Components/InformacoesPessoais/InformacoesPesoais";
 
 function App() {
