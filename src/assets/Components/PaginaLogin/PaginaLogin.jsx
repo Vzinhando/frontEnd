@@ -19,7 +19,7 @@ function PaginaLogin() {
             </div>
             <div className='linhaReta'></div>
             <div className='logoBemVindo'>
-                <img className='imagem' src="/img/Logo/Logo.svg" alt="Logo Vizinhando" width="300px" />
+                <img className='imagemLogo' src="/img/Logo/Logo.svg" alt="Logo Vizinhando" width="300px" />
                 <h1 className='textoBemVindo'>Seja bem vindo(a) de volta!</h1>
             </div>
         </section>

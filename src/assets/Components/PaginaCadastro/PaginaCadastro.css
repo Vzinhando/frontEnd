@@ -1,30 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 .containerCadastro {
-  margin: 0 1rem 5rem 3rem;
+  margin: 2rem 5rem;
   display: flex;
   border-radius: 12px;
-  padding: 1.7rem 0;
+  padding: 50px 0px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .dadosCadastro {
   flex: 1;
   padding: 40px;
-}
-
-.linhaReta {
-  width: 2px;
-  background-color: #FD7708;
+  display: flex;
+  flex-direction: column;
 }
 
 .logoBemVindo {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
   flex: 1;
   padding: 40px;
   text-align: center;
-  color: #4932DC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 5rem;
 }
 
 .imagem {
@@ -33,28 +30,17 @@
 }
 
 .textoBemVindo {
+  font-size: 20px;
   font-weight: 800;
-  font-size: 2rem;
+  font-style: normal;
   color: #4932DC;
 }
 
-.loginClick {
-  cursor: pointer;
-  font-weight: 600;
-  color: #200C80;
-}
-
-.loginClick:hover {
-  text-decoration: underline;
-}
-
-.campoNome,
-.campoEmail,
-.campoSenha,
-.campoCep {
+.campoNome, .campoEmail, .campoSenha, .campoCep {
   font-weight: 600;
   font-style: normal;
   color: #200C80;
+  margin-bottom: 0.5rem;
 }
 
 .campoInput {
@@ -66,8 +52,24 @@
   background-color: #f0c087;
 }
 
-input::placeholder {
+.campoInput::placeholder {
   font-size: 18px;
+}
+
+.textoLogin, .esquecerCep {
+  font-weight: 500;
+  font-style: normal;
+  color: #200C80;
+  text-align: end;
+  margin-top: 1rem;
+}
+
+.textoLogin .loginClick, .esquecerCep NavLink {
+  margin-left: 5px;
+  color: #7045E6;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .grupoBotoesPaginaCadastro {
@@ -75,25 +77,29 @@ input::placeholder {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
 }
-.grupoBotoesPaginaCadastro p{
+
+.grupoBotoesPaginaCadastro p {
   font-weight: 600;
   font-style: normal;
   color: #200C80;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
+
 .botaoEntrarCadastro {
   text-decoration: none;
   width: 100%;
   cursor: pointer;
-  font-weight: 700;
-  background-color: #FF7900;
-  color: white;
-  margin-bottom: 2rem;
-  padding: 1rem 20rem;
+  text-align: center;
+  padding: 1rem;
   font-size: 1.2rem;
   border-radius: 8px;
   transition: all 0.3s ease;
+  font-weight: 700;
+  background-color: #FF7900;
+  color: white;
 }
 
 .botaoEntrarCadastro:hover {
@@ -103,145 +109,44 @@ input::placeholder {
 }
 
 .botaoEntrarCadastroGoogle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.textoLogin {
-  font-weight: 500;
-  font-style: normal;
-  color: #200C80;
-  display: flex;
-  justify-content: flex-end;
+  cursor: pointer;
 }
 
-.esquecerCep {
-  display: flex;
-  justify-content: flex-end;
-  font-weight: 500;
-  font-style: normal;
-  color: #200C80;
-  margin: 0rem 0 3rem 0rem;
+.imagemGoogle {
+  width: 50px;
 }
 
-/*== Responsividade ==*/
+.linhaReta {
+  width: 2px;
+  background-color: #FD7708;
+  align-self: stretch;
+}
 
-/* MOBILE: até 767px */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
+  .containerCadastro {
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
   .containerCadastro {
     flex-direction: column;
-    padding: 20px 15px;
-  }
-
-  .logoBemVindo {
-    order: 1;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .imagem {
-    max-width: 150px;
-  }
-
-  .textoBemVindo {
-    font-size: 1.2rem;
-  }
-
-  .dadosCadastro {
-    order: 2;
-    padding: 0;
-  }
-
-  .campoInput {
-    font-size: 16px;
-  }
-
-  input::placeholder {
-    font-size: 14px;
-  }
-
-  .botaoEntrarCadastro {
-    font-size: 1rem;
-    padding: 12px;
-  }
-
-  .textoLogin {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-
-  .esquecerCep {
-    font-size: 14px;
-  }
-
-  .linhaReta {
-    display: none;
-  }
-}
-
-/* TABLET: 768px até 1023px */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .containerCadastro {
-    flex-direction: column;
-    align-items: center;
+    margin: 1rem;
     padding: 20px;
   }
 
   .logoBemVindo {
-    order: 1;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .imagem {
-    max-width: 180px;
-    margin-bottom: 10px;
-  }
-
-  .textoBemVindo {
-    font-size: 1.5rem;
-  }
-
-  .dadosCadastro {
-    order: 2;
-    width: 100%;
-    max-width: 500px;
-    padding: 0;
-  }
-
-  .campoInput {
-    font-size: 16px;
-  }
-
-  .botaoEntrarCadastro {
-    font-size: 1rem;
-    padding: 12px;
-    display: flex;
-  }
-
-  .textoLogin,
-  .esquecerCep {
-    font-size: 14px;
+    order: -1;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
   }
 
   .linhaReta {
     display: none;
   }
-}
 
-/* DESKTOP: a partir de 1024px */
-@media (min-width: 1024px) {
-  .containerLogin {
-    flex-direction: row;
-  }
-
-  .linhaReta {
-    display: block;
-  }
-
-  .dadosLogin,
-  .logoBemVindo {
-    padding: 40px;
-    width: auto;
+  .textoLogin, .esquecerCep {
+    text-align: center;
+    justify-content: center;
   }
 }

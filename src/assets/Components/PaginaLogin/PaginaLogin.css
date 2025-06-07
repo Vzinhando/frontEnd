@@ -1,216 +1,181 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
- .containerLogin {
-   margin: 0 5rem 5rem 5rem;
-   display: flex;
-   border-radius: 12px;
-   padding: 50px 0px;
- }
+.containerLogin {
+  margin: 0 5rem 5rem 5rem;
+  display: flex;
+  border-radius: 12px;
+  padding: 50px 0px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
- .dadosLogin {
-   flex: 1;
-   padding: 40px;
- }
+.dadosLogin {
+  flex: 1;
+  padding: 40px;
+}
 
- .linhaReta {
-   width: 2px;
-   background-color: #FD7708;
- }
+.linhaReta {
+  width: 2px;
+  background-color: #FD7708;
+  align-self: stretch;
+}
 
- .logoBemVindo {
-   font-weight: 800;
-   font-style: normal;
-   flex: 1;
-   padding: 40px;
-   text-align: center;
-   color: #4932DC;
- }
-
- .cadastroClick {
-   font-weight: 600;
-   font-style: normal;
-   color: #200C80;
- }
-
- .cadastroClick:hover {
-   text-decoration: underline;
- }
-
- .imagem {
-   max-width: 100%;
-   margin-bottom: 20px;
- }
-
- .textoBemVindo {
-   font-weight: 800;
-   font-style: normal;
-   color: #4932DC;
- }
-
- .campoLogin,
- .campoSenha {
-   font-weight: 600;
-   font-style: normal;
-   color: #200C80;
- }
-
- .campoInputLogin {
-   width: 100%;
-   padding: 1rem;
-   margin-bottom: 20px;
-   border-radius: 20px;
-   border: none;
-   background-color: #f0c087;
- }
-
- .campoInputSenha {
-   width: 100%;
-   padding: 1rem;
-   border-radius: 20px;
-   border: none;
-   background-color: #f0c087;
- }
-
- input::placeholder {
-   font-size: 18px;
- }
-.grupoBotoesLogin{
+.logoBemVindo {
+  font-weight: 800;
+  font-style: normal;
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+  color: #4932DC;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.grupoBotoesLogin p{
+
+.cadastroClick {
+  font-weight: 600;
+  font-style: normal;
+  color: #200C80;
+}
+
+.cadastroClick:hover {
+  text-decoration: underline;
+}
+
+.imagem, .imagemLogox {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.textoBemVindo {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  color: #4932DC;
+}
+
+.campoLogin,
+.campoSenha {
+  font-weight: 600;
+  font-style: normal;
+  color: #200C80;
+  margin-bottom: 0.5rem;
+}
+
+.campoInputLogin,
+.campoInputSenha {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f0c087;
+}
+
+input::placeholder {
+  font-size: 18px;
+}
+
+.grupoBotoesLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grupoBotoesLogin p {
   font-weight: 600;
   font-style: normal;
   color: #200C80;
   margin-bottom: 1rem;
 }
-.botaoGoogleLogin{
+
+.botaoGoogleLogin {
   display: flex;
   justify-content: center;
   align-items: center;
 }
- .botaoEntrarLogin {
-   text-decoration: none;
-   width: 100%;
-   cursor: pointer;
-   font-weight: 700;
-   background-color: #FF7900;
-   color: white;
-   margin-bottom: 2rem;
-   padding: 1rem 20rem;
-   font-size: 1.2rem;
-   border-radius: 8px;
-   transition: all 0.3s ease;
- }
 
- .botaoEntrarLogin:hover {
-   color: #FF7900;
-   background-color: #200C80;
-   transform: scale(0.95);
- }
- 
+.botaoEntrarLogin {
+  text-decoration: none;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #FF7900;
+  color: white;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
 
- .textoCadastrar {
-   font-weight: 500;
-   font-style: normal;
-   color: #200C80;
-   text-align: end;
-   margin: 0rem 0 3rem 0rem;
- }
+.botaoEntrarLogin:hover {
+  color: #FF7900;
+  background-color: #200C80;
+  transform: scale(0.95);
+}
 
- .esquecerSenha {
-   margin: 1rem 0 0 0;  
-   display: flex;
-   justify-content: flex-end;
-   font-weight: 500;
-   font-style: normal;
-   color: #200C80;
- }
+.textoCadastrar {
+  font-weight: 500;
+  font-style: normal;
+  color: #200C80;
+  text-align: end;
+  margin: 0rem 0 3rem 0rem;
+}
 
- span {
-   color: #7045E6;
-   text-decoration: underline;
- }
+.esquecerSenha {
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+  font-style: normal;
+  color: #200C80;
+}
 
- /* Responsividade */
- @media (max-width: 767px) {
-   .containerLogin {
-     flex-direction: column-reverse;
-     padding: 20px;
-   }
+span {
+  color: #7045E6;
+  text-decoration: underline;
+}
 
-   .linhaReta {
-     display: none;
-   }
+@media (max-width: 1024px) {
+  .containerLogin {
+    margin: 0 2rem 2rem 2rem;
+  }
 
-   .dadosLogin .logoBemVindo {
-     padding: 20px;
-     width: 100%;
-   }
+  .dadosLogin,
+  .logoBemVindo {
+    padding: 30px;
+  }
+}
 
-   .dadosLogin .imagem {
-     width: 150px;
-   }
+@media (max-width: 768px) {
+  .containerLogin {
+    flex-direction: column;
+    margin: 0 1rem 2rem 1rem;
+    padding: 20px;
+  }
 
-   .dadosLogin .textoBemVindo {
-     font-size: 1.3rem;
-   }
+  .linhaReta {
+    display: none;
+  }
 
-   .dadosLogin .botaoEntrarLogin {
-     font-size: 1rem;
-   }
+  .logoBemVindo {
+    order: -1;
+    padding: 20px 0;
+  }
 
-   .dadosLogin .textoCadastrar {
-     font-size: 0.9rem;
-   }
- }
+  .textoCadastrar {
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+  }
 
- @media (min-width: 768px) and (max-width: 1023px) {
-   .containerLogin {
-     flex-direction: column-reverse;
-     padding: 30px;
-   }
+  .esquecerSenha {
+    justify-content: center;
+  }
 
-   .linhaReta {
-     display: none;
-   }
-
-   .dadosLogin .logoBemVindo {
-     padding: 30px;
-     width: 100%;
-   }
-
-   .dadosLogin .imagem {
-     width: 200px;
-   }
-
-   .dadosLogin .textoBemVindo {
-     font-size: 1.5rem;
-   }
-
-   .dadosLogin .botaoEntrarLogin {
-     font-size: 1.1rem;
-   }
-
-   .dadosLogin .textoCadastrar {
-     font-size: 1rem;
-   }
- }
-
- @media (min-width: 1024px) {
-   .containerLogin {
-     flex-direction: row;
-   }
-
-   .linhaReta {
-     display: block;
-   }
-
-   .dadosLogin,
-   .logoBemVindo {
-     padding: 40px;
-     width: auto;
-   }
- }
+  .botaoEntrarLogin {
+    padding: 1rem;
+  }
+}
