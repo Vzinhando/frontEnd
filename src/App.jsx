@@ -36,7 +36,7 @@ function App() {
         <Route path="/pagina-credito" element={<FormasDePagamentoCartao />} />
         <Route path="/pagina-debito" element={<FormasDePagamentoCartao />} />
         <Route path="*" element={<NaoEncontrado />} />
-        <Route path="/confirmarpagamento" element={<ConfirmarPagamento />} />
+        <Route path="/confirmar-pagamento" element={<ConfirmarPagamento />} />
         <Route path="/pagamento-boleto" element={<PagamentoBoleto />} />
         <Route
           path="/confirmacao-pagamento"
