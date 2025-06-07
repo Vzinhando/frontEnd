@@ -1,0 +1,719 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.quadroGeralCliente {
+  border-radius: 30px;
+  min-height: 90vh;
+  width: 90%;
+  background-color: #ffdba8;
+  margin: 8% auto 2% auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  
+  position: relative;
+}
+
+.quadroPerfilCliente {
+  margin-left: 20%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  margin-right: 50%;
+}
+
+.imagemPerfilCliente {
+  flex-shrink: 0;
+  position: relative;
+  top: -6.25rem;
+  background-color: #200c80;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(255, 117, 8, 0.7);
+  border-radius: 1.875rem;
+}
+
+.imagemPerfilCliente img {
+  width: 21.875rem;
+  height: 21.875rem;
+  display: block;
+}
+
+.infosCliente {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -6.75rem;
+}
+
+.nomePerfilCliente {
+  display: flex;
+  align-items: center;
+  font-size: 3.75rem;
+  color: #200c80;
+  text-shadow: 0.25rem 0.25rem 0.25rem rgba(255, 117, 8, 0.5);
+  gap: 0.5rem;
+}
+
+.verificado {
+  color: #ff7900;
+  font-size: 3.75rem;
+}
+
+.estrelasPerfilCliente {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.estrelaCliente {
+  color: #200c80;
+  transition: all 0.3s ease-out;
+}
+
+.estrelaCliente:hover {
+  color: #ff7900;
+}
+
+.servicosPerfilCliente {
+  color: black;
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 1%;
+}
+.iconesRedesCliente {
+  display: flex;
+  gap: 12px;
+  margin-top: 5%;
+}
+
+.TituloPerfilCliente{
+  color: #200c80;
+  margin-left: 3%;
+  margin-bottom: 1%;
+  font-size: 3rem;
+}
+
+.icon {
+  font-size: 38px;
+  color: #200c80;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  color: #ff7900;
+}
+
+.informacoesPerfilCliente {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0; 
+}
+
+.conteudoPerfilCliente {
+  flex: 1;
+  max-width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: -33px; 
+}
+.avaliacoesCliente {
+  width: 90%;
+  background-color: #ffa452;
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.avaliacoesCliente > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avaliacao1Cliente {
+  background-color: #ffdba8; 
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.avaliacao2Cliente {
+  background-color: #ffdba8;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.avaliacao3Cliente {
+  background-color: #ffdba8;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.avaliacoesCliente h2 {
+  font-size: 40px;
+  margin: 0;
+  min-width: 100px;
+  color: black;
+  font-weight: 500;
+}
+
+.quadroCartoesCliente {
+  padding: 35px 35px 0 35px;
+  margin-top: -35px; 
+}
+
+.cardsCliente {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.cardCliente {
+  width: 300px;
+  height: 250px;
+  background-color: #ffa452;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.imagem-fundoCliente img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.texto-infoCliente {
+  padding: 16px;
+}
+
+.numeroCliente h3 {
+  margin-bottom: 8px;
+  color: #200c80;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.infoCliente h4 {
+  
+  color: #200c80;
+  font-size: 1.50rem;
+  text-align: center;
+}
+
+.numeroCliente2 h3{
+   color: #200c80;
+   font-size: 3rem;
+   text-align: center;
+}
+
+.infoCliente2 h4{
+  color: #200c80;
+  font-size: 1.50rem;
+  text-align: center;  
+}
+
+.todasAvaliacoesCliente {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin-right: 75%;
+}
+.todasAvaliacoesCliente p {
+  color: #200c80; 
+  font-size: 25px;
+  text-shadow: 4px 4px 4px rgba(255, 117, 8, 0.5);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.containerAvaliacoesCliente {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;  
+}
+
+.quadroAvaliacoesCliente {
+  flex: 1 1 18%;
+  max-width: 18%;
+  height: 300px;
+  background-color: #fdbc82;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.quadradoCliente {
+  width: 120px;
+  height: 120px;
+  background-color: #ff7900;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+}
+
+.quadroAvaliacoesCliente p {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.estrelaAvaliacaoCliente {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 2px;
+}
+
+
+.botoesCliente {
+  display: flex;
+  gap: 60px; 
+  justify-content: center; 
+  margin-top: 4%;
+}
+
+.botoesCliente button {
+  padding: 12px 60px;
+  border: none;
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.voltarCliente{
+  background-color: white;
+  color: #ff7900;
+}
+
+.voltarCliente:hover{
+  background-color: #200c80;
+  color: #ff7900;
+}
+
+.criacaoContaCliente h2{
+   color: #14084B;
+   font-weight: 400;
+   font-size: 40px;
+   margin-top: 10%;
+   margin-bottom: 10%;
+   text-shadow: 2px 2px 4px #ff7900;
+}
+
+@media (max-width: 1680px) {
+  .cardCliente {
+    width: 250px;
+    height: 200px;
+  }
+
+  .numeroCliente h3,
+  .numeroCliente2 h3 {
+    font-size: 4rem;
+  }
+
+  .todasAvaliacoesCliente {
+    width: 400px;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 1440px) {
+  /*Perfil geral*/
+
+  .informacoesPerfilCliente {
+    height: 200px;
+  }
+
+  /*preferencias*/
+
+  .avaliacao1Cliente,
+  .avaliacao3Cliente,
+  .avaliacao2Cliente {
+    width: 200px;
+  }
+
+  .avaliacoesCliente h2 {
+    font-size: 28px;
+  }
+
+  /*Comentarios e serviços*/
+  .cardCliente {
+    width: 150px;
+    height: 150px;
+  }
+
+  .numeroCliente h3,
+  .numeroCliente2 h3 {
+    font-size: 3rem;
+  }
+
+  .infoCliente h4,
+  .infoCliente2 h4 {
+    font-size: 1.2rem;
+  }
+
+  /*Botão avaliações gerais*/
+
+  .todasAvaliacoesCliente {
+    width: 400px;
+    margin-left: 10%;
+  }
+
+  /*Avaliações*/
+
+  .quadroAvaliacoesCliente p {
+    height: 75px;
+    font-size: 18px;
+  }
+
+  .estrelaAvaliacaoCliente {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* cartão de preferencias */
+  .avaliacoesCliente {
+    width: 500px;
+    gap: 25px;
+    height: 90px;
+  }
+
+  .avaliacoesCliente h2 {
+    font-size: 15px;
+  }
+
+  .avaliacao1Cliente,
+  .avaliacao2Cliente,
+  .avaliacao3Cliente {
+    width: 150px;
+    height: 50px;
+  }
+
+  /* informações iniciais */
+
+  .informacoesPerfilCliente {
+    height: 100px;
+  }
+
+  .imagemPerfilCliente img {
+    width: 19rem;
+    height: 19rem;
+  }
+
+  .nomePerfilCliente {
+    font-size: 3.5rem;
+  }
+
+  .estrelaCliente {
+    width: 2.8125rem;
+    height: 45px;
+    transition: all 0.3s ease-out;
+  }
+
+  /* cartões de serviço e comentarios */
+
+  .cardCliente {
+    width: 120px;
+    height: 120px;
+  }
+
+  .numeroCliente h3,
+  .numeroCliente2 h3 {
+    font-size: 2rem;
+  }
+
+  .infoCliente h4,
+  .infoCliente2 h4 {
+    font-size: 1rem;
+  }
+
+  /* botão para ver todas as avaliações */
+
+  .todasAvaliacoesCliente {
+    width: 400px;
+    margin-left: 22%;
+  }
+
+  .todasAvaliacoesCliente p {
+    font-size: 20px;
+  }
+
+  /* quadro de avaliações */
+
+  .quadroAvaliacoesCliente p {
+    height: 75px;
+    font-size: 15px;
+  }
+
+  .estrelaAvaliacaoCliente {
+    margin-top: 15%;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* cartão de preferencias */
+  .TituloPerfilCliente {
+    font-size: 38px;
+    margin-top: 4%;
+  }
+
+  .avaliacoesCliente {
+    width: 400px;
+    gap: 15px;
+  }
+
+  .avaliacao1Cliente,
+  .avaliacao2Cliente,
+  .avaliacao3Cliente {
+    width: 110px;
+    padding: 10px;
+  }
+
+  .avaliacoesCliente h2 {
+    font-size: 15px;
+  }
+  /* informações iniciais */
+
+  .informacoesPerfilCliente {
+    height: 100px;
+  }
+
+  .imagemPerfilCliente {
+    top: -4rem;
+  }
+
+  .imagemPerfilCliente img {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .nomePerfilCliente {
+    font-size: 1.7rem;
+  }
+
+  .verificadoCliente {
+    font-size: 40px;
+  }
+
+  .estrelaCliente {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon {
+    width: 30px;
+    
+  }
+
+  /* cartões de serviço e comentarios */
+  .cardsCliente {
+    gap: 10px;
+  }
+
+  .cardCliente {
+    width: 90px;
+    height: 90px;
+  }
+
+  .numeroCliente h3,
+  .numeroCliente2 h3 {
+    font-size: 1.6rem;
+  }
+
+  .infoCliente h4,
+  .infoCliente2 h4 {
+    font-size: 0.7rem;
+  }
+
+  /* botão para ver todas as avaliações */
+
+  .todasAvaliacoesCliente {
+    width: 400px;
+    margin-left: 38%;
+  }
+
+  .todasAvaliacoesCliente p {
+    font-size: 18px;
+  }
+
+  /* quadro de avaliações */
+
+  .containerAvaliacoesCliente {
+    justify-content: flex-start;
+  }
+
+  .avaliacao1,
+  .avaliacao2 {
+    display: none;
+  }
+
+  .quadroAvaliacoesCliente {
+    gap: 10px;
+    flex: 1 1 45%;
+    max-width: 45%;
+    height: 350px;
+  }
+
+  .quadroAvaliacoesCliente p {
+    height: 75px;
+    font-size: 20px;
+  }
+
+  .estrelaAvaliacaoCliente {
+    margin-top: 25%;
+    width: 25px;
+    height: 25px;
+  }
+
+  /* data da criação de conta */
+
+  .criacaoContaCliente h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  /*quadro geral*/
+
+  .quadroGeralCliente {
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+  }
+
+  /*Informações perfil */
+
+  .quadroPerfilCliente {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagemPerfilCliente {
+    top: -2.75rem;
+    margin-bottom: 50px;
+  }
+
+  .imagemPerfilCliente img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .estrelasPerfilCliente {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .iconesRedesCliente {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Preferencias */
+  .TituloPerfilCliente {
+    font-size: 25px;
+  }
+
+  .avaliacoesCliente {
+    height: 200px;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    padding: 0px;
+    margin-left: 5%;
+  }
+
+  /*Cartões comentarios e serviços*/
+
+  .quadroCartoesCliente {
+    margin: -58px;
+  }
+  .cardsCliente {
+    flex-direction: column;
+    margin-left: -30%;
+    gap: 17px;
+  }
+
+  .cardCliente {
+    width: 120px;
+    height: 115px;
+  }
+
+  .avaliacao1Cliente,
+  .avaliacao2Cliente,
+  .avaliacao3Cliente{
+    width: 120px;
+    height: 30px;
+  }
+  /*Ver todas as avaliações*/
+
+  .todasAvaliacoesCliente {
+    margin-top: 40%;
+    margin-left: 70%;
+    margin-bottom: 3%;
+  }
+
+  .todasAvaliacoesCliente p {
+    font-size: 18px;
+  }
+
+  /*Quadro de avaliações */
+
+  .containerAvaliacoesCliente {
+    padding: 0px;
+    margin-left: 5%;
+  }
+
+  .avaliacao3 {
+    display: none;
+  }
+
+  .estrelaAvaliacaoCliente{
+    width: 20px;
+    height: 20px;
+  }
+
+  /*criação da conta*/
+  .criacaoContaCliente h2 {
+    font-size: 25px;
+  }
+}

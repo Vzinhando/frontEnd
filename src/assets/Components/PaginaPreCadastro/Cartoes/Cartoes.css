@@ -1,0 +1,242 @@
+.cartoes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  width: 80%;
+  display: flex;
+  gap: 10%;
+  text-align: center;
+}
+
+.card1,
+.card2,
+.card3 {
+  position: relative;
+  width: 420px;
+  height: 520px;
+  background-color: #ffdba8;
+  border-radius: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.imagem-fundo {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background-color: #ff7300;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.imagem-fundo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.texto-info h3,
+h4 {
+  margin: 2px 0;
+  padding: 0;
+  line-height: 1.2;
+  color: #200c80;
+}
+
+.nome {
+  font-size: 36px;
+  color: #200c80;
+  margin-bottom: 10px;
+}
+
+.info h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 4px 4px 4px rgba(255, 117, 8, 0.5);
+}
+
+.estrelas {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.estrelas svg {
+  color: #200c80;
+  width: 52px;
+  height: 55px;
+}
+
+.servicos {
+  width: 342px;
+  height: 39px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: #ffa452;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.servicos p {
+  color: #00004c;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+}
+
+@media (max-width: 1440px) {
+  .servicos {
+    width: 250px;
+  }
+
+  .servicos p {
+    font-size: 16px;
+  }
+
+  .estrelas svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    gap: 40px;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 250px;
+    height: 450px;
+  }
+
+  .imagem-fundo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .imagem-fundo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .nome {
+    font-size: 30px;
+  }
+
+  .info h4 {
+    font-size: 20px;
+  }
+
+  .servicos {
+    width: 220px;
+  }
+
+  .estrelas svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    gap: 25px;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    width: 180px;
+    height: 380px;
+  }
+
+  .imagem-fundo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .imagem-fundo img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .nome {
+    font-size: 25px;
+  }
+
+  .info h4 {
+    font-size: 15px;
+  }
+
+  .servicos {
+    width: 160px;
+  }
+
+  .servicos p {
+    font-size: 11px;
+  }
+
+  .estrelas svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .cards {
+    gap: 20px;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    width: 120px;
+    height: 310px;
+  }
+
+  .imagem-fundo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .imagem-fundo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .nome {
+    font-size: 18px;
+  }
+
+  .info h4 {
+    font-size: 12px;
+  }
+
+  .servicos {
+    width: 100px;
+  }
+
+  .servicos p {
+    font-size: 10px;
+  }
+
+  .estrelas svg {
+    width: 20px;
+    height: 20px;
+  }
+}

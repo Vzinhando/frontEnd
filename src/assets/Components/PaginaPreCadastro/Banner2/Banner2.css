@@ -1,0 +1,143 @@
+.informacoes {
+  width: 80%;
+  height: 498px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 2%;
+  flex-direction: row;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  margin-bottom: 40px;
+}
+
+.bloco1 {
+  background-color: #f26c00;
+  color: #1a1363;
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bloco1 h2 {
+  font-size: 75px;
+  font-weight: 600;
+}
+
+.blocos {
+  background-color: #fde0bd;
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item1,
+.item2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.icone1, .icone2 {
+  background-color: #1a1363;
+  border-radius: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone1 img, .icone2 img {
+  width: 70px;
+  height: 70px;
+}
+.blocos p {
+  color: #200c80;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  text-shadow: 4px 4px 4px rgba(255, 117, 8, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .bloco1 h2 {
+    font-size: 3.5rem;
+  }
+
+  .blocos p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bloco1 {
+    padding: 1.25rem;
+  }
+
+  .bloco1 h2 {
+    font-size: 3rem;
+  }
+
+  .icone1 img,
+  .icone2 img {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+
+  .blocos p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .informacoes {
+    height: 14rem;
+  }
+
+  .bloco1 {
+    padding: 0.625rem;
+  }
+
+  .bloco1 h2 {
+    font-size: 1.7rem;
+  }
+
+  .item1,
+  .item2 {
+    gap: 0rem; 
+  }
+
+  .icone1 img,
+  .icone2 img {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  .icone1,
+  .icone2 {
+    padding: 0.425rem;
+  }
+
+  .blocos {
+    padding: 0.5rem;
+    gap: 0px;
+  }
+
+  .blocos p {
+    font-size: 0.8rem;
+  }
+
+  
+}

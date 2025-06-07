@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.quadroGeral {
+  border-radius: 30px;
+  min-height: 90vh;
+  width: 90%;
+  background-color: #ffdba8;
+  margin: 8% auto 2% auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.quadroPerfil {
+  margin-left: 20%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  margin-right: 50%;
+}
+
+.imagemPerfil {
+  flex-shrink: 0;
+  position: relative;
+  top: -6.25rem;
+  background-color: #200c80;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(255, 117, 8, 0.7);
+  border-radius: 1.875rem;
+}
+
+.imagemPerfil img {
+  width: 21.875rem;
+  height: 21.875rem;
+  display: block;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -3.75rem;
+}
+
+.nomePerfil {
+  display: flex;
+  align-items: center;
+  font-size: 3.75rem;
+  color: #200c80;
+  text-shadow: 0.25rem 0.25rem 0.25rem rgba(255, 117, 8, 0.5);
+  gap: 0.5rem;
+}
+
+.verificado {
+  color: #ff7900;
+  font-size: 3.75rem;
+}
+
+.estrelasPerfil {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.estrela {
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease-out;
+}
+
+.estrela:hover {
+  color: #ff7900;
+}
+
+.servicosPerfil {
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 1%;
+}
+.iconesRedes {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 38px;
+  color: #200c80;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  color: #ff7900;
+}
+
+.informacoesPerfil {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0; 
+}
+
+.conteudoPerfil {
+  flex: 1;
+  max-width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.avaliacoes {
+  width: 90%;
+  background-color: #ffa452;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.avaliacoes > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avaliacoes h2 {
+  font-size: 40px;
+  margin: 0;
+  min-width: 100px;
+  color: black;
+  font-weight: 500;
+}
+
+
+.avaliacao1,
+.avaliacao2,
+.avaliacao3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.descricaoPerfil {
+  width: 50%; 
+  padding: 0px 30px;
+}
+
+.descricaoPerfil h4 {
+  font-size: 38px;
+  color: #000000;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.estrelaPerfil {
+  width: 40px;
+  height: 40px;
+}
+
+.todasAvaliacoes {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin-right: 80%;
+}
+.todasAvaliacoes p {
+  color: #200c80; 
+  font-size: 25px;
+  text-shadow: 4px 4px 4px rgba(255, 117, 8, 0.5);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.containerAvaliacoes {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.quadroAvaliacoes {
+  flex: 1 1 18%;
+  max-width: 18%;
+  height: 300px;
+  background-color: #fdbc82;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.quadrado {
+  width: 120px;
+  height: 120px;
+  background-color: #ff7900;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+}
+
+.quadroAvaliacoes p {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.estrelaAvaliacao {
+  width: 36px;
+  height: 36px;
+  margin: 2px;
+}
+
+.duvidas {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.duvidas h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #0e053a;
+}
+
+.duvidas input {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  background-color: #e8be83;
+  font-size: 20px;
+}
+
+.botoes {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.botoes button {
+  padding: 12px 60px;
+  border: none;
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.voltar {
+  background-color: white;
+  color: #ff7900;
+}
+
+.contratar {
+  background-color: #ff7900;
+  color: white;
+}
+
+.voltar:hover {
+  background-color: #200c80;
+  color: #ff7900;
+}
+
+.contratar:hover {
+  background-color: #200c80;
+  color: #ff7900;
+}
+
+.criacaoConta h2 {
+  color: #14084b;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-shadow: 2px 2px 4px #ff7900;
+}
+
+@media (max-width: 1680px) {
+  .todasAvaliacoes {
+    width: 400px;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .descricaoPerfil h4 {
+    font-size: 33px;
+  }
+
+  .todasAvaliacoes {
+    width: 400px;
+    margin-left: 15%;
+  }
+
+  .estrelaAvaliacao {
+    width: 27px;
+    height: 27px;
+  }
+
+  .quadroAvaliacoes p {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .informacoesPerfil {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conteudoPerfil,
+  .descricaoPerfil {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .conteudoPerfil {
+    margin-top: -10%;
+  }
+
+  .todasAvaliacoes {
+    width: 400px;
+    margin-left: 30%;
+  }
+
+  .estrelaAvaliacao {
+    width: 18px;
+    height: 18px;
+  }
+
+  .duvidas h2 {
+    font-size: 25px;
+  }
+
+  .nomePerfilCliente h2 {
+    font-size: 70px;
+  }
+
+  .criacaoConta h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagemPerfil {
+    top: -3.25rem;
+  }
+
+  .imagemPerfil img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .nomePerfil h2 {
+    font-size: 60px;
+  }
+
+  .estrela {
+    width: 40px;
+    height: 40px;
+  }
+
+  .avaliacoes h2 {
+    font-size: 30px;
+  }
+
+  .estrelaPerfil {
+    width: 35px;
+    height: 35px;
+  }
+
+  .descricaoPerfil h4 {
+    font-size: 25px;
+  }
+
+  .todasAvaliacoes {
+    width: 400px;
+    margin-left: 50%;
+  }
+
+  .avaliacao1Prestador,
+  .avaliacao2Prestador {
+    display: none;
+  }
+
+  .quadroAvaliacoes {
+    gap: 10px;
+    flex: 1 1 45%;
+    max-width: 45%;
+    height: 350px;
+  }
+
+  .duvidas h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .quadroGeral {
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+  }
+
+  .infos {
+    margin-top: -27%;
+  }
+
+  .quadroPerfil {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagemPerfil {
+    top: -2.75rem;
+    margin-bottom: 50px;
+  }
+
+  .imagemPerfil img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .nomePerfilCliente {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nomePerfil h2 {
+    font-size: 50px;
+  }
+
+  .avaliacao1,
+  .avaliacao2,
+  .avaliacao3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .estrelaPerfil {
+    width: 20px;
+    height: auto;
+  }
+
+  .iconesRedes {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8%;
+  }
+
+  .TituloPerfil {
+    font-size: 25px;
+  }
+
+  .avaliacoes {
+    height: 250px;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    padding: 0px;
+    margin-left: 5%;
+  }
+
+
+  .todasAvaliacoes {
+    margin-top: 40%;
+    margin-left: 70%;
+    margin-bottom: 3%;
+  }
+
+  .todasAvaliacoes p {
+    font-size: 18px;
+  }
+
+
+  .containerAvaliacoes {
+    padding: 0px;
+  }
+
+  .avaliacao3Prestador {
+    display: none;
+  }
+
+  .criacaoConta h2 {
+    font-size: 20px;
+  }
+
+  .avaliacoes > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .avaliacoes {
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .estrelaPerfil {
+    width: 20px;
+    height: 20px;
+  }
+
+  .estrelasLinha2 {
+    margin-left: 22%;
+  }
+
+  .estrelasLinha3 {
+    margin-left: 8%;
+  }
+  .todasAvaliacoes {
+    margin: 0px;
+    margin-bottom: 5%;
+  }
+
+  .duvidas h2 {
+    font-size: 10px;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .botoes button {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+}
