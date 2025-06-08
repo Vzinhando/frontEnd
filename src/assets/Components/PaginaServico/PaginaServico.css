@@ -1,8 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #FFF8ED;
+.paginaServicoMain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vh;
 }
 
 .telasPaginaServico {
@@ -11,8 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
-  max-height: 100%;
+  max-width: 80%;
 }
 
 .esquerdaPaginaServico {
@@ -21,11 +20,11 @@
   text-align: center;
 }
 
-.imagem-esquerdaPaginaServico img {
+.imagemEsquerdaPaginaServico img {
   width: 400px;
   height: auto;
 }
-.esquerda-textoPagina {
+.esquerdaTextoPagina {
   color: #200c80;
   font-size: 48px;
   font-weight: 600;
@@ -54,11 +53,10 @@
   font-size: 20px;
 }
 
-.texto {
+.textoPaginaServico {
   margin-bottom: 2%;
 }
 
-/*768px para celulares e tablets*/
 @media (max-width: 768px) {
   .telasPaginaServico {
     flex-direction: column;
