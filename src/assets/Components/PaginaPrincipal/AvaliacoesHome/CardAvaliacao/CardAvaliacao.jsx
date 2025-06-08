@@ -3,13 +3,15 @@ import "./CardAvaliacao.css";
 function CardAvaliacao(props) {
   return (
     <>
+    <div className="containerPrincipalCardAvaliacao">
+
       <div className="containerCardAvaliacao">
         <div className="miniContainerImagemCard"></div>
         <div className="imagemAvaliacao">
           <img
             src={props.imagemAvaliadoras}
             alt="Foto de perfil de Clientes"
-          />
+            />
         </div>
         <div className="containerMainNomeCard">
           <div className="miniContainerDeitadoCard"></div>
@@ -23,6 +25,7 @@ function CardAvaliacao(props) {
           </p>
         </div>
       </div>
+            </div>
     </>
   );
 }

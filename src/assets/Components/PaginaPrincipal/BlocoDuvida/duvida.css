@@ -1,32 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.duvidaContainer {
+.containerPrincipalDuvida{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
+}
+
+.duvidaContainerBloco{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
 }
 
 .textoDuvida {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   color: #273E59;
-  padding: 0rem 3rem;
   font-weight: 700;
   text-align: left;
 }
 
-.duvidaContainer img {
+.duvidaContainerBloco img {
   width: 350px;
   max-width: 100%;
 }
 
-/*== Responsividade ==*/
-
-/* MOBILE: até 767px */
 @media (max-width: 767px) {
-  .duvidaContainer {
+  .duvidaContainerBloco {
     flex-direction: column-reverse;
     text-align: center;
     gap: 1.5rem;
@@ -37,14 +38,13 @@
     padding: 0 1rem;
   }
 
-  .duvidaContainer img {
+  .duvidaContainerBloco img {
     width: 250px;
   }
 }
 
-/* TABLET: 768px até 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .duvidaContainer {
+  .duvidaContainerBloco {
     gap: 1.5rem;
     padding: 1.5rem;
   }
@@ -54,14 +54,13 @@
     padding: 0 2rem;
   }
 
-  .duvidaContainer img {
+  .duvidaContainerBloco img {
     width: 300px;
   }
 }
 
-/* DESKTOP: a partir de 1024px */
 @media (min-width: 1024px) {
-  .duvidaContainer {
+  .duvidaContainerBloco {
     padding: 3rem 5rem;
   }
 

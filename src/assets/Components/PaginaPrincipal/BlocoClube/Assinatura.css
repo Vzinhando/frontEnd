@@ -4,8 +4,7 @@ body {
 .BlocosContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-around;
   padding: 100px;
 }
 @media (max-width: 768px) {
