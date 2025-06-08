@@ -8,7 +8,7 @@ function PaginaPerfilCliente() {
           <div className="imagemPerfilCliente">
             <img src="/img/ImagemLaura/Vanessa1.svg" alt="" />
           </div>
-          <div className="infosCliente">
+          <div className="infosClientePaginaCli">
             <div className="nomePerfilCliente">
               <h2>Vanessa</h2>
               
@@ -75,8 +75,9 @@ function PaginaPerfilCliente() {
         <div className="todasAvaliacoesCliente">
           <p>Ver o historico de avaliações!</p>
         </div>
+        {/* container com err */}
         <div className="containerAvaliacoesCliente">
-          <div className="quadroAvaliacoesCliente avaliacao1">
+          <div className="quadroAvaliacoesCliente avaliacao">
             <div className="quadradoCliente"></div>
             <p>
               Serviço excelente!
@@ -88,7 +89,7 @@ function PaginaPerfilCliente() {
             <img src = "/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" />
             <img src = "/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" />
           </div>
-          <div className="quadroAvaliacoesCliente avaliacao2">
+          <div className="quadroAvaliacoesCliente avaliacao">
             <div className="quadradoCliente"></div>
             <p>
               Trabalho impecável!
@@ -101,7 +102,7 @@ function PaginaPerfilCliente() {
             <img src = "/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" />
             <img src = "/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" />
           </div>
-          <div className="quadroAvaliacoesCliente avaliacao3">
+          <div className="quadroAvaliacoesCliente avaliacao">
             <div className="quadradoCliente"></div>
             <p>
               Trabalho impecável!

@@ -13,7 +13,7 @@ function Cartoes() {
               <div className="nome">
                 <h3>Julia</h3>
               </div>
-              <div className="info">
+              <div className="infoCartoes">
                 <h4>Chefe de cozinha</h4>
                 <h4>Bela Vista, SP</h4>
               </div>
@@ -25,7 +25,7 @@ function Cartoes() {
               <img src="/img/estrela_clara.svg" alt="" />
               <img src="/img/estrela_clara.svg" alt="" />
             </div>
-            <div className="servicos">
+            <div className="servicosCartoes">
               <p>9.999 serviços prestados!</p>
             </div>
           </div>
@@ -38,7 +38,7 @@ function Cartoes() {
               <div className="nome">
                 <h3>Vanessa</h3>
               </div>
-              <div className="info">
+              <div className="infoCartoes">
                 <h4>Jardineira</h4>
                 <h4>Itaquera, SP</h4>
               </div>
@@ -50,7 +50,7 @@ function Cartoes() {
               <img src="/img/estrela_clara.svg" alt="" />
               <img src="/img/estrela_clara.svg" alt="" />
             </div>
-            <div className="servicos">
+            <div className="servicosCartoes">
               <p>9.999 serviços prestados!</p>
             </div>
           </div>
@@ -63,7 +63,7 @@ function Cartoes() {
               <div className="nome">
                 <h3>Vinicius</h3>
               </div>
-              <div className="info">
+              <div className="infoCartoes">
                 <h4>Eletrcista</h4>
                 <h4>Brasilandia, SP</h4>
               </div>
@@ -75,7 +75,7 @@ function Cartoes() {
               <img src="/img/estrela_clara.svg" alt="" />
               <img src="/img/estrela_clara.svg" alt="" />
             </div>
-            <div className="servicos">
+            <div className="servicosCartoes">
               <p>9.999 serviços prestados!</p>
             </div>
           </div>
