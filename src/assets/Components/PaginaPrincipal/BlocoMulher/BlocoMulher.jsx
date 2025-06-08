@@ -5,15 +5,15 @@ function BlocoMulher(){
     return(
         <>
        <div className='BlocoMulher'>
-        <div className='TextosBlocos'>
-        <h1 className='TextoBloco'>No Vizinhando, sua <br />vizinhança vira comunidade.
+        <div className='TextosBlocosMulher'>
+        <h1 className='TextoBlocoMulher'>No Vizinhando, sua <br />vizinhança vira comunidade.
         </h1>
-        <h2 className='Texto2Bloco'>
+        <h2 className='Texto2BlocoMulher'>
             Descubra talentos, troque serviços, <br />
              participe de eventos e fortaleça laços <br /> com quem está logo ali, do outro lado da rua.
         </h2>
         </div>
-        <img className='Mulherfoto' src={MulherBloco} />
+        <img className='MulherfotoBlocoMulher' src={MulherBloco} />
     
        </div>
      </>

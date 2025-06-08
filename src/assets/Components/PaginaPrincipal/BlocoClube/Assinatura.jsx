@@ -18,7 +18,7 @@ function Assinatura() {
           info2="Contrate qualquer serviço"
           info3="Venda seus serviços"
           info4="Sem anúncios"
-          tipoBloco="gratis"
+          tipoBloco="Gratis"
         />
 
         <BlocoClube
@@ -31,7 +31,7 @@ function Assinatura() {
           info2="Contrate Qualquer serviço"
           info3="Sem anúncios"
           info4="5 Cupons de 10% de desconto na contratação de um serviço"
-          tipoBloco="pessoal"
+          tipoBloco="Pessoal"
           button="ADQUIRIR"
 
         />
@@ -45,7 +45,7 @@ function Assinatura() {
           info2="Maior área de busca para seu serviço"
           info3="Se destacará entre outros prestadores (Verificado)"
           info4="Receberá valor maior por serviço concluido"
-          tipoBloco="empresarial"
+          tipoBloco="Empresarial"
           button="ADQUIRIR"
 
 

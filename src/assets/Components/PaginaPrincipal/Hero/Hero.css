@@ -25,7 +25,6 @@
   object-fit: cover;
 }
 
-/* Formulário de busca */
 .pesquisa {
   position: absolute;
   top: 5rem;
@@ -63,7 +62,6 @@
   
 }
 
-/* Botões de controle do carrossel */
 .carrosselControles {
   position: absolute;
   bottom: 2rem;
@@ -89,25 +87,21 @@
   background-color: #ff6a00;
 }
 
-/* Conteúdo principal */
 .heroContainer {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 10rem 1rem 5rem 1rem;
+  padding: 10rem 1rem 5rem 4rem;
   position: relative;
   z-index: 10;
 }
 
 .heroContent {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .heroContent h1 {
   font-size: 2.5rem;
-  color: #000C4B;
+  color: #200C80;
   margin-bottom: 2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -201,11 +195,38 @@
 
 @media (max-width: 768px){
 .heroContent h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .heroContent form {
-    max-width: 100%;
+    max-width: 70%;
+  }
+
+  .heroContent input[type="email"] {
+    width: 100%;
+  }
+
+  .heroContent button[type="submit"] {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+
+  .pesquisa {
+    width: 90%;
+    top: 4rem;
+  }
+  
+
+}
+
+@media (max-width: 480px){
+
+.heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroContent form {
+    max-width: 80%;
   }
 
   .heroContent input[type="email"] {

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-.containergratis {
+.containerGratis {
   color: #1a237e;
   flex: 1 1 300px;
   max-width: 320px;
@@ -12,7 +12,7 @@
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.containerpessoal {
+.containerPessoal {
   color: #1a237e;
   flex: 1 1 300px;
   max-width: 320px;
@@ -24,7 +24,7 @@
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.containerempresarial {
+.containerEmpresarial {
   color: #1a237e;
   flex: 1 1 300px;
   max-width: 320px;
@@ -37,10 +37,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*HOVER NOS CONTAINERS EMPRESARIAIS ,PESSOAIS E GRATIS*/
-.containergratis:hover,
-.containerpessoal:hover,
-.containerempresarial:hover {
+.containerGratis:hover,
+.containerPessoal:hover,
+.containerEmpresarial:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
@@ -77,7 +76,7 @@ h1 {
   padding: 12px;
 }
 
-.informacoes {
+.informacoesBlocoClube {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -89,7 +88,7 @@ h1 {
   transition: background-color 0.2s ease;
 }
 
-.informacoes img {
+.informacoesBlocoClube img {
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -105,7 +104,7 @@ h1 {
   all: unset;
 }
 
-.containerempresarial .botaoPlano {
+.containerEmpresarial .botaoPlano {
   margin: 3.5rem;
   padding: 12px 24px;
   background-color: #0A55D5;
@@ -117,7 +116,7 @@ h1 {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.containerpessoal .botaoPlano {
+.containerPessoal .botaoPlano {
   margin: 2rem;
   padding: 12px 24px;
   background-color: #FF7900;
@@ -129,14 +128,15 @@ h1 {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.containergratis .botaoPlano {
+.containerGratis .botaoPlano {
   display: none;
 }
 
-.containerempresarial .botaoPlano:hover {
+.containerEmpresarial .botaoPlano:hover {
   background-color: #083bbd;
+
 }
- .containerpessoal .botaoPlano:hover {
+ .containerPessoal .botaoPlano:hover {
   background-color: #e28736;
 }
 

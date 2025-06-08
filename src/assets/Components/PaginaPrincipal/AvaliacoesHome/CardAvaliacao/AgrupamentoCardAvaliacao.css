@@ -1,46 +1,97 @@
-
-.setaEsquerdaCardAvaliacao,
-.setaDireitaCardAvaliacao {
-  margin: 0rem 0rem 0rem 3rem;
-  background-color: #ff7900;
-  color: white;
-  border-radius: 50%;
-  border: none;
-  align-items: center;
-  justify-content: flex-start;
-  height: 3.5rem;
-  width: 3.5rem;
-  pointer-events: auto;
-  transition: background-color 0.3s ease;
-}
-.setaEsquerdaCardAvaliacao:hover,
-.setaDireitaCardAvaliacao:hover {
-  background-color: #200c80;
+.agrupamentoCardAvaliacao {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
 }
 
 .carrosselContainer {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 1rem;
-  padding: 2rem 0;
   overflow: hidden;
+  width: 100%;
 }
 
-.carrosselContainer>* {
-  flex: 0 0 calc(100% / 1 - 2rem);
+.carrosselTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
-/*-- Responsividade --*/
+.cardAgrupamentoCard {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
 
-@media screen and (min-width: 768px) {
-  .carrosselContainer>* {
-    flex: 0 0 calc(100% / 2 - 2rem);
+
+@media (min-width: 768px) {
+  .cardAgrupamentoCard {
+    flex-basis: 50%;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .carrosselContainer>* {
-    flex: 0 0 calc(100% / 3 - 2rem);
+@media (min-width: 1024px) {
+  .cardAgrupamentoCard {
+    flex-basis: calc(100% / 3);
+  }
+}
+
+.setasDivCard {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+  padding: 0;
+}
+
+.setaEsquerdaCardAvaliacao,
+.setaDireitaCardAvaliacao {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.setaEsquerdaCardAvaliacao {
+  transform: translateX(-50%);
+}
+
+.setaDireitaCardAvaliacao {
+  transform: translateX(50%);
+}
+
+.setaEsquerdaCardAvaliacao:hover,
+.setaDireitaCardAvaliacao:hover {
+  background-color: white;
+}
+
+.setaEsquerdaCardAvaliacao:disabled,
+.setaDireitaCardAvaliacao:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+@media (max-width: 480px) {
+  .setaEsquerdaCardAvaliacao,
+  .setaDireitaCardAvaliacao {
+    width: 32px;
+    height: 32px;
+  }
+
+  .setasDivCard {
+    padding: 0 0.5rem;
   }
 }

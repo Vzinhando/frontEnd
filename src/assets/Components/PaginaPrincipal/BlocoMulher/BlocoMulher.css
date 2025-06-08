@@ -9,11 +9,11 @@
     flex-wrap: wrap;
 }
 
-.TextosBlocos {
+.TextosBlocosMulher {
     max-width: 40%;
 }
 
-.TextoBloco {
+.TextoBlocoMulher {
     font-family: "Poppins", sans-serif;
     font-size: 2rem;
     color: #FF7508;
@@ -21,19 +21,18 @@
     font-weight: 900;
 }
 
-.Texto2Bloco {
+.Texto2BlocoMulher {
     display: inline-block;
     color: #FFF;
     border: 10px solid #273E59;
     background: #273E59;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    
     border-radius: 50px;
     padding: 15px 20px;
 }
 
-.mulherfoto {
+.mulherfotoBlocoMulher {
     max-width: 300px;
     width: 100%;
     height: auto;
@@ -45,22 +44,22 @@
         padding: 1rem;
     }
 
-    .TextosBlocos {
+    .TextosBlocosMulher {
         max-width: 100%;
     }
 
-    .TextoBloco {
+    .TextoBlocoMulher {
         font-size: 1.5rem;
     }
 
-    .Texto2Bloco {
+    .Texto2BlocoMulher {
         font-size: 0.9rem;
         border-width: 6px;
         padding: 8px 12px;
         border-radius: 30px;
     }
 
-    .mulherfoto {
+    .mulherfotoBlocoMulher {
         max-width: 250px;
     }
 }
@@ -72,16 +71,16 @@
         gap: 2rem;
     }
 
-    .TextosBlocos {
+    .TextosBlocosMulher {
         max-width: 80%;
     }
 
-    .TextoBloco {
+    .TextoBlocoMulher {
         font-size: 1.8rem;
         padding: 0.5rem;
     }
 
-    .Texto2Bloco {
+    .Texto2BlocoMulher {
         font-size: 1rem;
         padding: 10px 16px;
     }

@@ -3,7 +3,7 @@ import './Hero.css';
 import search from "../../../../../public/img/search.svg"
 
 
-const backgrounds = ["url('/imgHero/fundoCarrossel3.svg')", "url('/imgHero/costureira.svg')", "url('/imgHero/doceiro.svg')"];
+const backgrounds = ["url('/imgHero/padeiroCarrosselMain.svg')", "url('/imgHero/costureiraCarrosselMain.svg')", "url('/imgHero/cozinheiraCarrosselMain.svg')"];
 
 function Hero() {
   const [slideIndex, setSlideIndex] = useState(0); 
@@ -39,7 +39,7 @@ function Hero() {
             <button
               key={idx}
               className={idx === slideIndex ? 'active' : ''}
-              onClick={() => setSlideIndex(idx)} // Muda para a cor clicada
+              onClick={() => setSlideIndex(idx)} 
             />
           ))}
         </div>

@@ -9,7 +9,7 @@ function BlocoClube(props) {
             valor: props.valor
         }));
 
-        window.open('/paginapagamento', '_blank');//Abrir a pagina de pagamento em uma nova aba.
+        window.open('/pagina-pagamento', '_blank');//Abrir a pagina de pagamento em uma nova aba.
     }
     return (
 
@@ -20,25 +20,25 @@ function BlocoClube(props) {
                 <h1 className='paraQuemEOPlano'>{props.paraQuemEOPlano}</h1>
             </div>
 
-            <div className="informacoes">
+            <div className="informacoesBlocoClube">
                 <img className="tipoImg" src={props.tipo} alt={props.alt} />
                 <p className='infoClube'>{props.info1}</p>
             </div>
 
 
-            <div className="informacoes">
+            <div className="informacoesBlocoClube">
                 <img className="tipoImg" src={props.tipo} alt={props.alt} />
                 <p className='infoClube'>{props.info2}</p>
 
             </div>
 
-            <div className="informacoes">
+            <div className="informacoesBlocoClube">
                 <img className="tipoImg" src={props.tipo} alt={props.alt} />
                 <p className='infoClube'>{props.info3}</p>
 
             </div>
 
-            <div className="informacoes">
+            <div className="informacoesBlocoClube">
                 <img className="tipoImg" src={props.tipo2} alt={props.alt} />
                 <p className='infoClube'>{props.info4}</p>
             </div>
