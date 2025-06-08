@@ -45,27 +45,20 @@ function App() {
         />
         <Route path="/pesquisar-servico" element={<BuscaPrestador />} />
         <Route path="/perfil-cliente" element={<PaginaPerfilCliente />} />
-        {/*Pagina para mudar className se o class name estiver sem o nome do 
-        componente no final colocar ex: "container" mudar para => "containerNomeComponente" 
-         */}
         <Route path="/cadastro-prestador" element={<PaginaPreCadastro />} />
-        {/*Pagina para mudar className se o class name estiver sem o nome do 
-        componente no final colocar ex: "container" mudar para => "containerNomeComponente" 
-         */}
         <Route path="/pagina-servico" element={<PaginaServico />} />
-        {/*Pagina para mudar className se o class name estiver sem o nome do 
-        componente no final colocar ex: "container" mudar para => "containerNomeComponente" 
-         */}
         <Route path="/pagina-prestador" element={<PaginaPerfilPrestador />} />
-        {/*Pagina para mudar className se o class name estiver sem o nome do 
-        componente no f234inal colocar ex: "container" mudar para => "containerNomeComponente" 
-        */}
-        <Route path="/informacoes-pessoais" element={<InformacoesPessoais />} />
         <Route path="/informacoes-pessoais" element={<InformacoesPessoais />} />
       </Routes>
       <Footer />
     </BrowserRouter>
   );
+}
+{
+  /*Caso algum className de algum componente estiver com nomes genericos
+       sem uma identificao ex: container ou texto, Por favor troque para um nome unico
+       ex.: containerNomeComponente ou textoNomeComponente
+       */
 }
 
 export default App;

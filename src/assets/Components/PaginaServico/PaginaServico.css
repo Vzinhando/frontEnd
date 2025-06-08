@@ -1,44 +1,45 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.paginaServicoMain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vh;
 }
 
-.telas {
+.telasPaginaServico {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
-  max-height: 100%;
+  max-width: 80%;
 }
 
-.esquerda {
+.esquerdaPaginaServico {
   width: 55%;
   height: 100%;
   text-align: center;
 }
 
-.imagem-esquerda img {
-  width: 500px;
-  height: 500px;
+.imagemEsquerdaPaginaServico img {
+  width: 400px;
+  height: auto;
 }
-.esquerda-texto {
+.esquerdaTextoPagina {
   color: #200c80;
   font-size: 48px;
   font-weight: 600;
 }
-.direita {
+.direitaPaginaServico {
   width: 45%;
   height: 100%;
   text-align: center;
   margin-left: 26px;
   }
 
-.direita h2 {
+.direitaPaginaServico h2 {
   color: #ff7900;
   font-weight: 600;
+  width: auto;
   font-size: 30px;
   background-color: #200c80;
   border-radius: 30px;
@@ -46,25 +47,24 @@
   margin-bottom: 2%;
 }
 
-.direita p {
+.direitaPaginaServico p {
   color: #000C4C;
-  font-weight: 500;
+  font-weight: 550;
   font-size: 20px;
 }
 
-.texto {
+.textoPaginaServico {
   margin-bottom: 2%;
 }
 
-/*768px para celulares e tablets*/
 @media (max-width: 768px) {
-  .telas {
+  .telasPaginaServico {
     flex-direction: column;
     align-items: center;
   }
 
-  .esquerda,
-  .direita {
+  .esquerdaPaginaServico,
+  .direitaPaginaServico {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -73,12 +73,12 @@
     margin: 0;
   }
 
-  .esquerda-texto {
+  .esquerda-textoPagina {
     font-size: 1.8rem;
     padding: 0 10px;
   }
 
-  .direita {
+  .direitaPaginaServico {
   display: flex;
   flex-direction: column;
   align-items: center;  
@@ -87,12 +87,12 @@
   margin-top: 20px;
 }
 
-  .direita h2 {
+  .direitaPaginaServico h2 {
     font-size: 1.2rem;
     padding: 5px 20px;
   }
 
-  .direita p {
+  .direitaPaginaServico p {
     font-size: 0.95rem;
     padding: 0 15px;
   }
