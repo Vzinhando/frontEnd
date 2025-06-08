@@ -58,7 +58,7 @@ function App() {
          */}
         <Route path="/pagina-prestador" element={<PaginaPerfilPrestador />} />
         {/*Pagina para mudar className se o class name estiver sem o nome do 
-        componente no final colocar ex: "container" mudar para => "containerNomeComponente" 
+        componente no f234inal colocar ex: "container" mudar para => "containerNomeComponente" 
         */}
         <Route path="/informacoes-pessoais" element={<InformacoesPessoais />} />
         <Route path="/informacoes-pessoais" element={<InformacoesPessoais />} />
