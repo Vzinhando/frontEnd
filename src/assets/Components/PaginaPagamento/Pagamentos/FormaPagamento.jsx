@@ -39,7 +39,6 @@ function FormaPagamento() {
                 <div className="formaPagamentoPix">
                     <img src="./img/Pagamentos/pix.svg" alt="Desenho do pix" />
                     <h3>Pix</h3>
-
                 </div>
                 </NavLink>
 

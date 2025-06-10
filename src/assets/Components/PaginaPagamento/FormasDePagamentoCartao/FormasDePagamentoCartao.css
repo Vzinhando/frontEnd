@@ -14,6 +14,7 @@
   font-size: 1.9rem;
   font-weight: bold;
   margin-bottom: 1.875rem;
+  color: #200c80;
 }
 
 .formularioPagamento {
@@ -117,6 +118,7 @@
 .containerDireitaFormasDePagamento h2 {
   font-size: 1.5rem;
   font-weight: bolder;
+  color: #200c80;
 }
 
 
@@ -127,6 +129,10 @@
   font-weight: 500;
   display: flex;
   justify-content: space-between;
+}
+.totalFormaDePagamento p{
+  font-size: 1.125rem;
+  color: #200C80;
 }
 
 
@@ -145,6 +151,7 @@
   font-weight: 600;
   cursor: pointer;
   font-size: 1.0625rem;
+  text-decoration: none;
 }
 
 .voltarFormasDePagamento {

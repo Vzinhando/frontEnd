@@ -47,7 +47,7 @@
     border-radius: 8px;
     border: none;
     background-color: #ffd6a4;
-    color: #000000;
+    color: #200c80;
     font-size: 14px;
 }
 
@@ -89,6 +89,13 @@
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+.dadosBoletoBotaoVoltar:hover {
+    background-color: #ff6f00;
+    color: #200c80;
+    transform: scale(0.95);
 }
 
 .dadosBoletoBotaoFinalizar {
@@ -100,6 +107,12 @@
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+.dadosBoletoBotaoFinalizar:hover {
+    background-color: #200c80;
+    color: #ff6f00;
+    transform: scale(0.95);
 }
 
 /*== Responsividade ==*/
