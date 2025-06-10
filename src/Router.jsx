@@ -21,7 +21,7 @@ import PaginaPerfilPrestador from "./assets/Components/PaginaPerfilPrestador/Pag
 import PaginaPerfilCliente from "./assets/Components/PaginaPerfilCliente/PaginaPerfilCliente";
 import InformacoesPessoais from "./assets/Components/InformacoesPessoais/InformacoesPesoais";
 
-function App() {
+function Router() {
   return (
     <BrowserRouter>
       <Header />
@@ -59,4 +59,4 @@ function App() {
        */
 }
 
-export default App;
+export default Router;

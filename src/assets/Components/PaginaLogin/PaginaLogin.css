@@ -70,10 +70,15 @@
   border-radius: 20px;
   border: none;
   background-color: #f0c087;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(0, 0, 0,0.76);
 }
 
 input::placeholder {
   font-size: 18px;
+  font-weight: 600;
 }
 
 .grupoBotoesLogin {
