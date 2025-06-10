@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
 
-#cor_gradiente {
+.corGradiente {
     background: linear-gradient(to right, #0451e1, #2b2d42);
     color: white;
     padding: 2rem 3rem;
     border-radius: 15px 15px 0 0;
-    font-family: 'Arial', sans-serif;
 }
 
-#container_footer {
+.containerFooter {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -16,14 +15,14 @@
     gap: 2rem;
 }
 
-#sub_logo {
+.subLogo {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 0.5rem;
 }
 
-#blocos_informativos {
+.blocosInformativos {
     display: flex;
     gap: 3rem;
     flex: 1;
@@ -34,11 +33,13 @@
     min-width: 150px;
 }
 
-.sub_titulo {
+.subTitulo {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
     margin-bottom: 0.5rem;
+    text-decoration: none;
+ 
 }
 
 .bloco ul {
@@ -61,7 +62,7 @@
     text-decoration: underline;
 }
 
-#termos_de_politica {
+.termosDePolitica {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -79,25 +80,25 @@
     text-decoration: underline;
 }
 
-#rede_social_rodape {
+.redeSocialRodape {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin: 1rem 0;
 }
 
-#rede_social_rodape img {
+.redeSocialRodape img {
     width: 32px;
     height: 32px;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
-#rede_social_rodape img:hover {
+.redeSocialRodape img:hover {
     transform: scale(1.1);
 }
 
-#footer_copyright {
+.footerCopyright {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -107,75 +108,70 @@
     margin-bottom: 0.5rem;
 }
 
-/*== Responsividade ==*/
-
-/* MOBILE: até 767px */
 @media (max-width: 767px) {
-  #container_footer {
+  .containerFooter {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  #sub_logo {
+  .subLogo {
     align-items: center;
   }
 
-  #blocos_informativos {
+  .blocosInformativos {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
     margin-top: 1.5rem;
   }
 
-  #termos_de_politica {
+  .termosDePolitica {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
     text-align: center;
   }
 
-  #rede_social_rodape {
+  .redeSocialRodape {
     flex-wrap: wrap;
     gap: 1rem;
   }
 }
 
-/* TABLET: 768px até 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
-  #container_footer {
+  .containerFooter {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
   }
 
-  #blocos_informativos {
+  .blocosInformativos {
     flex: 1 1 100%;
     justify-content: space-around;
     margin-top: 1rem;
   }
 
-  #termos_de_politica {
+  .termosDePolitica {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 }
 
-/* DESKTOP: a partir de 1024px */
 @media (min-width: 1024px) {
-  #container_footer {
+  .containerFooter {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  #blocos_informativos {
+  .blocosInformativos {
     flex-direction: row;
     justify-content: flex-end;
   }
 
-  #termos_de_politica {
+  .termosDePolitica {
     flex-direction: row;
     justify-content: space-between;
   }
