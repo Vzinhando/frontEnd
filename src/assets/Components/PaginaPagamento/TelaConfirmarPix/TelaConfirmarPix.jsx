@@ -21,7 +21,7 @@ function TelaConfirmarPix() {
                 <h1 className = "titulo2">Use o QR Code acima ou copie o código Pix abaixo:</h1>
 
                 <div className='codigoPix'>
-                    <p>000200001...02222.111111111.2323222</p>
+                    <p>000200001.02222.111111111.2323222</p>
                     <button type='submit' className='btnCopiar'>Copiar</button>
                 </div>
 

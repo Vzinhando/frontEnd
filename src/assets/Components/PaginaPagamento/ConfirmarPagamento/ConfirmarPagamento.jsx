@@ -55,7 +55,7 @@ function ConfirmarPagamento() {
                 <button className="voltartotalDetalhesCompra" type="submit">
                   Voltar
                 </button>
-                <NavLink to = "/confirmacaopagamento" className="finalizartotalDetalhesCompra" type="submit">
+                <NavLink to = "/confirmacao-pagamento" className="finalizartotalDetalhesCompra" type="submit">
                   Finalizar pagamento
                 </NavLink>
               </form>

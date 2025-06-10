@@ -25,23 +25,20 @@
 }
 
 .pagamentoBoletoTitulo {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
-  color: #1e1e1e;
+  color: #200c80;
 }
 
 .pagamentoBoletoTexto {
-  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  color: #333;
+  color: #200c80;
 }
 
 .pagamentoBoletoBotoes {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -64,13 +61,25 @@
 }
 
 .pagamentoBoletoVisualizar {
-  background-color: #2e008b;
+  background-color: #200c80;
   color: white;
+  transition: all 0.3s ease;
+}
+.pagamentoBoletoVisualizar:hover {
+  background-color: #200c80;
+  color: #ff6f00;
+  transform: scale(0.95);
 }
 
 .pagamentoBoletoFinalizar {
   background-color: #FF7900;
   color: white;
+  transition: all 0.3s ease;
+}
+.pagamentoBoletoFinalizar:hover {
+  background-color: #200c80;
+  color: #ff6f00;
+  transform: scale(0.95);
 }
 
 @media (max-width: 768px) {
