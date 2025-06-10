@@ -29,7 +29,7 @@ function Footer() {
             </div>
 
             <div className="bloco">
-              <h3 className="sub_titulo">Trabalhe com a gente</h3>
+              <h3 className="sub_titulo">Trabalhe Conosco</h3>
               <ul>
                 <li>Carreira</li>
                 <li>Cadastre-se</li>
