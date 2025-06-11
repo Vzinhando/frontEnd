@@ -2,28 +2,43 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 40px 20px;
 }
 
 .cards {
-  width: 80%;
+  width: 100%;
+  max-width: 1400px;
   display: flex;
-  gap: 10%;
+  justify-content: center;
+  gap: 40px;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .card1,
 .card2,
 .card3 {
-  position: relative;
-  width: 420px;
-  height: 520px;
+  flex: 1 1 320px;
+  max-width: 420px;
+  min-height: 520px;
   background-color: #ffdba8;
   border-radius: 30px;
-  padding-top: 20px;
+  padding: 30px 20px;
   text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.imagem-fundo {
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.imagemFundo {
   width: 200px;
   height: 200px;
   margin: 0 auto 20px;
@@ -33,20 +48,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  flex-shrink: 0;
 }
 
-.imagem-fundo img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+.imagemFundo img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  position: relative;
-  z-index: 2;
 }
 
-.texto-info h3,
-h4 {
+.textoInfo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textoInfo h3, 
+.textoInfo h4 {
   margin: 2px 0;
   padding: 0;
   line-height: 1.2;
@@ -70,6 +89,7 @@ h4 {
   display: flex;
   gap: 2px;
   justify-content: center;
+  align-items: center;
   text-align: center;
   margin-top: 15px;
 }
@@ -81,18 +101,19 @@ h4 {
 }
 
 .servicosCartoes {
-  width: 342px;
+  width: 90%;
+  max-width: 342px;
   height: 39px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
   background-color: #ffa452;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
-.servicos p {
+
+.servicosCartoes p {
   color: #00004c;
   font-weight: 600;
   font-size: 20px;
@@ -100,11 +121,11 @@ h4 {
 }
 
 @media (max-width: 1440px) {
-  .servicos {
-    width: 250px;
+  .servicosCartoes {
+    max-width: 250px;
   }
 
-  .servicos p {
+  .servicosCartoes p {
     font-size: 16px;
   }
 
@@ -116,22 +137,17 @@ h4 {
 
 @media (max-width: 1024px) {
   .cards {
-    gap: 40px;
+    gap: 30px;
   }
 
   .card1,
   .card2,
   .card3 {
-    width: 250px;
-    height: 450px;
+    min-height: auto;
+    flex-basis: 280px;
   }
 
-  .imagem-fundo {
-    width: 150px;
-    height: 150px;
-  }
-
-  .imagem-fundo img {
+  .imagemFundo {
     width: 150px;
     height: 150px;
   }
@@ -144,8 +160,8 @@ h4 {
     font-size: 20px;
   }
 
-  .servicos {
-    width: 220px;
+  .servicosCartoes {
+    max-width: 220px;
   }
 
   .estrelas svg {
@@ -156,87 +172,51 @@ h4 {
 
 @media (max-width: 768px) {
   .cards {
-    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
   }
+  
   .card1,
   .card2,
   .card3 {
-    width: 180px;
-    height: 380px;
-  }
-
-  .imagem-fundo {
-    width: 120px;
-    height: 120px;
-  }
-
-  .imagem-fundo img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .nome {
-    font-size: 25px;
-  }
-
-  .info h4 {
-    font-size: 15px;
-  }
-
-  .servicos {
-    width: 160px;
-  }
-
-  .servicos p {
-    font-size: 11px;
-  }
-
-  .estrelas svg {
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    max-width: 380px;
+    flex-basis: auto;
   }
 }
 
 @media (max-width: 480px) {
-
-  .cards {
-    gap: 20px;
-  }
   .card1,
   .card2,
   .card3 {
+    padding: 20px;
+    max-width: 320px;
+  }
+  
+  .imagemFundo {
     width: 120px;
-    height: 310px;
-  }
-
-  .imagem-fundo {
-    width: 80px;
-    height: 80px;
-  }
-
-  .imagem-fundo img {
-    width: 80px;
-    height: 80px;
+    height: 120px;
   }
 
   .nome {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .info h4 {
-    font-size: 12px;
+    font-size: 18px;
   }
-
-  .servicos {
-    width: 100px;
-  }
-
-  .servicos p {
-    font-size: 10px;
-  }
-
+  
   .estrelas svg {
-    width: 20px;
-    height: 20px;
+      width: 30px;
+      height: 30px;
+  }
+
+  .servicosCartoes {
+      width: 80%;
+  }
+
+  .servicosCartoes p {
+    font-size: 14px;
   }
 }

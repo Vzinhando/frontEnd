@@ -15,24 +15,13 @@ function Footer() {
             <div className="bloco">
               <h3 className="subTitulo">Sobre nós</h3>
               <ul>
-                <li>Conheça o Vizinhando</li>
-                <li>Missão</li>
-                <li>Objetivos</li>
-                <li>Nossos parceiros</li>
+                <NavLink to = "/sobre" className = "conhecerFooter">Conheça o Vizinhando</NavLink>
               </ul>
             </div>
-
-            <div className="bloco">
-              <h3 className="subTitulo">Produtos</h3>
-              <ul>
-                <li>Guias</li>
-              </ul>
-            </div>
-
             <div className="bloco">
               <h3 className="subTitulo">Trabalhe Conosco</h3>
               <ul>
-                <NavLink to="/cadastro-prestador">Cadastre-se</NavLink>
+                <NavLink className = "cadastrarFooter" to="/cadastro-prestador">Cadastre-se</NavLink>
               </ul>
             </div>
           </section>
@@ -40,14 +29,13 @@ function Footer() {
 
         <section className='termosDePolitica'>
           <p className='politica'>Politica de privacidade</p>
-          <p className='termos'>Termos de uso</p>
+          <NavLink className='termosFooter' to = "/termos">Termos de uso</NavLink>
         </section>
 
         <section className='redeSocialRodape'>
-          <img src="./img/SocialMedia/icon_instagram.svg" alt="instagram" width="50px" />
-          <img src="./img/SocialMedia/icon_github.svg" alt="github" width="50px" />
-          <img src="./img/SocialMedia/icon_tiktok.svg" alt="tiktok" width="50px" />
-          <img src="./img/SocialMedia/icon_linkedin.svg" alt="linkedin" width="50px" />
+          <a href="https://www.instagram.com/vzinhando/"><img src="./img/SocialMedia/icon_instagram.svg" alt="instagram" width="50px" /></a>
+          <a href="https://github.com/Vzinhando"><img src="./img/SocialMedia/icon_github.svg" alt="github" width="50px" /></a>
+          <a href="https://www.linkedin.com/company/vizinhando-plataforma/"><img src="./img/SocialMedia/icon_linkedin.svg" alt="linkedin" width="50px" /></a>
         </section>
         <p className="footerCopyright">Vizinhando © 2025 | Todos os direitos reservados.</p>
       </section>
