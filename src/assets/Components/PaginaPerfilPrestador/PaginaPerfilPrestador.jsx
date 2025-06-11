@@ -8,25 +8,33 @@
             <div className="imagemPerfilPrestador">
               <img src="/img/ImagemLaura/Julia.svg" alt="" />
             </div>
+            
+
             <div className="infosClientePrestador">
               <div className="nomePerfilClientePrestador">
-                <h2>Julia</h2>
+                
+                <h2>Julia</h2> <div className="estrelasPerfilClientePrestador">
+                <img src = "/img/estrela_clara.svg" className="estrelaCliente" />
+                <img src = "/img/estrela_clara.svg" className="estrelaCliente" />
+                <img src = "/img/estrela_clara.svg" className="estrelaCliente" />
+                <img src = "/img/estrela_clara.svg" className="estrelaCliente" />
+                <img src = "/img/estrela_clara.svg" className="estrelaCliente" />
                 </div>
+                
+                  <p className="servicosPerfilClientePrestador">Mais de mil serviços realizados</p>
 
-              <div className="estrelasPerfilClientePrestador">
-                <img src = "/img/estrela_clara.svg" className="estrelaCliente" />
-                <img src = "/img/estrela_clara.svg" className="estrelaCliente" />
-                <img src = "/img/estrela_clara.svg" className="estrelaCliente" />
-                <img src = "/img/estrela_clara.svg" className="estrelaCliente" />
-                <img src = "/img/estrela_clara.svg" className="estrelaCliente" />
-              </div>
-              <p className="servicosPerfilClientePrestador">Mais de mil serviços realizados</p>
-
-              <div className="iconesRedesPerfilPrestador">
+                  <div className="iconesRedesPerfilPrestador">
                 <img src = "/img/ImagemLaura/instagram.svg" className="iconPerfilPrestador" />
                 <img src = "/img/ImagemLaura/facebook.svg" className="iconPerfilPrestador" />
                 <img src = "/img/SocialMedia/icon_tiktok.svg" className="iconPerfilPrestador" />
               </div>
+              </div>
+                
+
+
+              
+
+              
             </div>
           </div>
           <div className="informacoesPerfilPrestador">
