@@ -56,10 +56,10 @@ function Cartoes() {
           </div>
 
           <div className="card3">
-            <div className="imagem-fundo">
+            <div className="imagemFundo">
               <img src="/img/ImagemLaura/Vinicius.svg" alt="" />
             </div>
-            <div className="texto-info">
+            <div className="textoInfo">
               <div className="nome">
                 <h3>Vinicius</h3>
               </div>
