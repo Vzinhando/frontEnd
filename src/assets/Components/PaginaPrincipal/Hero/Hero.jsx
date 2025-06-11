@@ -3,7 +3,7 @@ import './Hero.css';
 import search from "../../../../../public/img/search.svg"
 
 
-const backgrounds = ["url('/imgHero/padeiroCarrosselMain.svg')", "url('/imgHero/costureiraCarrosselMain.svg')", "url('/imgHero/cozinheiraCarrosselMain.svg')"];
+const backgrounds = ["url('/imgHero/pintorCarrosselMain.svg')", "url('/imgHero/costureiraCarrosselMain.svg')", "url('/imgHero/cozinheiraCarrosselMain.svg')"];
 
 function Hero() {
   const [slideIndex, setSlideIndex] = useState(0); 
