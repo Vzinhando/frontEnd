@@ -1,62 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .quadroGeralprestador {
-  border-radius: 30px;
-  min-height: 90vh;
   width: 90%;
+  max-width: 1400px;
+  min-height: 90vh;
   background-color: #ffdba8;
+  border-radius: 30px;
   margin: 8% auto 2% auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  padding-left: 1.25rem;
+  padding: 0 2rem 2rem 2rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quadroGeralprestador p {
+  color: #200c80;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1rem;
 }
 
 .quadroPerfilPrestaodr {
-  margin-left: 20%;
-  width: 50%;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
-  padding: 1.25rem;
-  border-radius: 0.5rem;
-  margin-right: 50%;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: -75px;
 }
 
 .imagemPerfilPrestador {
-  flex-shrink: 0;
-  position: relative;
-  top: -6.25rem;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 1rem;
   background-color: #200c80;
-  box-shadow: 0.25rem 0.25rem 0.25rem rgba(255, 117, 8, 0.7);
-  border-radius: 1.875rem;
 }
 
 .imagemPerfilPrestador img {
-  width: 21.875rem;
-  height: 21.875rem;
-  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.nomePerfilClientePrestador {
+.infosClientePrestador {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: -3.75rem;
-}
-
-.nomePerfilClientePrestador {
-  display: flex;
   align-items: center;
-  font-size: 3.75rem;
-  color: #200c80;
-  text-shadow: 0.25rem 0.25rem 0.25rem rgba(255, 117, 8, 0.5);
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
-.verificado {
-  color: #ff7900;
-  font-size: 3.75rem;
+.nomePerfilClientePrestador h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #200c80;
+  text-shadow: 2px 2px 4px rgba(255, 117, 8, 0.4);
 }
 
 .estrelasPerfilClientePrestador {
@@ -64,500 +66,287 @@
   gap: 0.5rem;
 }
 
-.estrelasPerfilClientePrestador {
-  width: 50px;
-  height: 50px;
-  transition: all 0.3s ease-out;
-}
-
-.estrela:hover {
-  color: #ff7900;
+.estrelasPerfilClientePrestador .estrelaCliente {
+  width: 35px;
+  height: 35px;
 }
 
 .servicosPerfilClientePrestador {
-  color: black;
-  font-size: 24px;
+  font-size: 1.1rem;
   font-weight: 500;
-  margin-top: 1%;
+  color: #200c80;
 }
+
 .iconesRedesPerfilPrestador {
   display: flex;
-  gap: 12px;
-  margin-top: 10px;
+  gap: 1.25rem;
 }
 
 .iconPerfilPrestador {
-  font-size: 38px;
-  color: #200c80;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease-in-out;
 }
 
-.iconPerfilPrestador :hover {
-  transform: scale(1.1);
-  color: #ff7900;
+.iconPerfilPrestador:hover {
+  transform: scale(1.15);
 }
 
 .informacoesPerfilPrestador {
   width: 100%;
-  margin-top: 30px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 0; 
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .conteudoPerfilPrestador {
-  flex: 1;
-  max-width: 100%;
-  text-align: left;
+  flex: 2;
+  min-width: 300px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.avaliacoesPerfilPrestador {
-  width: 90%;
-  background-color: #ffa452;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: flex-start;
-}
-
-.avaliacoesPerfilPrestador > div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.avaliacoesPerfilPrestador h2 {
-  font-size: 40px;
-  margin: 0;
-  min-width: 100px;
-  color: black;
-  font-weight: 500;
-}
-
-
-.avaliacaoPerfilPrestador,
-.avaliacaoPerfilPrestador,
-.avaliacaoPerfilPrestador {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .descricaoPerfilPrestadorM {
-  width: 50%; 
-  padding: 0px 30px;
+  flex: 1;
+  min-width: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  border-radius: 15px;
 }
 
 .descricaoPerfilPrestadorM h4 {
-  font-size: 38px;
-  color: #000000;
-  line-height: 1.3;
+  font-size: 1.2rem;
+  line-height: 1.6;
   font-weight: 500;
+  color: #200c80;
+}
+
+.avaliacoesPerfilPrestador {
+  border: solid 1px #3115be;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+
+.avaliacaoPerfilPrestador {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.avaliacaoPerfilPrestador h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ff7900;
+  margin: 0;
+}
+
+.estrelasLinha {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .estrelaPerfil {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .todasAvaliacoesPerfilPrestador {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 40px;
-  margin-right: 80%;
+  margin-top: 1rem;
 }
-.todasAvaliacoesPerfilPrestador p {
-  color: #200c80; 
-  font-size: 25px;
-  text-shadow: 4px 4px 4px rgba(255, 117, 8, 0.5);
+
+.todasAvaliacoesPerfilPrestador {
+  color: #200c80;
+  font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(255, 117, 8, 0.4);
+  margin-bottom: 2rem;
 }
 
 .containerAvaliacoesPerfilPrestador {
-  width: 100vw;
-  max-width: 100%;
+  width: 100%;
   display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
-  justify-content: space-between;
-  padding: 20px;
-  box-sizing: border-box;
-  margin: 0 auto;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .quadroAvaliacoesPrestadores {
-  flex: 1 1 18%;
-  max-width: 18%;
-  height: 300px;
-  background-color: #fdbc82;
+  flex: 0 0 280px;
+  background-color: #f4e0bf;
   border-radius: 15px;
-  padding: 15px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
-  box-sizing: border-box;
 }
 
 .quadradoPerfilPrestadores {
-  width: 120px;
-  height: 120px;
-  background-color: #ff7900;
-  margin: 0 auto 10px;
+  width: 80px;
+  height: 80px;
   border-radius: 10px;
+  background-color: #200C80;
+  margin: 0 auto 1rem auto;
 }
 
 .quadroAvaliacoesPrestadores p {
-  font-size: 20px;
-  color: black;
-  margin-bottom: 10px;
+  font-size: 1rem;
   font-weight: 500;
+  margin-bottom: 1rem;
+  color: #210b91;
 }
 
 .estrelaAvaliacao {
-  width: 36px;
-  height: 36px;
-  margin: 2px;
+  width: 24px;
+  height: 24px;
 }
 
 .duvidasPerfilPrestador {
-  margin-top: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 .duvidasPerfilPrestador h2 {
-  font-size: 40px;
-  font-weight: 500;
-  color: #0e053a;
+  font-size: 1.8rem;
+  color: #200c80;
+  margin-bottom: 1rem;
 }
 
-.duvidasPerfilPrestador input {
+.duvidasPerfilPrestador .campoResposta {
   width: 100%;
   height: 50px;
-  margin-top: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
-  outline: none;
-  padding: 20px;
+  padding: 0 1rem;
   background-color: #e8be83;
-  font-size: 20px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .botoesPerfilPrestador {
+  width: 100%;
   display: flex;
-  gap: 60px;
   justify-content: center;
-  margin-top: 20px;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .botoesPerfilPrestador button {
-  padding: 12px 60px;
+  padding: 12px 40px;
+  border-radius: 10px;
   border: none;
-  border-radius: 15px;
-  font-size: 24px;
+  font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease;
 }
 
 .voltarPerfilPrestador {
-  background-color: white;
+  background-color: #ffffff;
   color: #ff7900;
+  border: 2px solid #ff7900;
 }
 
 .contratarPrestador {
   background-color: #ff7900;
-  color: white;
+  color: #ffffff;
+  border: 2px solid #ff7900;
 }
 
-.voltarPerfilPrestador:hover {
+.botoesPerfilPrestador button:hover {
   background-color: #200c80;
-  color: #ff7900;
+  color: #ffffff;
+  border-color: #200c80;
 }
 
-.contratarPrestador:hover {
-  background-color: #200c80;
-  color: #ff7900;
+.criacaoContaPerfilPrestador {
+  margin-top: 2rem;
 }
 
 .criacaoContaPerfilPrestador h2 {
-  color: #14084b;
+  font-size: 1rem;
   font-weight: 400;
-  font-size: 40px;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  text-shadow: 2px 2px 4px #ff7900;
-}
-
-@media (max-width: 1680px) {
-  .todasAvaliacoes {
-    width: 400px;
-    margin-left: 10%;
-  }
-}
-
-@media (max-width: 1440px) {
-  .descricaoPerfil h4 {
-    font-size: 33px;
-  }
-
-  .todasAvaliacoes {
-    width: 400px;
-    margin-left: 15%;
-  }
-
-  .estrelaAvaliacao {
-    width: 27px;
-    height: 27px;
-  }
-
-  .quadroAvaliacoes p {
-    font-size: 19px;
-  }
+  color: #200c80;
+  opacity: 0.8;
 }
 
 @media (max-width: 1024px) {
-  .informacoesPerfil {
+  .informacoesPerfilPrestador {
     flex-direction: column;
-    align-items: center;
   }
-
-  .conteudoPerfil,
-  .descricaoPerfil {
-    width: 90%;
-    padding: 20px;
-  }
-
-  .conteudoPerfil {
-    margin-top: -10%;
-  }
-
-  .todasAvaliacoes {
-    width: 400px;
-    margin-left: 30%;
-  }
-
-  .estrelaAvaliacao {
-    width: 18px;
-    height: 18px;
-  }
-
-  .duvidas h2 {
-    font-size: 25px;
-  }
-
-  .nomePerfilCliente h2 {
-    font-size: 70px;
-  }
-
-  .criacaoConta h2 {
-    font-size: 30px;
+  .imagemPerfilPrestador {
+    margin-top: 4rem;
+    width: 140px;
+    height: 140px;
   }
 }
 
 @media (max-width: 768px) {
-  .imagemPerfil {
-    top: -3.25rem;
+  .quadroGeralprestador {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0 1rem 2rem 1rem;
+    margin-top: 80px;
   }
 
-  .imagemPerfil img {
-    width: 250px;
-    height: 250px;
+  .quadroPerfilPrestaodr {
+    margin-top: -120px;
   }
 
-  .nomePerfil h2 {
-    font-size: 60px;
+  .imagemPerfilPrestador {
+    margin-top: 4rem;
+    width: 140px;
+    height: 140px;
   }
 
-  .estrela {
-    width: 40px;
-    height: 40px;
-  }
-
-  .avaliacoes h2 {
-    font-size: 30px;
-  }
-
-  .estrelaPerfil {
-    width: 35px;
-    height: 35px;
-  }
-
-  .descricaoPerfil h4 {
-    font-size: 25px;
-  }
-
-  .todasAvaliacoes {
-    width: 400px;
-    margin-left: 50%;
-  }
-
-  .avaliacao1Prestador,
-  .avaliacao2Prestador {
-    display: none;
-  }
-
-  .quadroAvaliacoes {
-    gap: 10px;
-    flex: 1 1 45%;
-    max-width: 45%;
-    height: 350px;
-  }
-
-  .duvidas h2 {
-    font-size: 20px;
+  .nomePerfilClientePrestador h2 {
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 480px) {
-
-  .quadroGeral {
-    width: 90%;
-    margin-left: 5%;
-    padding: 10px;
+  .nomePerfilClientePrestador h2 {
+    font-size: 2rem;
   }
 
-  .infos {
-    margin-top: -27%;
+  .estrelasPerfilClientePrestador .estrelaCliente {
+    width: 25px;
+    height: 25px;
   }
 
-  .quadroPerfil {
+  .avaliacaoPerfilPrestador h2 {
+    font-size: 1.2rem;
+  }
+  
+  .estrelaPerfil {
+    width: 25px;
+    height: 25px;
+  }
+
+  .duvidasPerfilPrestador h2 {
+    font-size: 1.5rem;
+  }
+
+  .botoesPerfilPrestador {
     flex-direction: column;
-    margin: 0;
+    align-items: center;
     width: 100%;
-    align-items: center;
-    text-align: center;
   }
 
-  .imagemPerfil {
-    top: -2.75rem;
-    margin-bottom: 50px;
-  }
-
-  .imagemPerfil img {
-    width: 180px;
-    height: 180px;
-  }
-
-  .nomePerfilCliente {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .nomePerfil h2 {
-    font-size: 50px;
-  }
-
-  .avaliacao1,
-  .avaliacao2,
-  .avaliacao3 {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  .estrelaPerfil {
-    width: 20px;
-    height: auto;
-  }
-
-  .iconesRedes {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 8%;
-  }
-
-  .TituloPerfil {
-    font-size: 25px;
-  }
-
-  .avaliacoes {
-    height: 250px;
-    flex-direction: column;
-    gap: 15px;
-    width: 50%;
-    padding: 0px;
-    margin-left: 5%;
-  }
-
-
-  .todasAvaliacoes {
-    margin-top: 40%;
-    margin-left: 70%;
-    margin-bottom: 3%;
-  }
-
-  .todasAvaliacoes p {
-    font-size: 18px;
-  }
-
-
-  .containerAvaliacoes {
-    padding: 0px;
-  }
-
-  .avaliacao3Prestador {
-    display: none;
-  }
-
-  .criacaoConta h2 {
-    font-size: 20px;
-  }
-
-  .avaliacoes > div {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .avaliacoes {
-    width: 300px;
-    height: 300px;
-    margin: 0px;
-    padding: 10px;
-  }
-
-  .estrelaPerfil {
-    width: 20px;
-    height: 20px;
-  }
-
-  .estrelasLinha2 {
-    margin-left: 22%;
-  }
-
-  .estrelasLinha3 {
-    margin-left: 8%;
-  }
-  .todasAvaliacoes {
-    margin: 0px;
-    margin-bottom: 5%;
-  }
-
-  .duvidas h2 {
-    font-size: 10px;
-  }
-
-  .botoes {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .botoes button {
-    padding: 8px 20px;
-    font-size: 16px;
+  .botoesPerfilPrestador button {
+    width: 100%;
+    max-width: 350px;
   }
 }
