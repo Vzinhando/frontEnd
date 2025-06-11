@@ -39,8 +39,7 @@ function Router() {
         <Route path="*" element={<NaoEncontrado />} />
         <Route path="/confirmar-pagamento" element={<ConfirmarPagamento />} />
         <Route path="/pagamento-boleto" element={<PagamentoBoleto />} />
-        <Route path="/confirmacao-pagamento" element={<ConfirmacaoPagamento />}
-        />
+        <Route path="/confirmacao-pagamento" element={<ConfirmacaoPagamento />}/>
         <Route path="/pesquisar-servico" element={<BuscaPrestador />} />
         <Route path="/perfil-cliente" element={<PaginaPerfilCliente />} />
         <Route path="/cadastro-prestador" element={<PaginaPreCadastro />} />
