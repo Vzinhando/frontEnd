@@ -1,5 +1,6 @@
 import './Header.css'
 import { NavLink } from 'react-router-dom';
+import TradutorIdiomas from './TradutorIdiomas/TradutorIdiomas';
 
 function Header() {
     return (
@@ -14,6 +15,9 @@ function Header() {
             <div className="menuHeader">
                 <NavLink className={'sobreHeader'} to = "/sobre">Sobre</NavLink>
                 <NavLink className={'sobreHeader'} target="_blank" to="https://linktr.ee/Vizinhando.web?utm_source=qr_code">Ajuda</NavLink>
+            </div>
+            <div className="traducaoIdioma">
+                <TradutorIdiomas/>
             </div>
             <div className="usuarioHeader">
                 <a className="botaoLoginHeader"><NavLink to = "login" className={'loginClickHeader'}>Login</NavLink></a>
