@@ -1,10 +1,20 @@
+.containerPagamentoPix{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 2rem 5rem;
+}
 .titulo1 {
     margin: 2rem 1.2rem 1.2rem 6rem;
     color: #200c80;
+    font-size: 2.5rem;
 }
+
 .titulo2 {
     margin: 2.5rem 1.8rem 0 6rem;
     color: #200c80;
+    font-size: 2rem;
 
 }
 
@@ -26,12 +36,12 @@
 }
 
 .esquerda img {
-    width: 90%;
+    width: 80%;
     max-width: 300px;
 }
 
 .direita {
-    width: 37%;
+    width: 35%;
     height: 50%;
     margin: 0 0 80px 400px;
     background-color: #FFDBA8;
@@ -85,7 +95,7 @@
     border-radius: 20px 0px 0px 20px;
     width: 40%;
     padding: 0 24px;
-    margin: 20px 0 0 100px;
+    margin: 20px 0 0 6rem;
 }
 
 .codigoPix .btnCopiar {
@@ -97,12 +107,14 @@
     color: #fff;
     font-weight: 600;
     cursor: pointer;
-    transition: filter .2s;
-    margin-top: 1.2rem;
+    transition: all 0.3s ease;
+    margin-top: 1.25rem;
 }
 
 .btnCopiar:hover {
     filter: brightness(1.1);
+    background-color: #200C80;
+    color: #FF7900;
 }
 
 .buttons {
@@ -113,39 +125,52 @@
 }
 
 .buttons .buttonVoltar {
+    text-decoration: none;
     height: 50px;
-    width: 150px;
+    width: 7.6rem;
     font-size: 18px;
-    margin: 80px 40px 40px 0;
+    margin: 5rem 2.5rem 2.5rem 0;
     padding: 12px 32px;
-    border: none;
     border-radius: 10px;
     background: #FFDBA8;
     color: #FF7A00;
     font-weight: 600;
     cursor: pointer;
-    transition: filter .2s;
+    transition: all 0.3s ease;
 }
 
+.buttonVoltar:hover {
+    color: #FFFFFF;
+    background-color: #FF7900;
+    transform: scale(0.95);
+}
+
+
 .buttons .buttonPagamento {
+    text-decoration: none;
     height: 50px;
-    width: 400px;
+    width: 16.9rem;
     font-size: 18px;
-    margin: 80px 80px 0 0;
+    margin: 5rem 5rem 0 0;
     padding: 12px 32px;
-    border: none;
     border-radius: 10px;
     background: #FF7A00;
     color: #fff;
     font-weight: 600;
     cursor: pointer;
-    transition: filter .2s;
+    transition: all 0.3s ease;
+}
+
+.buttonPagamento:hover {
+    color: #FF7900;
+    background-color: #200C80;
+    transform: scale(0.95);
 }
 
 @media (max-width: 900px) {
 
-    #titulo1,
-    #titulo2 {
+    .titulo1,
+    .titulo2 {
         text-align: center;
     }
 
@@ -161,11 +186,13 @@
         max-width: 300px;
         margin-left: 0;
     }
+
     .esquerda {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .esquerda,
     .direita {
         width: 90%;

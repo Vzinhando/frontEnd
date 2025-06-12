@@ -42,7 +42,7 @@ function Router() {
         <Route path="/confirmacao-pagamento" element={<ConfirmacaoPagamento />}/>
         <Route path="/pesquisar-servico" element={<BuscaPrestador />} />
         <Route path="/perfil-cliente" element={<PaginaPerfilCliente />} />
-        <Route path="/cadastro-prestador" element={<PaginaPreCadastro />} />
+        <Route path="/pre-cadastro-prestador" element={<PaginaPreCadastro />} />
         <Route path="/pagina-servico" element={<PaginaServico />} />
         <Route path="/pagina-prestador" element={<PaginaPerfilPrestador />} />
         <Route path="/informacoes-pessoais" element={<InformacoesPessoais />} />

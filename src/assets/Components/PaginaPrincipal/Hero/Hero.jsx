@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'; // 
 import './Hero.css';
 import search from "../../../../../public/img/search.svg"
+import { NavLink } from 'react-router-dom';
 
 
 const backgrounds = ["url('/imgHero/pintorCarrosselMain.svg')", "url('/imgHero/costureiraCarrosselMain.svg')", "url('/imgHero/cozinheiraCarrosselMain.svg')"];
@@ -59,7 +60,7 @@ function Hero() {
               </h2>
               <label htmlFor="email">E-mail*</label>
               <input type="email" id="email" placeholder="email@email.com.br" required />
-              <button type="submit">Cadastrar agora</button>
+              <NavLink to = "/pre-cadastro-prestador" className = "cadastrarHero" type="submit">Cadastrar agora</NavLink>
             </form>
           </div>
         </div>
