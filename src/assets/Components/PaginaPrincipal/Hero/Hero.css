@@ -19,6 +19,7 @@
   transition: background-image 0.5s ease-in-out;
   object-fit: cover;
 }
+
 .materialSymbolsOutlined img{
   width: 60%;
   height: 60%;
@@ -46,20 +47,29 @@
   flex: 1;
   background: transparent;
   width: 100%;
-  color: #4b5563;
-  font-size: 1rem;
+  color: #200C80;
+  height: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
   border: none;
   outline: none;
   padding: 1%;
 }
 
+.pesquisa input::placeholder{
+  color: rgba(32, 12, 128,0.5);
+  font-weight: 800;
+}
 
 .pesquisa button {
   background: none;
   border: none;
   cursor: pointer;
-  width: 3%;
-  
+  width: 2.7rem;
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carrosselControles {
@@ -220,7 +230,6 @@
     width: 90%;
     top: 4rem;
   }
-  
 
 }
 

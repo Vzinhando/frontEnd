@@ -20,7 +20,7 @@ function Header() {
                 <TradutorIdiomas/>
             </div>
             <div className="usuarioHeader">
-                <a className="botaoLoginHeader"><NavLink to = "login" className={'loginClickHeader'}>Login</NavLink></a>
+                <a className="botaoLoginHeader"><NavLink to = "login" className={'loginClickHeader'}>Entrar</NavLink></a>
                 <a className="botaoCadastroHeader">Cadastro</a>
             </div>
         </section>

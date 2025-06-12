@@ -1,7 +1,5 @@
-// src/components/TradutorIdiomas.js
-
 import React, { useEffect } from 'react';
-import './TradutorIdiomas.css'; // Corrigido o nome do arquivo CSS
+import './TradutorIdiomas.css';
 
 const TradutorIdiomas = () => {
   const languages = [
