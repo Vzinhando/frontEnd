@@ -3,11 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="keywords" content="Contratar Serviço, Buscar Serviço perto de mim,Conseguir Clientes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="Site para conectar moradores com prestadores de serviço locais, unindo os profissionais do seu bairro."/>
+    <meta name="author" content="Vizinhando Plataforma"/>
+    <meta name="robots" content="index, follow"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:site_name" content="Vizinhando"/>
     <title>Vizinhando</title>
-    <link rel="icon" href="Vizinhando.ico" type="icon">
+    <link rel="icon" href="Vizinhando.ico" type="icon" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "b49590fa-648b-4cf6-9937-4962427fe9ea",
+        apiHost: "https://cloud.flowiseai.com/",
+    })
+</script>
   </body>
 </html>
