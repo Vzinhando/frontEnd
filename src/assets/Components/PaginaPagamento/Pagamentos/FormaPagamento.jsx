@@ -35,7 +35,7 @@ function FormaPagamento() {
                 </div>
                 </NavLink>
 
-                <NavLink to = "/confirmar-pagamento" className="formaPagamentoPix">
+                <NavLink to = "/pagina-pix" className="formaPagamentoPix">
                 <div className="formaPagamentoPix">
                     <img src="./img/Pagamentos/pix.svg" alt="Desenho do pix" />
                     <h3>Pix</h3>

@@ -1,10 +1,11 @@
 import './TelaConfirmarPix.css'
 import qrcode from '../../../../../public/img/Pagamentos/qrcode.svg'
+import { NavLink } from 'react-router-dom'
 
 function TelaConfirmarPix() {
     return (
         <>
-            <div className='Container'>
+            <div className='containerPagamentoPix'>
                 <h1 className="titulo1">Perfil Preencha os dados para pagamento via Pix</h1>
                 <div className='quadroGeral'>
                     <div className='esquerda'>
@@ -26,8 +27,8 @@ function TelaConfirmarPix() {
                 </div>
 
                 <div className='buttons'>
-                    <button className='buttonVoltar'>Voltar</button>
-                    <button className='buttonPagamento'>Confirmar Pagamento</button>
+                    <NavLink to= "/pagina-pagamento" className='buttonVoltar'>Voltar</NavLink>
+                    <NavLink to="/confirmar-pagamento" className='buttonPagamento'>Confirmar Pagamento</NavLink>
                 </div>
             </div>
         </>

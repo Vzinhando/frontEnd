@@ -5,7 +5,7 @@ function InformacoesPessoais() {
   return (
     <>
 
-      <main>
+      <main className="containerInformacoesPessoais">
         <h1 className="informacoesPessoais">Informações Pessoais</h1>
 
         <div className="Pai1">
