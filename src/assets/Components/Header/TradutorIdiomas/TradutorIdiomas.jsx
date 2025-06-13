@@ -3,9 +3,9 @@ import './TradutorIdiomas.css';
 
 const TradutorIdiomas = () => {
   const languages = [
-    { code: 'pt', name: 'Português', flag: '🇧🇷' },
-    { code: 'en', name: 'English', flag: '🇺🇸' },
-    { code: 'es', name: 'Español', flag: '🇪🇸' },
+    { code: 'pt', name: 'Português', flag: "/img/IconTraducao/bandeiraBrasil.svg" },
+    { code: 'en', name: 'English', flag: "/img/IconTraducao/bandeiraEstadosUnidos.svg" },
+    { code: 'es', name: 'Español', flag: "/img/IconTraducao/bandeiraEspanhol.svg" },
   ];
 
   const handleLanguageChange = (langCode) => {
@@ -20,7 +20,7 @@ const TradutorIdiomas = () => {
     window.googleTranslateElementInit = () => {
       new window.google.translate.TranslateElement(
         { pageLanguage: 'pt' },
-        'googleTranslateElement' 
+        'googleTranslateElement'
       );
     };
 
@@ -44,7 +44,7 @@ const TradutorIdiomas = () => {
             title={lang.name}
             onClick={() => handleLanguageChange(lang.code)}
           >
-            {lang.flag}
+            <img src={lang.flag} alt={lang.name} className="iconeBandeira" />
           </button>
         ))}
       </div>
