@@ -54,6 +54,7 @@
 
 .campoInput::placeholder {
   font-size: 18px;
+  color: rgba(32, 12, 128, 0.5);
 }
 
 .textoLogin, .esquecerCep {
