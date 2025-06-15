@@ -1,62 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .quadroGeralCliente {
+  font-family: "Poppins", sans-serif;
   border-radius: 30px;
   min-height: 90vh;
   width: 90%;
   background-color: #ffdba8;
-  margin: 8% auto 2% auto;
+  margin: 8rem auto 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .quadroPerfilCliente {
-  width: 90%;
-  max-width: 800px;
+  position: relative;
+  width: 100%;
+  max-width: 850px;
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  padding: 1.25rem;
+  gap: 2rem;
+  padding: 1.5rem 2.5rem;
   margin: 0 auto;
+  background-color: #fdbc82;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .imagemPerfilCliente {
   flex-shrink: 0;
-  position: relative;
-  top: -6.25rem;
+  margin-top: -9rem;
   background-color: #200c80;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(255, 117, 8, 0.7);
   border-radius: 1.875rem;
+  border: 6px solid #fffaf0;
 }
 
 .imagemPerfilCliente img {
-  width: 21.875rem;
-  height: 21.875rem;
+  width: 18rem;
+  height: 18rem;
   display: block;
   border-radius: inherit;
+  object-fit: cover;
 }
 
 .infosCliente {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -6.75rem;
-}
-
-.nomePerfilCliente {
-  display: flex;
-  align-items: center;
-  font-size: 3.75rem;
+  align-items: flex-start;
+  gap: 0.75rem;
+  width: 100%;
   color: #200c80;
-  text-shadow: 0.25rem 0.25rem 0.25rem rgba(255, 117, 8, 0.5);
-  gap: 0.5rem;
 }
 
-.verificado {
-  color: #ff7900;
-  font-size: 3.75rem;
+.infosCliente h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.infosCliente p {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  color: #200c80;
 }
 
 .estrelasPerfilCliente {
@@ -65,66 +75,141 @@
 }
 
 .estrelaCliente {
-  color: #200c80;
-  transition: color 0.3s ease-out;
-}
-
-.estrelaCliente:hover {
-  color: #ff7900;
-}
-
-.servicosPerfilCliente {
-  color: black;
-  font-size: 26px;
-  font-weight: 500;
-  margin-top: 1%;
+  width: 1.75rem;
 }
 
 .iconesRedesCliente {
   display: flex;
-  gap: 12px;
-  margin-top: 5%;
+  gap: 1rem;
+  margin-top: 0.75rem;
 }
 
-.icon {
-  font-size: 38px;
-  color: #200c80;
+.iconesRedesCliente img {
+  width: 38px;
+  height: 38px;
   cursor: pointer;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
-.icon:hover {
+.iconesRedesCliente img:hover {
   transform: scale(1.1);
-  color: #ff7900;
+}
+.botoesAcao {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.botaoEditar,
+.botaoDeletar,
+.botaoSalvar,
+.botaoCancelar {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.botaoEditar:hover,
+.botaoDeletar:hover,
+.botaoSalvar:hover,
+.botaoCancelar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botaoEditar {
+  background-color: #ff7900;
+}
+
+.botaoDeletar {
+  background-color: #dc3545;
+}
+
+.botaoSalvar {
+  background-color: #200c80;
+}
+
+.botaoCancelar {
+  background-color: #6c757d;
+}
+
+form.infosCliente {
+  gap: 1rem;
+}
+
+.camposEdicaoCliente {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  text-align: left;
+}
+
+.infosCliente label {
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+.inputEdicaoNome,
+.inputEdicaoCep {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.inputEdicaoNome:focus,
+.inputEdicaoCep:focus {
+  outline: none;
+  border-color: #200c80;
+  box-shadow: 0 0 0 3px rgba(32, 12, 128, 0.2);
+}
+
+.botoesEdicaoCliente {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.conteudoPerfilCliente,
+.quadroCartoesCliente,
+.todasAvaliacoesCliente,
+.containerAvaliacoesCliente {
+  width: 100%;
+  max-width: 1400px;
+  margin-top: 2rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .TituloPerfilCliente {
   color: #200c80;
-  margin: 0 0 1% 3%;
   font-size: 3rem;
-  width: 90%; 
-  max-width: 1200px;
-  text-align: left;
-}
-
-.conteudoPerfilCliente {
-  flex: 1;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -33px;
+  text-align: left;
+  margin-bottom: 1rem;
 }
-
 
 .avaliacoesCliente {
-  width: 90%;
-  max-width: 1200px; 
-  background-color: #ffa452;
+  background-color  : #ffa452;
   border-radius: 20px;
   padding: 20px;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 20px;
   align-items: center;
   justify-content: center;
@@ -140,16 +225,10 @@
 }
 
 .avaliacaoBoxCliente h2 {
-  font-size: 28px; 
+  font-size: 28px;
   margin: 0;
   color: black;
   font-weight: 500;
-}
-
-.quadroCartoesCliente {
-  padding: 35px;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .cardsCliente {
@@ -165,32 +244,25 @@
   background-color: #ffa452;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 16px;
+  text-align: center;
 }
 
 .cardCliente-numero {
   color: #200c80;
   font-size: 3rem;
-  margin-bottom: 8px;
+  font-weight: 700;
 }
 
 .cardCliente-info {
   color: #200c80;
   font-size: 1.5rem;
   text-align: center;
-}
-
-.todasAvaliacoesCliente {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 40px;
-  width: 90%;
-  max-width: 1200px;
+  font-weight: 500;
 }
 
 .todasAvaliacoesCliente p {
@@ -199,60 +271,51 @@
   text-shadow: 4px 4px 4px rgba(255, 117, 8, 0.5);
   font-weight: 500;
   cursor: pointer;
+  width: 100%;
+  text-align: center;
 }
 
 .containerAvaliacoesCliente {
-  width: 100%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 3rem;
   justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
+  padding-top: 20px;
 }
 
 .quadroAvaliacoesCliente {
-  flex: 1 1 300px;
-  max-width: 350px;
-  min-width: 250px;
-  height: 300px;
+  flex: 0 1 200px;
+  max-width: 200px;
+  min-height: 200px;
   background-color: #fdbc82;
   border-radius: 15px;
   padding: 15px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  box-sizing: border-box;
-}
-
-.quadradoCliente {
-  width: 120px;
-  height: 120px;
-  background-color: #ff7900;
-  margin: 0 auto 10px;
-  border-radius: 10px;
-}
-
-.quadroAvaliacoesCliente p {
-  font-size: 20px;
-  color: black;
-  margin-bottom: 10px;
-  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .estrelaAvaliacaoCliente {
-  width: 2.25rem;
-  height: 2.25rem;
-  margin: 2px;
+  width: 2rem;
+  height: 2rem;
 }
+
 
 .botoesCliente {
   display: flex;
   gap: 60px;
   justify-content: center;
   margin-top: 4%;
+  padding-bottom: 2rem;
+  width: 100%;
 }
 
-.botoesCliente button {
+.voltarCliente {
   padding: 12px 60px;
   border: none;
   border-radius: 15px;
@@ -260,9 +323,6 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease-out;
-}
-
-.voltarCliente {
   background-color: white;
   color: #ff7900;
 }
@@ -280,156 +340,243 @@
   text-shadow: 2px 2px 4px #ff7900;
   text-align: center;
 }
-@media (max-width: 1440px) {
+
+/* --- MEDIA QUERIES --- */
+
+/* TABLETS MAIORES E DESKTOPS PEQUENOS (Até 1080px) */
+@media (max-width: 1080px) {
+  .quadroGeralCliente {
+    width: 95%;
+    margin-top: 6rem;
+  }
+
+  .quadroPerfilCliente {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .imagemPerfilCliente {
+    margin-top: -6rem;
+    margin-bottom: -4rem;
+  }
+
   .imagemPerfilCliente img {
-    width: 18rem; 
-    height: 18rem;
+    width: 15rem;
+    height: 15rem;
   }
-  .nomePerfilCliente {
-    font-size: 3rem;
+
+  .infosCliente {
+    align-items: center;
+    /* Isso centralizará tudo dentro, incluindo os novos botões */
+    margin-top: 1rem;
   }
+
+  .infosCliente h2 {
+    font-size: 2.2rem;
+  }
+
+  .infosCliente p {
+    font-size: 1.8rem;
+  }
+
+  .iconesRedesCliente {
+    justify-content: center;
+  }
+
+  .botoesAcao {
+    justify-content: center;
+    /* Centraliza os botões dentro do seu container */
+  }
+
+  .TituloPerfilCliente {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-top: 2rem;
+  }
+
   .cardCliente {
     width: 260px;
     height: 220px;
   }
 }
 
-
-@media (max-width: 1024px) {
-  .quadroGeralCliente {
-    margin-top: 15%;
-  }
-
-  .quadroPerfilCliente {
-    flex-direction: column;
-    text-align: center;
-    gap: 0;
-  }
-  .imagemPerfilCliente {
-    top: -5rem;
-    margin-bottom: -5rem;
-  }
-  .imagemPerfilCliente img {
-    width: 15rem;
-    height: 15rem;
-  }
-  .infosCliente {
-    margin-top: 0;
-    align-items: center;
-  }
-  .nomePerfilCliente {
-    font-size: 2.5rem;
-  }
-  .TituloPerfilCliente {
-    text-align: center;
-    margin-left: 0;
-    margin-top: 2rem;
-  }
-  .todasAvaliacoesCliente {
-    justify-content: center;
-  }
-  .criacaoContaCliente h2 {
-    font-size: 2rem;
-  }
-}
-
+/* TABLETS (Até 768px) */
 @media (max-width: 768px) {
   .quadroGeralCliente {
     width: 100%;
-    margin: 15% 0 0 0;
+    margin: 5rem 0 0 0;
     border-radius: 0;
-    padding: 0 1rem; 
-    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .quadroPerfilCliente {
+    padding: 1rem;
+  }
+
+  .imagemPerfilCliente {
+    margin-top: -5rem;
+    margin-bottom: -3rem;
   }
 
   .imagemPerfilCliente img {
-    width: 12rem; 
+    width: 12rem;
     height: 12rem;
   }
-  .nomePerfilCliente {
+
+  .infosCliente h2 {
     font-size: 2rem;
-  }
-  .iconesRedesCliente {
-    justify-content: center;
+    margin: 2rem;
   }
 
-  .avaliacaoBoxCliente {
-    flex-grow: 1;
+  .infosCliente p {
+    font-size: 1.5rem;
   }
+
+  .estrelaCliente {
+    width: 1.5rem;
+  }
+
+  .TituloPerfilCliente {
+    font-size: 2.5rem;
+  }
+
+  .avaliacaoBoxCliente h2 {
+    font-size: 24px;
+  }
+
   .cardsCliente {
     gap: 20px;
   }
+
   .cardCliente {
-    width: 220px;
+    flex-basis: calc(50% - 20px);
+    width: auto;
+    height: 200px;
+  }
+
+  .cardCliente-numero {
+    font-size: 2.8rem;
+  }
+
+  .cardCliente-info {
+    font-size: 1.3rem;
   }
 
   .botoesCliente {
     flex-direction: column;
     gap: 1rem;
-    width: 80%;
-    max-width: 400px;
+    align-items: center;
+    padding: 0 2rem 2rem 2rem;
   }
-  .botoesCliente button {
+
+  .voltarCliente {
     width: 100%;
+    max-width: 400px;
+    font-size: 20px;
+  }
+
+  .criacaoContaCliente h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quadroGeralCliente {
+    padding: 1rem 0.5rem;
+    margin-top: 4rem;
+  }
+
+  .quadroPerfilCliente {
+    gap: 0.5rem;
+  }
+
+  .imagemPerfilCliente {
+    margin-top: -4rem;
+    margin-bottom: -2rem;
+    border-width: 4px;
+    
+  }
+
+  .imagemPerfilCliente img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .infosCliente h2 {
+    font-size: 1.8rem;
+    margin: 1rem;
+  }
+
+  .infosCliente p {
+    font-size: 1.3rem;
+  }
+
+  .botoesAcao {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .botaoEditar,
+  .botaoDeletar,
+  .botaoSalvar,
+  .botaoCancelar {
+    width: 100%;
+  }
+
+  .TituloPerfilCliente {
+    font-size: 2rem;
+  }
+
+  .avaliacoesCliente {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .avaliacaoBoxCliente {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .avaliacaoBoxCliente h2 {
+    font-size: 20px;
+  }
+
+  .cardsCliente {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cardCliente {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+    flex-basis: auto;
+  }
+
+  .cardCliente-numero {
+    font-size: 2.5rem;
+  }
+
+  .cardCliente-info {
+    font-size: 1.2rem;
+  }
+
+  .todasAvaliacoesCliente p {
+    font-size: 18px;
+  }
+
+  .voltarCliente {
+    padding: 10px 40px;
+    font-size: 18px;
   }
 
   .criacaoContaCliente h2 {
     font-size: 1.5rem;
   }
 }
-
-@media (max-width: 480px) {
-    .quadroGeralCliente{
-        padding: 0 0.5rem;
-        margin-top: 20%;
-    }
-
-    .imagemPerfilCliente {
-        top: -4rem;
-        margin-bottom: -4rem;
-    }
-
-    .imagemPerfilCliente img {
-        width: 10rem; 
-        height: 10rem; 
-    }
-
-    .nomePerfilCliente {
-        font-size: 1.8rem;
-    }
-
-    .TituloPerfilCliente{
-        font-size: 2.2rem;
-    }
-
-    .avaliacoesCliente{
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .avaliacaoBoxCliente{
-        width: 80%;
-        justify-content: center;
-    }
-    .avaliacaoBoxCliente h2{
-        font-size: 22px;
-    }
-
-    .cardsCliente{
-        flex-direction: column;
-        align-items: center;
-    }
-    .cardCliente{
-        width: 80%;
-        max-width: 300px;
-        height: auto;
-        padding: 20px;
-    }
-    .cardCliente-numero{
-        font-size: 2.5rem;
-    }
-
-    .todasAvaliacoesCliente p{
-        font-size: 20px;
-    }
-}
-

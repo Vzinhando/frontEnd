@@ -1,20 +1,6 @@
 {
   "usuarios": [
     {
-      "id": "9610",
-      "nome": "felipe",
-      "email": "felipe123@email.com",
-      "senha": "felipe123",
-      "cep": "23287835"
-    },
-    {
-      "id": "20a6",
-      "nome": "jose",
-      "email": "jose123@email.com",
-      "senha": "jose123",
-      "cep": "23287835"
-    },
-    {
       "id": "69ce",
       "nome": "Felipe",
       "email": "felipe12345@gmail.com",
@@ -23,7 +9,7 @@
     },
     {
       "id": "a039",
-      "nome": "jose",
+      "nome": "Jose",
       "email": "jose123@email.com",
       "senha": "jose123",
       "cep": "23287835"

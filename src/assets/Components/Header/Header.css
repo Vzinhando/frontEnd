@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .sobreHeader {
   text-decoration: none;
   color: white;
   font-size: 20px;
 }
+
 .sobreHeader:hover {
   color: #fd7708;
 }
+
 .containerHeader {
   background-color: #200c80;
   color: white;
@@ -31,7 +35,7 @@
   justify-content: center;
 }
 
-.imagemHeader{
+.imagemHeader {
   width: 70px;
   margin: 10px;
 }
@@ -49,7 +53,8 @@
   gap: 10px;
 }
 
-.botaoLoginHeader {
+.loginClickHeader {
+  all: unset;
   cursor: pointer;
   font-weight: 700;
   background-color: #ff7900;
@@ -60,10 +65,8 @@
   border-radius: 20px;
   transition: all 0.3s ease;
 }
-.loginClickHeader {
-  all: unset;
-}
-.botaoLoginHeader:hover {
+
+.loginClickHeader:hover {
   color: #200c80;
   transform: scale(0.95);
 }
@@ -72,12 +75,40 @@
   display: none;
 }
 
-.perfilLogado{
+.perfilLogado {
+  position: relative;
   display: flex;
   align-items: center;
-  flex-direction: row;
-  gap: 20px;
+  cursor: pointer;
+  gap: 1rem;
 }
+
+.menuPerfilHeader {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background-color: #ff7900;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  width: 6rem;
+}
+
+.perfilMenu {
+  all: unset;
+  flex-direction: row;
+  display: block;
+  padding: 12px 16px;
+  color: #200c80;
+  cursor: pointer;
+  border: solid 1px transparent;
+}
+
+.perfilMenuHeader:hover {
+  background-color: #f1f1f1;
+}
+
 .perfilLogado img {
   width: 3rem;
   height: 3rem;
@@ -85,12 +116,15 @@
   border: #ff7900 2px solid;
   background-color: white;
 }
+
 .perfilLogado span {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
   color: #ff7900;
+  order: -1;
 }
+
 .botaoSairLogado {
   background-color: #ff7900;
   color: #200c80;
