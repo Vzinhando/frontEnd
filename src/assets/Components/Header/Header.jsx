@@ -1,8 +1,19 @@
 import './Header.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import TradutorIdiomas from './TradutorIdiomas/TradutorIdiomas';
 
 function Header() {
+    const navigate = useNavigate();
+    const usuarioJSON = localStorage.getItem('usuarioLogado');
+
+    const usuario = usuarioJSON ? JSON.parse(usuarioJSON) : null;
+
+    const handleLogout = () => {
+        localStorage.removeItem('usuarioLogado');
+        navigate('/login');
+        window.location.reload();
+    };
+
     return (
         <section className="containerHeader">
             <div className="logoHeader">
@@ -19,12 +30,25 @@ function Header() {
             <div className="traducaoIdioma">
                 <TradutorIdiomas/>
             </div>
+            {usuario ? (
+                <div className='perfilLogado'>
+                    <img src={usuario.foto || '/img/Desenvolvedores/Rodrigues.svg'} 
+                    alt = {`Foto de ${usuario.nome}`}
+                    className='fotoPerfil'
+                    />
+                    <span>Olá, {usuario.nome.split(' ') [0]} </span>
+                    <button onClick={handleLogout} className='botaoSairLogado'>Sair</button>
+                </div>
+                
+            ):(
+
             <div className="usuarioHeader">
                 <a className="botaoLoginHeader"><NavLink to = "login" className={'loginClickHeader'}>Entrar</NavLink></a>
-                <a className="botaoCadastroHeader">Cadastro</a>
+                <a className="botaoCadastroHeader">Cadastro</a>   
             </div>
-        </section>
+            )}
 
+        </section>
     )
 }
 

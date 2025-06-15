@@ -100,10 +100,16 @@ input::placeholder {
   justify-content: center;
   align-items: center;
 }
+.mensagemLogin{
+  font-weight: 600;
+  font-style: normal;
+  color: #200C80;
+  margin-bottom: 1rem;
+}
 
 .botaoEntrarLogin {
-  text-decoration: none;
-  width: 100%;
+  all: unset;
+  width: 95%;
   cursor: pointer;
   font-weight: 700;
   background-color: #FF7900;
