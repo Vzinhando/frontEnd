@@ -42,7 +42,12 @@
   color: #200C80;
   margin-bottom: 0.5rem;
 }
-
+.mensagemCadastro{
+  font-weight: 600;
+  font-style: normal;
+  color: #200C80;
+  margin-bottom: 1rem;
+}
 .campoInput {
   width: 100%;
   padding: 1rem;
@@ -50,6 +55,10 @@
   border-radius: 20px;
   border: none;
   background-color: #f0c087;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(0, 0, 0,0.76);
 }
 
 .campoInput::placeholder {
@@ -90,8 +99,8 @@
 }
 
 .botaoEntrarCadastro {
-  text-decoration: none;
-  width: 100%;
+  all: unset;
+  width: 95%;
   cursor: pointer;
   text-align: center;
   padding: 1rem;
