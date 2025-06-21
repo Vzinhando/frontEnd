@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import "./PaginaPerfilCliente.css";
 import { useState, useEffect } from "react";
 
@@ -23,6 +23,47 @@ function PaginaPerfilCliente() {
       navigate('/login');
     }
   }, [navigate]);
+  
+  // <<< NOVO: Função para trocar a foto >>>
+  const handleFotoChange = (event) => {
+    const file = event.target.files[0];
+    if (!file) {
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+
+    reader.onloadend = async () => {
+      const base64String = reader.result;
+      try {
+        const response = await fetch(`http://localhost:3001/usuarios/${usuario.id}`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ foto: base64String }),
+        });
+
+        if (!response.ok) throw new Error("Falha ao atualizar a foto de perfil.");
+
+        const usuarioAtualizado = await response.json();
+        localStorage.setItem('usuarioLogado', JSON.stringify(usuarioAtualizado));
+
+        window.dispatchEvent(new Event('storageUpdate'));
+        
+        setUsuario(usuarioAtualizado);
+
+        alert("Foto de perfil atualizada com sucesso!");
+
+      } catch (error) {
+        console.error("Erro ao atualizar foto:", error);
+        alert(error.message);
+      }
+    };
+
+    reader.onerror = () => {
+      alert("Houve um erro ao tentar ler o arquivo da imagem.");
+    };
+  };
 
   const handleSalvar = async (event) => {
     event.preventDefault();
@@ -43,6 +84,8 @@ function PaginaPerfilCliente() {
       const usuarioAtualizado = await response.json();
 
       localStorage.setItem('usuarioLogado', JSON.stringify(usuarioAtualizado));
+      window.dispatchEvent(new Event('storageUpdate'));
+      
       setUsuario(usuarioAtualizado);
       setModoEdicao(false);
       alert("Perfil atualizado com sucesso!");
@@ -64,6 +107,8 @@ function PaginaPerfilCliente() {
 
         alert("Conta deletada com sucesso.");
         localStorage.removeItem('usuarioLogado');
+        window.dispatchEvent(new Event('storageUpdate'));
+        
         navigate('/');
 
       } catch (error) {
@@ -76,12 +121,24 @@ function PaginaPerfilCliente() {
   if (!usuario) {
     return <div>Carregando perfil...</div>;
   }
+
   return (
     <>
       <div className="quadroGeralCliente">
         <div className="quadroPerfilCliente">
           <div className="imagemPerfilCliente">
             <img src={usuario.foto || '/img/botaoGoogle.svg'} alt={`Foto de perfil de ${usuario.nome}`} />
+
+            <label htmlFor="upload-foto" className="botaoTrocarFoto">
+              Trocar Foto
+            </label>
+            <input
+              id="upload-foto"
+              type="file"
+              accept="image/png, image/jpeg"
+              style={{ display: 'none' }}
+              onChange={handleFotoChange}
+            />
           </div>
 
           {modoEdicao ? (
@@ -155,13 +212,10 @@ function PaginaPerfilCliente() {
         <div className="quadroCartoesCliente">
           <div className="cardsCliente">
             <div className="cardCliente">
-
               <h3 className="cardCliente-numero">8</h3>
               <h4 className="cardCliente-info">Comentários <br /> feitos</h4>
             </div>
-
             <div className="cardCliente">
-
               <h3 className="cardCliente-numero">12</h3>
               <h4 className="cardCliente-info">Serviços <br /> contratados</h4>
             </div>
@@ -235,7 +289,7 @@ function PaginaPerfilCliente() {
         </div>
 
         <div className="botoesCliente">
-          <button className="voltarCliente">Voltar</button>
+          <NavLink to = "/" className="voltarCliente">Voltar</NavLink>
         </div>
         <div className="criacaoContaCliente">
           <h2>Conta criada desde Fev - 2025</h2>

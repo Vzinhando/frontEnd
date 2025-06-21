@@ -9,6 +9,12 @@
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+.containerInformacoesPessoais h1 {
+  text-align: center;
+  color: #200c80;
+  font-size: 3rem;
+  margin-bottom: 20px;
+} 
 
 .Pai1 {
   display: flex;
@@ -21,7 +27,7 @@ main .LocalTipo {
   color: #200c80;
 }
 
-.round-checkbox {
+.roundCheckbox {
   appearance: none;
   -webkit-appearance: none;
   background-color: #fff;
@@ -35,12 +41,12 @@ main .LocalTipo {
   margin: 5px;
 }
 
-.round-checkbox:checked {
+.roundCheckbox:checked {
   background-color: #FF7900;
   border-color: #FF7900;
 }
 
-.round-checkbox:checked::after {
+.roundCheckbox:checked::after {
   content: '';
   position: absolute;
   top: 4px;

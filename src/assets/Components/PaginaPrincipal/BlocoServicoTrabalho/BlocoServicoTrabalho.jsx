@@ -13,7 +13,7 @@ function BlocoServicoTrabalho() {
                 <div className="blocoTrabalheLaranja">
                     <h2 className="trabalheTexto">Entre no Vizinhando e faça seu talento acontecer!</h2>
                     <img className="blocoImagemTrabalhePessoas" src="./img/Bloco_Servico_Trabalho/pessoas_comprando.svg" alt="imagem ilustrativa de pessoas comprando" />
-                    <NavLink to="/cadastro-prestador" className="botaoTrabalheLaranja">Trabalhe conosco! </NavLink>
+                    <NavLink to="/pre-cadastro-prestador" className="botaoTrabalheLaranja">Trabalhe conosco! </NavLink>
                 </div>
             </section>
         </>

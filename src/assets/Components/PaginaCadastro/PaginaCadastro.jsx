@@ -5,7 +5,6 @@ import { useState } from 'react';
 function PaginaCadastro() {
     const navigate = useNavigate();
 
-    // --- CORREÇÃO 1: Sintaxe do useState ---
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');

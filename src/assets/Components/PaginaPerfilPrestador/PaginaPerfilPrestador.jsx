@@ -6,7 +6,7 @@
         <div className="quadroGeralprestador">
           <div className="quadroPerfilPrestaodr">
             <div className="imagemPerfilPrestador">
-              <img src="/img/ImagemLaura/Julia.svg" alt="" />
+              <img src="/img/ImagemLaura/Julia.svg" alt="Imagem do prestador de serviço" />
             </div>
             <div className="infosClientePrestador">
               <div className="nomePerfilClientePrestador">

@@ -2,9 +2,8 @@ import "./InformacoesPessoais.css";
 import CampoDigitar from "./CampoDeDigitar/campoDigitar";
 
 function InformacoesPessoais() {
-  return (
+  return (  
     <>
-
       <main className="containerInformacoesPessoais">
         <h1 className="informacoesPessoais">Informações Pessoais</h1>
 
@@ -25,19 +24,19 @@ function InformacoesPessoais() {
             <label>
               <input type="radio"
               name="genero"
-              className="round-checkbox" />
+              className="roundCheckbox" />
               Masculino
             </label>
             <label>
               <input type="radio"
               name="genero"
-              className="round-checkbox" />
+              className="roundCheckbox" />
               Feminino
             </label>
             <label className="Outros">
               <input type="radio"
               name="genero"
-              className="round-checkbox" />
+              className="roundCheckbox" />
               Outros
             </label>
             </div>
@@ -64,13 +63,13 @@ function InformacoesPessoais() {
             <label>
               <input type="radio"
               name="local"
-              className="round-checkbox" />
+              className="roundCheckbox" />
               Residencial
             </label>
             <label className="comercial">
               <input type="radio"
               name="local"
-              className="round-checkbox" />
+              className="roundCheckbox" />
               Estabelecimento comercial
             </label>
             </div>

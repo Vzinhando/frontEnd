@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+
 import Header from "./assets/Components/Header/Header";
 import Footer from "./assets/Components/Footer/Footer";
 import PaginaLogin from "./assets/Components/PaginaLogin/PaginaLogin";
@@ -22,13 +24,29 @@ import PaginaPerfilCliente from "./assets/Components/PaginaPerfilCliente/PaginaP
 import InformacoesPessoais from "./assets/Components/InformacoesPessoais/InformacoesPesoais";
 
 function Router() {
+  const [usuarioLogado, setUsuarioLogado] = useState(() => {
+    const savedUser = localStorage.getItem('usuarioLogado');
+    return savedUser ? JSON.parse(savedUser) : null;
+  });
+
+  const handleUserUpdate = (userData) => {
+    if (!userData) {
+      localStorage.removeItem('usuarioLogado');
+      setUsuarioLogado(null);
+    } else {
+      localStorage.setItem('usuarioLogado', JSON.stringify(userData));
+      setUsuarioLogado(userData);
+    }
+  };
+
   return (
     <BrowserRouter>
-      <Header />
+      <Header usuario={usuarioLogado} onLogout={() => handleUserUpdate(null)} />
+      
       <Routes>
         <Route path="/" element={<PaginaPrincipal />} />
         <Route path="/termos" element={<Termos />} />
-        <Route path="/login" element={<PaginaLogin />} />
+        <Route path="/login" element={<PaginaLogin onLoginSuccess={handleUserUpdate} />} />
         <Route path="/cadastro" element={<PaginaCadastro />} />
         <Route path="/sobre" element={<PaginaSobre />} />
         <Route path="/pagina-pagamento" element={<FormaPagamento />} />
@@ -41,7 +59,10 @@ function Router() {
         <Route path="/pagamento-boleto" element={<PagamentoBoleto />} />
         <Route path="/confirmacao-pagamento" element={<ConfirmacaoPagamento />}/>
         <Route path="/pesquisar-servico" element={<BuscaPrestador />} />
-        <Route path="/perfil-cliente" element={<PaginaPerfilCliente />} />
+        <Route 
+          path="/perfil-cliente" 
+          element={<PaginaPerfilCliente usuario={usuarioLogado} onUserUpdate={handleUserUpdate} />} 
+        />
         <Route path="/pre-cadastro-prestador" element={<PaginaPreCadastro />} />
         <Route path="/pagina-servico" element={<PaginaServico />} />
         <Route path="/pagina-prestador" element={<PaginaPerfilPrestador />} />
@@ -50,12 +71,6 @@ function Router() {
       <Footer />
     </BrowserRouter>
   );
-}
-{
-  /*Caso algum className de algum componente estiver com nomes genericos
-       sem uma identificao ex: container ou texto, Por favor troque para um nome unico
-       ex.: containerNomeComponente ou textoNomeComponente
-       */
 }
 
 export default Router;

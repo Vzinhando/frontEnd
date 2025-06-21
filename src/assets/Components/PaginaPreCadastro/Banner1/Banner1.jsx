@@ -10,7 +10,7 @@ function Banner1() {
         </div>
         <div className="texto">
           <h1>Divulgue seu talento no seu bairro!</h1>
-          <NavLink className="buttonBanner1">Comece agora!</NavLink>
+          <NavLink className="buttonBanner1" to="/informacoes-pessoais">Comece agora!</NavLink>
         </div>
       </div>
     </>

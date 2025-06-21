@@ -41,7 +41,7 @@ function Header() {
             {usuario ? (
                 <div className='perfilLogado' onClick={abrirMenu}>
                     <NavLink className>
-                        <img src={usuario.foto || '/img/Desenvolvedores/Rodrigues.svg'}
+                        <img src={usuario.foto || '/img/botaoGoogle.svg'}
                             alt={`Foto de ${usuario.nome}`}
                             className='fotoPerfilHeader'
                         />
