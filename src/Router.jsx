@@ -65,7 +65,7 @@ function Router() {
         />
         <Route path="/pre-cadastro-prestador" element={<PaginaPreCadastro />} />
         <Route path="/pagina-servico" element={<PaginaServico />} />
-        <Route path="/pagina-prestador" element={<PaginaPerfilPrestador />} />
+        <Route path="/perfil-prestador" element={<PaginaPerfilPrestador />} />
         <Route path="/informacoes-pessoais" element={<InformacoesPessoais />} />
       </Routes>
       <Footer />
