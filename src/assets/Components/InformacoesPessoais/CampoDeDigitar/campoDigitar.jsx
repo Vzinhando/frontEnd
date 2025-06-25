@@ -1,5 +1,7 @@
 import './campoDigitar.css';
 import { IMaskInput } from 'react-imask';
+// Se der erro ao executar o codigo na linha 2 abra o terminal e baixe usando esse comando
+// npm install react-input-mask@latest
 
 function CampoDigitar(props) {
   const { Nome, name, tipo, placeholder, value, onChange, mask, onBlur } = props;
