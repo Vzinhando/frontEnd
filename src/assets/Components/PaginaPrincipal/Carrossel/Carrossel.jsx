@@ -3,31 +3,31 @@ import './Carrossel.css';
 
 const slides = [
     {
-        imagem: '/imgCarrossel/jardineiro.jpg',
+        imagem: '/imgCarrossel/jardineiro.svg',
         titulo: 'Contrate um jardineiro',
         texto: 'Aqui você pode encontrar o profissional que precisa',
         corBotao: '#fd7708',
     },
     {
-        imagem: '/imgCarrossel/personal.jpg',
+        imagem: '/imgCarrossel/personal.svg',
         titulo: 'Contrate um Personal Trainer',
         texto: 'Profissionais Qualificados para Atender Suas Necessidades',
         corBotao: '#200c80',
     },
     {
-        imagem: '/imgCarrossel/tatuador.jpg',
+        imagem: '/imgCarrossel/tatuador.svg',
         titulo: 'Contrate um tatuador',
         texto: 'Serviços Especializados ao Seu Alcance',
         corBotao: '#3d50e0',
     },
     {
-        imagem: '/imgCarrossel/fotografo.jpg',
+        imagem: '/imgCarrossel/fotografo.svg',
         titulo: 'Contrate um fotografo',
         texto: 'Descubra e Contrate Especialistas de Confiança',
         corBotao: '#7D43EB',
     },
     {
-        imagem: '/imgCarrossel/cabelereiro.jpg',
+        imagem: '/imgCarrossel/cabelereiro.svg',
         titulo: 'Contrate um cabeleireiro',
         texto: 'Transforme Seu Dia com Profissionais de Confiança',
         corBotao: '#fd7708',
