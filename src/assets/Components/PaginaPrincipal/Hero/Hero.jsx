@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'; // 
+import { useState, useEffect } from 'react';
 import './Hero.css';
 import search from "../../../../../public/img/search.svg"
 import { NavLink } from 'react-router-dom';

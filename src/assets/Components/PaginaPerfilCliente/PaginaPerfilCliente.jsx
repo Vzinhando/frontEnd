@@ -125,15 +125,14 @@ function PaginaPerfilCliente() {
       <div className="quadroGeralCliente">
         <div className="quadroPerfilCliente">
           <div className="imagemPerfilCliente">
-            <img src={usuario.foto || '/img/botaoGoogle.svg'} alt={`Foto de perfil de ${usuario.nome}`} />
-
+            <img src={usuario.foto || '/img/Desenvolvedores/Rodrigues.svg'} alt={`Foto de perfil de ${usuario.nome}`} />
             <label htmlFor="upload-foto" className="botaoTrocarFoto">
               Trocar Foto
             </label>
             <input
               id="upload-foto"
               type="file"
-              accept="image/png, image/jpeg"
+              accept="image/png, image/jpeg"  
               style={{ display: 'none' }}
               onChange={handleFotoChange}
             />

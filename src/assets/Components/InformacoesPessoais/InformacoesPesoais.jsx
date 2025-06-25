@@ -18,7 +18,7 @@ function InformacoesPessoais() {
     numero: '',
     bairro: '',
     tipoLocal: '',
-    imagemPerfil: '/img/avatar_placeholder.svg', 
+    imagemPerfil: '/img/Desenvolvedores/Rodrigues.svg',
     servicosRealizados: 0,
     dataCriacaoConta: new Date().toISOString(),
     descricao: 'Prestador de serviços recém-cadastrado.',
@@ -26,7 +26,7 @@ function InformacoesPessoais() {
     avaliacoesGerais: { servico: 0, atendimento: 0, agilidade: 0 },
     comentarios: []
   });
-  
+
   const [mensagem, setMensagem] = useState('');
 
   const handleChange = (evento) => {
@@ -63,7 +63,7 @@ function InformacoesPessoais() {
   const handleSubmit = async (evento) => {
     evento.preventDefault();
     setMensagem('Enviando dados...');
-    
+
     try {
       const response = await fetch('http://localhost:3001/prestadores', {
         method: 'POST',
@@ -72,18 +72,15 @@ function InformacoesPessoais() {
       });
 
       if (response.ok) {
-        const novoPrestador = await response.json(); 
-
+        const novoPrestador = await response.json();
         setMensagem('Cadastro realizado com sucesso! Redirecionando para o seu perfil...');
-
         setTimeout(() => {
-          navigate(`/pagina-prestador/${novoPrestador.id}`);
+          navigate(`/perfil/${novoPrestador.id}`);
         }, 2000);
-
       } else {
         setMensagem('Erro ao realizar o cadastro.');
       }
-    } catch(error) {
+    } catch (error) {
       setMensagem('Falha na comunicação com o servidor.');
     }
   };
@@ -93,10 +90,20 @@ function InformacoesPessoais() {
       <h1 className="informacoesPessoais">Informações Pessoais</h1>
       <div className="Pai1">
         <section className="cartao1">
-          <CampoDigitar Nome="Nome" tipo="text" name="nome" value={formData.nome} onChange={handleChange} />
-          <CampoDigitar Nome="Telefone" name="telefone" placeholder="(99) 91234-5678" value={formData.telefone} onChange={handleChange} />
-          <CampoDigitar Nome="Email" tipo="email" name="email" value={formData.email} onChange={handleChange} />
-          <CampoDigitar Nome="Data de nascimento" tipo="date" name="dataNascimento" value={formData.dataNascimento} onChange={handleChange} />
+          <CampoDigitar Nome="Nome" type="text" name="nome" value={formData.nome} onChange={handleChange} />
+          
+          <CampoDigitar
+            Nome="Telefone"
+            name="telefone"
+            placeholder="(99) 91234-5678"
+            value={formData.telefone}
+            onChange={handleChange}
+            type="tel"
+            maxLength="15" 
+          />
+          
+          <CampoDigitar Nome="Email" type="email" name="email" value={formData.email} onChange={handleChange} />
+          <CampoDigitar Nome="Data de nascimento" type="date" name="dataNascimento" value={formData.dataNascimento} onChange={handleChange} />
           <h2 className="H2Genero">Gênero</h2>
           <div className="Genero">
             <label><input type="radio" name="genero" value="Masculino" checked={formData.genero === 'Masculino'} onChange={handleChange} className="roundCheckbox" /> Masculino</label>
@@ -107,12 +114,21 @@ function InformacoesPessoais() {
 
         <section className="cartao2">
           <div className="Inputs">
-            <CampoDigitar Nome="CEP" name="cep" placeholder="00000-000" value={formData.cep} onChange={handleChange} onBlur={handleCepBlur} />
-            <CampoDigitar Nome="Cidade" tipo="text" name="cidade" value={formData.cidade} onChange={handleChange} />
-            <CampoDigitar Nome="Rua" tipo="text" name="rua" value={formData.rua} onChange={handleChange} />
+            <CampoDigitar
+              Nome="CEP"
+              name="cep"
+              placeholder="00000-000"
+              value={formData.cep}
+              onChange={handleChange}
+              onBlur={handleCepBlur}
+              type="tel"
+              maxLength="9"
+            />
+            <CampoDigitar Nome="Cidade" type="text" name="cidade" value={formData.cidade} onChange={handleChange} />
+            <CampoDigitar Nome="Rua" type="text" name="rua" value={formData.rua} onChange={handleChange} />
             <div className="AoLado">
-              <div className="Numero"><CampoDigitar Nome="Número" tipo="text" name="numero" value={formData.numero} onChange={handleChange} /></div>
-              <div className="Bairro"><CampoDigitar Nome="Bairro" tipo="text" name="bairro" value={formData.bairro} onChange={handleChange} /></div>
+              <div className="Numero"><CampoDigitar Nome="Número" type="text" name="numero" value={formData.numero} onChange={handleChange} /></div>
+              <div className="Bairro"><CampoDigitar Nome="Bairro" type="text" name="bairro" value={formData.bairro} onChange={handleChange} /></div>
             </div>
           </div>
           <h2 className="LocalTipo">Tipo de local</h2>
@@ -124,7 +140,7 @@ function InformacoesPessoais() {
       </div>
 
       {mensagem && <p className="mensagem-status">{mensagem}</p>}
-      
+
       <div className="Pai2">
         <button type="submit" className="continuar">Cadastrar</button>
       </div>
