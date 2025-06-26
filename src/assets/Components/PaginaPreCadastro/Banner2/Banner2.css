@@ -1,156 +1,117 @@
-.informacoes {
+.informacoesBanner {
   width: 90%;
-  max-width: 1200px;
-  display: flex;
-  margin: 40px auto;
+  max-width: 1000px;
+  margin: 2.5rem auto; 
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background-color: #fde0bd;
+  display: flex;
+  flex-direction: column;
 }
 
-.bloco1 {
+.bloco1Banner {
   background-color: #f26c00;
   color: #1a1363;
-  flex: 1;
-  padding: 60px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 1.875rem 1.25rem; 
   text-align: center;
-  min-height: 400px;
 }
 
-.bloco1 h2 {
-  font-size: 75px;
+.bloco1Banner h2 {
+  font-size: 2rem;
   font-weight: 600;
+  line-height: 1.3;
 }
 
-.blocos {
-  background-color: transparent; 
-  flex: 1;
-  padding: 40px;
+.blocosBanner {
+  padding: 1.875rem 0.9375rem; 
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 1.875rem; 
   align-items: center;
-  justify-content: center; 
 }
 
-.item1,
-.item2 {
+.itemBanner {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 15px; 
+  gap: 0.9375rem; 
+  max-width: 300px;
 }
 
-.icone1, 
-.icone2 {
+.iconeBanner {
   background-color: #1a1363;
   border-radius: 50%;
-  padding: 20px;
+  padding: 0.9375rem; 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.icone1 img, 
-.icone2 img {
-  width: 70px;
-  height: 70px;
+.iconeBanner img {
+  width: 45px;
+  height: 45px;
 }
 
-.blocos p {
+.blocosBanner p {
   color: #200c80;
-  font-size: 24px;
+  font-size: 1.1rem;
   font-weight: 600;
+  line-height: 1.4;
   text-shadow: 4px 4px 4px rgba(255, 117, 8, 0.5);
 }
 
-
-@media (max-width: 1024px) {
-  .bloco1 h2 {
-    font-size: 2rem;
+@media (min-width: 1024px) {
+  .bloco1Banner h2 {
+    font-size: 3.2rem;
   }
 
-  .blocos p {
-    font-size: 1.5rem;
+  .blocosBanner p {
+    font-size: 1.3rem;
+  }
+
+  .iconeBanner img {
+    width: 70px;
+    height: 70px;
   }
 }
 
-@media (max-width: 768px) {
-  .informacoes {
-    flex-direction: column; 
-    width: 90%;
+@media (min-width: 768px) {
+  .informacoesBanner {
+    flex-direction: row;
   }
 
-  .bloco1 {
-    width: 100%;
-    min-height: auto;
-    padding: 40px;
-  }
-
-  .bloco1 h2 {
-    font-size: 2rem;
-  }
-
-  .blocos {
-    flex-direction: row; 
-    width: 100%;
-    padding: 30px;
-    justify-content: space-around;
-  }
-
-  .icone1 img,
-  .icone2 img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .blocos p {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .informacoes {
-    width: 90%;
+  .bloco1Banner,
+  .blocosBanner {
+    flex: 1;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .bloco1 {
-    padding: 30px 20px;
+  .bloco1Banner {
+    padding: 3.75rem 2.5rem;
   }
 
-  .bloco1 h2 {
-    font-size: 1.5rem;
-  }
-  
-  .blocos {
-    flex-direction: column; 
-    gap: 30px;
-    padding: 25px 15px;
+  .bloco1Banner h2 {
+    font-size: 2.5rem;
   }
 
-  .item1,
-  .item2 {
-    gap: 10px;
+  .blocosBanner {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2.5rem;
   }
 
-  .icone1,
-  .icone2 {
-    padding: 15px;
-  }
-  
-  .icone1 img,
-  .icone2 img {
-    width: 40px;
-    height: 40px;
+  .blocosBanner p {
+    font-size: 1.25rem;
   }
 
-  .blocos p {
-    font-size: 1rem;
+  .iconeBanner img {
+    width: 60px;
+    height: 60px;
   }
 }

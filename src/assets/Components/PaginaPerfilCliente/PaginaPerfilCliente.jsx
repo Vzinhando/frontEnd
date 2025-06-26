@@ -24,7 +24,6 @@ function PaginaPerfilCliente() {
     }
   }, [navigate]);
   
-  // <<< NOVO: Função para trocar a foto >>>
   const handleFotoChange = (event) => {
     const file = event.target.files[0];
     if (!file) {
@@ -56,7 +55,6 @@ function PaginaPerfilCliente() {
 
       } catch (error) {
         console.error("Erro ao atualizar foto:", error);
-        alert(error.message);
       }
     };
 
