@@ -14,6 +14,65 @@
     <meta property="og:site_name" content="Vizinhando"/>
     <title>Vizinhando</title>
     <link rel="icon" href="Vizinhando.ico" type="icon" />
+    <style>
+  /* Botão flutuante centralizado à esquerda */
+  #botao-acessibilidade {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #ff7900;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 9999;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Painel lateral centralizado */
+  #painel-acessibilidade {
+    position: fixed;
+    top: 50%;
+    left: 60px; /* distância do botão */
+    transform: translateY(-50%);
+    background: #fff;
+    border: 2px solid #ff7900;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+    max-width: 220px;
+  }
+
+  #painel-acessibilidade h4 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #007bff;
+  }
+
+  #painel-acessibilidade button {
+    display: block;
+    width: 100%;
+    margin: 6px 0;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    background-color: #ff7900;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #painel-acessibilidade button:hover {
+    background-color: #0056b3;
+  }
+
+  .oculto {
+    display: none;
+  }
+</style>
   </head>
   <body>
     <div vw class="enabled">
@@ -22,12 +81,76 @@
       <div class="vw-plugin-top-wrapper"></div>
     </div>
   </div>
+  <!-- libras -->
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
+
+  <!-- Botão com ícone para abrir a barra -->
+<div id="botao-acessibilidade" onclick="toggleAcessibilidade()">
+  ☰
+</div>
+
+<!-- Barra de ferramentas de acessibilidade -->
+<div id="painel-acessibilidade" class="oculto">
+  <h4>Ferramentas de Acessibilidade</h4>
+  <button onclick="acessibilidade.aumentarFonte()">A+</button>
+  <button onclick="acessibilidade.diminuirFonte()">A-</button>
+  <button onclick="acessibilidade.grayscale()">Escala de Cinza</button>
+  <button onclick="acessibilidade.contraste()">Alto Contraste</button>
+  <button onclick="acessibilidade.negativo()">Contraste Negativo</button>
+  <button onclick="acessibilidade.fonteLegivel()">Fonte Legível</button>
+  <button onclick="acessibilidade.zoom()">Zoom</button>
+  <button onclick="acessibilidade.resetar()">Redefinir</button>
+</div>
+
+<script>
+  const acessibilidade = {
+    escala: 1,
+    aumentarFonte() {
+      this.escala += 0.1;
+      document.body.style.transform = `scale(${this.escala})`;
+      document.body.style.transformOrigin = 'top left';
+    },
+    diminuirFonte() {
+      this.escala = Math.max(0.5, this.escala - 0.1);
+      document.body.style.transform = `scale(${this.escala})`;
+    },
+    grayscale() {
+      document.body.style.filter = 'grayscale(100%)';
+    },
+    contraste() {
+      document.body.style.filter = 'contrast(150%)';
+    },
+    negativo() {
+      document.body.style.filter = 'invert(100%)';
+    },
+    fonteLegivel() {
+      document.body.style.fontFamily = '"Arial", sans-serif';
+    },
+    zoom() {
+      document.body.style.zoom = '120%';
+    },
+    resetar() {
+      document.body.style = '';
+      this.escala = 1;
+    }
+  };
+
+  function toggleAcessibilidade() {
+    const painel = document.getElementById('painel-acessibilidade');
+    painel.classList.toggle('oculto');
+  }
+</script>
+ 
+<!-- //// -->
+  
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    
+     <!-- agente ia -->
    <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.init({
