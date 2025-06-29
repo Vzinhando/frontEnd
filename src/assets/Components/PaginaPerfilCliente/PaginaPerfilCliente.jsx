@@ -125,7 +125,7 @@ function PaginaPerfilCliente() {
       <div className="quadroGeralCliente">
         <div className="quadroPerfilCliente">
           <div className="imagemPerfilCliente">
-            <img src={usuario.foto || '/img/botaoGoogle.svg'} alt={`Foto de perfil de ${usuario.nome}`} />
+            <img src={usuario.foto || '/img/semUsuario.svg'} alt={`Foto de perfil de ${usuario.nome}`} />
 
             <label htmlFor="upload-foto" className="botaoTrocarFoto">
               Trocar Foto
@@ -159,9 +159,9 @@ function PaginaPerfilCliente() {
                   onChange={(e) => setCepEditado(e.target.value)}
                 />
               </div>
-              <div className="botoesEdicaoCliente">
-                <button type="submit" className="botaoSalvar">Salvar</button>
-                <button type="button" onClick={() => setModoEdicao(false)} className="botaoCancelar">Cancelar</button>
+              <div className="botoesAcao"> 
+                <button type="submit" className="btn btn-acao-primaria">Salvar</button> 
+                <button type="button" onClick={() => setModoEdicao(false)} className="btn btn-cinza">Cancelar</button>
               </div>
             </form>
           ) : (
@@ -185,8 +185,8 @@ function PaginaPerfilCliente() {
                 <img src="/img/SocialMedia/icon_tiktok.svg" className="icon" alt="Ícone do TikTok" />
               </div>
               <div className="botoesAcao">
-                {!modoEdicao && <button onClick={() => setModoEdicao(true)} className="botaoEditar">Editar Perfil</button>}
-                <button onClick={handleDeletar} className="botaoDeletar">Deletar Conta</button>
+                <button onClick={() => setModoEdicao(true)} className="btn btn-principal">Editar Perfil</button> {/* ATUALIZADO */}
+                <button onClick={handleDeletar} className="btn btn-perigo">Deletar Conta</button> {/* ATUALIZADO */}
               </div>
             </div>
           )}
@@ -194,20 +194,15 @@ function PaginaPerfilCliente() {
 
         <div className="conteudoPerfilCliente">
           <h1 className="TituloPerfilCliente">Preferências</h1>
-          <div className="avaliacoesCliente">
-            <div className="avaliacaoBoxCliente">
-              <h2>Beleza</h2>
-            </div>
-            <div className="avaliacaoBoxCliente">
-              <h2>Manutenção</h2>
-            </div>
-            <div className="avaliacaoBoxCliente">
-              <h2>Limpeza</h2>
-            </div>
+          {/* ATUALIZADO: Estrutura da seção de preferências para usar botões */}
+          <div className="preferenciasCliente">
+            <button type="button" className="btn btn-outline">Beleza</button>
+            <button type="button" className="btn btn-outline">Manutenção</button>
+            <button type="button" className="btn btn-outline">Limpeza</button>
           </div>
         </div>
 
-        <div className="quadroCartoesCliente">
+        <div className="conteudoPerfilCliente"> {/* ATUALIZADO: Usando a classe container padrão */}
           <div className="cardsCliente">
             <div className="cardCliente">
               <h3 className="cardCliente-numero">8</h3>
@@ -226,12 +221,11 @@ function PaginaPerfilCliente() {
 
         <div className="containerAvaliacoesCliente">
           <div className="quadroAvaliacoesCliente">
-            <div className="quadradoCliente"></div>
             <p>
               Serviço excelente!
               <br /> Contrataria novamente!
             </p>
-            <div>
+            <div className="estrelasAvaliacao">
               <img src="/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" alt="Estrela de avaliação" />
               <img src="/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" alt="Estrela de avaliação" />
               <img src="/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" alt="Estrela de avaliação" />
@@ -240,13 +234,12 @@ function PaginaPerfilCliente() {
             </div>
           </div>
           <div className="quadroAvaliacoesCliente">
-            <div className="quadradoCliente"></div>
             <p>
               Trabalho impecável!
               <br />
               Super recomendo.
             </p>
-            <div>
+            <div className="estrelasAvaliacao">
               <img src="/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" alt="Estrela de avaliação" />
               <img src="/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" alt="Estrela de avaliação" />
               <img src="/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" alt="Estrela de avaliação" />
@@ -255,13 +248,12 @@ function PaginaPerfilCliente() {
             </div>
           </div>
           <div className="quadroAvaliacoesCliente">
-            <div className="quadradoCliente"></div>
             <p>
               Ótima profissional!
               <br />
               Muito atenciosa.
             </p>
-            <div>
+            <div className="estrelasAvaliacao">
               <img src="/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" alt="Estrela de avaliação" />
               <img src="/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" alt="Estrela de avaliação" />
               <img src="/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" alt="Estrela de avaliação" />
@@ -270,13 +262,12 @@ function PaginaPerfilCliente() {
             </div>
           </div>
           <div className="quadroAvaliacoesCliente">
-            <div className="quadradoCliente"></div>
             <p>
               Recomendo fortemente.
               <br />
               Resultado incrível.
             </p>
-            <div>
+            <div className="estrelasAvaliacao">
               <img src="/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" alt="Estrela de avaliação" />
               <img src="/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" alt="Estrela de avaliação" />
               <img src="/img/estrela_clara.svg" className="estrelaAvaliacaoCliente" alt="Estrela de avaliação" />
@@ -287,7 +278,7 @@ function PaginaPerfilCliente() {
         </div>
 
         <div className="botoesCliente">
-          <NavLink to = "/" className="voltarCliente">Voltar</NavLink>
+          <NavLink to = "/" className="btn btn-outline">Voltar</NavLink> {/* ATUALIZADO */}
         </div>
         <div className="criacaoContaCliente">
           <h2>Conta criada desde Fev - 2025</h2>

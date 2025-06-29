@@ -139,4 +139,11 @@ h1 {
  .containerPessoal .botaoPlano:hover {
   background-color: #e28736;
 }
+@media (max-width: 768px) {
+  .containerGratis,
+  .containerPessoal,
+  .containerEmpresarial {
+    margin-bottom: 20px;
+  }
+}
 
