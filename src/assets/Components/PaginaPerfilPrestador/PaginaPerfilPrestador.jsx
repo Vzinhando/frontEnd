@@ -40,7 +40,6 @@ const mockPrestador = {
       nota: 5,
       texto: "Muito profissional e atenciosa aos detalhes.",
     },
-    // --- NOVOS COMENTÁRIOS ADICIONADOS ---
     {
       id: 104,
       autor: "Lucas M.",
@@ -102,7 +101,7 @@ function PaginaPerfilPrestador() {
               <div className="iconesRedesPerfilPrestador">
                 <a href={prestador.redesSociais.instagram} target="_blank" rel="noopener noreferrer"><img src="/img/ImagemLaura/instagram.svg" className="iconPerfilPrestador" /></a>
                 <a href={prestador.redesSociais.facebook} target="_blank" rel="noopener noreferrer"><img src="/img/ImagemLaura/facebook.svg" className="iconPerfilPrestador" /></a>
-                <a href={prestador.redesSociais.tiktok} target="_blank" rel="noopener noreferrer"><img src="/img/SocialMedia/icon_tiktok.svg" className="iconPerfilPrestador" /></a>
+                <a href={prestador.redesSociais.tiktok} target="_blank" rel="noopener noreferrer"><img src="/img/ImagemLaura/tiktok.svg" className="iconPerfilPrestador" /></a>
               </div>
             </div>
           </div>

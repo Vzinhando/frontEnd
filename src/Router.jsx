@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, lazy, Suspense } from "react";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ScrollNoTopo from "./assets/Components/ScrollNoTopo/ScrollNoTopo";
 
 // Componentes carregados estaticamente (necessários em todas as páginas)
 import Header from "./assets/Components/Header/Header";
@@ -53,6 +54,7 @@ function Router() {
 
   return (
     <BrowserRouter>
+    <ScrollNoTopo/>
       <Header usuario={usuarioLogado} onLogout={() => handleUserUpdate(null)} />
       
       {/* PASSO 3: Envolver as rotas com Suspense */}
