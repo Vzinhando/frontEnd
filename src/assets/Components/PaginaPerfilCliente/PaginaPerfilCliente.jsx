@@ -36,7 +36,7 @@ function PaginaPerfilCliente() {
     reader.onloadend = async () => {
       const base64String = reader.result;
       try {
-        const response = await fetch(`http://localhost:3001/usuarios/${usuario.id}`, {
+        const response = await fetch(`vizinhando-api.up.railway.app/Usuarios/${usuario.id}`, {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ foto: base64String }),
@@ -71,7 +71,7 @@ function PaginaPerfilCliente() {
     };
 
     try {
-      const response = await fetch(`http://localhost:3001/usuarios/${usuario.id}`, {
+      const response = await fetch(`vizinhando-api.up.railway.app/Usuarios${usuario.id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dadosAtualizados),
@@ -97,7 +97,7 @@ function PaginaPerfilCliente() {
   const handleDeletar = async () => {
     if (window.confirm("Você tem certeza que deseja deletar a sua conta? Esta ação é irreversível!")) {
       try {
-        const response = await fetch(`http://localhost:3001/usuarios/${usuario.id}`, {
+        const response = await fetch(`vizinhando-api.up.railway.app/Usuarios/${usuario.id}`, {
           method: 'DELETE',
         });
 
@@ -185,8 +185,8 @@ function PaginaPerfilCliente() {
                 <img src="/img/SocialMedia/icon_tiktok.svg" className="icon" alt="Ícone do TikTok" />
               </div>
               <div className="botoesAcao">
-                <button onClick={() => setModoEdicao(true)} className="btn btn-principal">Editar Perfil</button> {/* ATUALIZADO */}
-                <button onClick={handleDeletar} className="btn btn-perigo">Deletar Conta</button> {/* ATUALIZADO */}
+                <button onClick={() => setModoEdicao(true)} className="btn btn-principal">Editar Perfil</button> 
+                <button onClick={handleDeletar} className="btn btn-perigo">Deletar Conta</button>
               </div>
             </div>
           )}
@@ -194,7 +194,6 @@ function PaginaPerfilCliente() {
 
         <div className="conteudoPerfilCliente">
           <h1 className="TituloPerfilCliente">Preferências</h1>
-          {/* ATUALIZADO: Estrutura da seção de preferências para usar botões */}
           <div className="preferenciasCliente">
             <button type="button" className="btn btn-outline">Beleza</button>
             <button type="button" className="btn btn-outline">Manutenção</button>
@@ -202,7 +201,7 @@ function PaginaPerfilCliente() {
           </div>
         </div>
 
-        <div className="conteudoPerfilCliente"> {/* ATUALIZADO: Usando a classe container padrão */}
+        <div className="conteudoPerfilCliente">
           <div className="cardsCliente">
             <div className="cardCliente">
               <h3 className="cardCliente-numero">8</h3>
@@ -278,7 +277,7 @@ function PaginaPerfilCliente() {
         </div>
 
         <div className="botoesCliente">
-          <NavLink to = "/" className="btn btn-outline">Voltar</NavLink> {/* ATUALIZADO */}
+          <NavLink to = "/" className="btn btn-outline">Voltar</NavLink>
         </div>
         <div className="criacaoContaCliente">
           <h2>Conta criada desde Fev - 2025</h2>
