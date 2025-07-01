@@ -17,61 +17,61 @@
     <style>
       
   #botao-acessibilidade {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    background: #ff7900;
-    color: white;
-    padding: 12px 16px;
-    border-radius: 0 8px 8px 0;
-    cursor: pointer;
-    font-size: 20px;
-    z-index: 9999;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  }
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #ff7900;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 9999;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
 
-  
-  #painel-acessibilidade {
-    position: fixed;
-    top: 50%;
-    left: 60px; 
-    transform: translateY(-50%);
-    background: #fff;
-    border: 2px solid #ff7900;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    z-index: 9999;
-    max-width: 220px;
-  }
+#painel-acessibilidade {
+  position: fixed;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 2px solid #ff7900;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+  max-width: 220px;
+}
 
-  #painel-acessibilidade h4 {
-    margin-top: 0;
-    font-size: 16px;
-    color: #007bff;
-  }
+#painel-acessibilidade h4 {
+  margin-top: 0;
+  font-size: 16px;
+  color: #007bff;
+}
 
-  #painel-acessibilidade button {
-    display: block;
-    width: 100%;
-    margin: 6px 0;
-    padding: 8px;
-    font-size: 14px;
-    border: none;
-    background-color: #ff7900;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+#painel-acessibilidade button {
+  display: block;
+  width: 100%;
+  margin: 6px 0;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  background-color: #ff7900;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  #painel-acessibilidade button:hover {
-    background-color: #0056b3;
-  }
+#painel-acessibilidade button:hover {
+  background-color: #0056b3;
+}
 
-  .oculto {
-    display: none;
-  }
+.oculto {
+  display: none;
+}
+
 </style>
   </head>
   <body>
@@ -86,6 +86,13 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
+
+  <!-- Início do conteúdo que será afetado pela acessibilidade -->
+<div id="site-conteudo">
+  <script type="module" src="/src/main.jsx"></script>
+  <div id="root"></div>
+</div>
+
 
   <!-- Botão com ícone para abrir a barra -->
 <div id="botao-acessibilidade" onclick="toggleAcessibilidade()">
@@ -110,30 +117,33 @@
     escala: 1,
     aumentarFonte() {
       this.escala += 0.1;
-      document.body.style.transform = `scale(${this.escala})`;
-      document.body.style.transformOrigin = 'top left';
+      const el = document.getElementById('site-conteudo');
+      el.style.transform = `scale(${this.escala})`;
+      el.style.transformOrigin = 'top left';
     },
     diminuirFonte() {
       this.escala = Math.max(0.5, this.escala - 0.1);
-      document.body.style.transform = `scale(${this.escala})`;
+      const el = document.getElementById('site-conteudo');
+      el.style.transform = `scale(${this.escala})`;
     },
     grayscale() {
-      document.body.style.filter = 'grayscale(100%)';
+      document.getElementById('site-conteudo').style.filter = 'grayscale(100%)';
     },
     contraste() {
-      document.body.style.filter = 'contrast(150%)';
+      document.getElementById('site-conteudo').style.filter = 'contrast(150%)';
     },
     negativo() {
-      document.body.style.filter = 'invert(100%)';
+      document.getElementById('site-conteudo').style.filter = 'invert(100%)';
     },
     fonteLegivel() {
-      document.body.style.fontFamily = '"Arial", sans-serif';
+      document.getElementById('site-conteudo').style.fontFamily = '"Arial", sans-serif';
     },
     zoom() {
-      document.body.style.zoom = '120%';
+      document.getElementById('site-conteudo').style.zoom = '120%';
     },
     resetar() {
-      document.body.style = '';
+      const el = document.getElementById('site-conteudo');
+      el.removeAttribute('style');
       this.escala = 1;
     }
   };
@@ -146,8 +156,8 @@
  
 <!-- //// -->
   
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script> -->
 
     
      <!-- agente ia -->
