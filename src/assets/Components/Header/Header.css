@@ -134,7 +134,7 @@
   transition: all 0.3s ease;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .containerHeader {
     display: flex;
     flex-direction: column;
@@ -172,31 +172,5 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .containerHeader {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: left;
-  }
-
-  .logoHeader {
-    margin-bottom: 0;
-  }
-
-  .menuHeader,
-  .usuarioHeader {
-    margin: 0;
-  }
-
-  .menuHeader {
-    order: 2;
-  }
-
-  .usuarioHeader {
-    order: 3;
   }
 }
