@@ -1,5 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, lazy, Suspense } from "react";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 // Componentes carregados estaticamente (necessários em todas as páginas)
 import Header from "./assets/Components/Header/Header";
 import Footer from "./assets/Components/Footer/Footer";
@@ -82,6 +85,7 @@ function Router() {
       </Suspense>
       
       <Footer />
+      <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} />
     </BrowserRouter>
   );
 }
