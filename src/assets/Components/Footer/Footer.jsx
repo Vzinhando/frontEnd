@@ -33,9 +33,9 @@ function Footer() {
         </section>
 
         <section className='redeSocialRodape'>
-          <a href="https://www.instagram.com/vzinhando/"><img src="./img/SocialMedia/icon_instagram.svg" alt="instagram" width="50px" /></a>
-          <a href="https://github.com/Vzinhando"><img src="./img/SocialMedia/icon_github.svg" alt="github" width="50px" /></a>
-          <a href="https://www.linkedin.com/company/vizinhando-plataforma/"><img src="./img/SocialMedia/icon_linkedin.svg" alt="linkedin" width="50px" /></a>
+          <a target='_blank' href="https://www.instagram.com/vzinhando/"><img src="./img/SocialMedia/icon_instagram.svg" alt="instagram" width="50px" /></a>
+          <a target='_blank' href="https://github.com/Vzinhando"><img src="./img/SocialMedia/icon_github.svg" alt="github" width="50px" /></a>
+          <a target='_blank' href="https://www.linkedin.com/company/vizinhando-plataforma/"><img src="./img/SocialMedia/icon_linkedin.svg" alt="linkedin" width="50px" /></a>
         </section>
         <p className="footerCopyright">Vizinhando © 2025 | Todos os direitos reservados.</p>
       </section>
