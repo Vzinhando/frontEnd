@@ -7,7 +7,7 @@ import Carrossel from "./Carrossel/Carrossel.jsx";
 const BlocoChatBot = lazy(() => import("./BlocoChatBot/BlocoChatBot.jsx"));
 const BlocoServicoTrabalho = lazy(() => import("./BlocoServicoTrabalho/BlocoServicoTrabalho.jsx"));
 const BlocoMulher = lazy(() => import("./BlocoMulher/BlocoMulher.jsx"));
-const Duvida = lazy(() => import("./BlocoDuvida/Duvida.jsx"));
+const Duvida = lazy(() => import("../BlocoDuvida/Duvida.jsx"));
 const AgrupamentoCardAvaliacao = lazy(() => import("./AvaliacoesHome/CardAvaliacao/AgrupamentoCardAvaliacao.jsx"));
 const Assinatura = lazy(() => import("./BlocoClube/Assinatura.jsx"));
 
