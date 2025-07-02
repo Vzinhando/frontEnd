@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Duvida.css";
+import "./duvida.css";
 import ImagemMulher from "../../../../../public/img/BlocoMulheres/duvidamulher.svg"; 
 function Duvida() {
     return (
