@@ -151,7 +151,7 @@ function PaginaPerfilCliente({ usuario, onUserUpdate, onLogout }) {
             <div className="iconesRedesCliente">
               <img src="/img/ImagemLaura/instagram.svg" className="icon" alt="Ícone do Instagram" />
               <img src="/img/ImagemLaura/facebook.svg" className="icon" alt="Ícone do Facebook" />
-              <img src="/img/SocialMedia/icon_tiktok.svg" className="icon" alt="Ícone do TikTok" />
+              <img src="/img/ImagemLaura/tiktok.svg" className="icon" alt="Ícone do TikTok" />
             </div>
             <div className="botoesAcao">
               <button onClick={() => setModoEdicao(true)} className="btn btn-principal">Editar Perfil</button>
