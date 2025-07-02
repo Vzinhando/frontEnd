@@ -32,9 +32,6 @@ async function request(endpoint, options = {}) {
     throw error;
   }
 }
-// ===================================================================
-// === NOVA FUNÇÃO DE UPLOAD ADICIONADA AQUI ===
-// ===================================================================
 async function upload(endpoint, formData) {
   const url = `${BASE_URL}${endpoint}`;
   const token = localStorage.getItem('authToken');

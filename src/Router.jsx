@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { useState, lazy, Suspense, useEffect } from "react";
 import { ToastContainer } from 'react-toastify';
+import ScrollNoTopo from "./assets/Components/ScrollNoTopo/ScrollNoTopo";
+
 import 'react-toastify/dist/ReactToastify.css';
 import Header from "./assets/Components/Header/Header";
 import Footer from "./assets/Components/Footer/Footer";
@@ -59,6 +61,7 @@ function Router() {
 
   return (
     <>
+     <ScrollNoTopo/>
       <Header usuario={usuarioLogado} onLogout={handleLogout} />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
