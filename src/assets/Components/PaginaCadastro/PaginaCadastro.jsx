@@ -12,33 +12,27 @@ function PaginaCadastro() {
     const [confirmarSenha, setConfirmarSenha] = useState('');
     const [cep, setCep] = useState('');
     const [isLoading, setIsLoading] = useState(false);
-
 const handleCadastroSubmit = async (event) => {
     event.preventDefault();
-    
     if (senha !== confirmarSenha) {
         toast.warn('As senhas não coincidem!');
         return;
     }
-
     setIsLoading(true);
     const dadosParaApi = {
-        nomeUsuario: nome,
-        emailUsuario: email,
-        senha: senha,
-        cepUsuario: cep,
-        tipoUsuario: "Cliente",
-        dataNascimentoUsuario: "1990-01-01",
-        telefoneUsuario: "99999-9999",
-        enderecoUsuario: "endereco",
-        cidadeUsuario: "sao paulo"
+        NomeUsuario: nome,
+        EmailUsuario: email,
+        SenhaUsuario: senha,
+        CepUsuario: cep
     };
-
     try {
         await api.post('/api/Usuarios/cadastro', dadosParaApi);
 
-        toast.success('Cadastro realizado com sucesso!');
-        navigate('/login');
+        toast.success('Cadastro realizado com sucesso! Redirecionando...');
+        
+        setTimeout(() => {
+            navigate('/login');
+        }, 2000);
 
     } catch (error) {
         toast.error(error.message || 'Não foi possível realizar o cadastro.');
@@ -51,7 +45,6 @@ const handleCadastroSubmit = async (event) => {
     return (
         <section className='containerCadastro'>
             <form className='dadosCadastro' onSubmit={handleCadastroSubmit}>
-                {/* O seu JSX continua o mesmo, com os labels e inputs corretos */}
                 <label className='campoNome' htmlFor='nome'>Nome</label>
                 <input
                     id='nome'

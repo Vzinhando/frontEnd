@@ -218,7 +218,6 @@
 
 .quadroAvaliacoesCliente {
   flex-basis: 200px;
-  /* Largura base de cada card */
   flex-grow: 1;
   background-color: #fdbc82;
   border-radius: 15px;

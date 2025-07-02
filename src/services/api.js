@@ -1,10 +1,14 @@
 const BASE_URL = import.meta.env.VITE_API_BASE_URL;
-
 async function request(endpoint, options = {}) {
   const url = `${BASE_URL}${endpoint}`;
+  const token = localStorage.getItem('authToken');
   const defaultHeaders = {
     'Content-Type': 'application/json',
   };
+
+  if (token) {
+    defaultHeaders['Authorization'] = `Bearer ${token}`;
+  }
 
   const config = {
     ...options,
@@ -28,17 +32,40 @@ async function request(endpoint, options = {}) {
     throw error;
   }
 }
+// ===================================================================
+// === NOVA FUNÇÃO DE UPLOAD ADICIONADA AQUI ===
+// ===================================================================
+async function upload(endpoint, formData) {
+  const url = `${BASE_URL}${endpoint}`;
+  const token = localStorage.getItem('authToken');
+
+  const headers = {};
+
+  if (token) {
+    headers['Authorization'] = `Bearer ${token}`;
+  }
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: headers,
+      body: formData,
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({ message: `Ocorreu um erro no servidor (status: ${response.status})` }));
+      throw new Error(errorData.message || 'Falha no upload do arquivo.');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Erro no upload:', error);
+    throw error;
+  }
+}
+
 export const api = {
   get: (endpoint) => request(endpoint),
-  post: (endpoint, data) => request(endpoint, {
-    method: 'POST',
-    body: JSON.stringify(data),
-  }),
-  patch: (endpoint, data) => request(endpoint, {
-    method: 'PATCH',
-    body: JSON.stringify(data),
-  }),
-  delete: (endpoint) => request(endpoint, {
-    method: 'DELETE',
-  }),
+  post: (endpoint, data) => request(endpoint, { method: 'POST', body: JSON.stringify(data) }),
+  patch: (endpoint, data) => request(endpoint, { method: 'PATCH', body: JSON.stringify(data) }),
+  delete: (endpoint) => request(endpoint, { method: 'DELETE' }),
+  upload: (endpoint, formData) => upload(endpoint, formData),
 };

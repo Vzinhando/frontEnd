@@ -5,10 +5,7 @@ import { useState } from 'react';
 
 function Header() {
     const navigate = useNavigate();
-
     const [menuAberto, setMenuAberto] = useState(false);
-
-
     const usuarioJSON = localStorage.getItem('usuarioLogado');
     const usuario = usuarioJSON ? JSON.parse(usuarioJSON) : null;
 
@@ -21,7 +18,6 @@ function Header() {
     const abrirMenu = () => {
         setMenuAberto(!menuAberto);
     }
-
     return (
         <section className="containerHeader">
             <div className="logoHeader">
@@ -41,12 +37,12 @@ function Header() {
             {usuario ? (
                 <div className='perfilLogado' onClick={abrirMenu}>
                     <NavLink className>
-                        <img src={usuario.foto || '/img/semUsuario.svg'}
-                            alt={`Foto de ${usuario.nome}`}
+                        <img src={usuario.fotoUsuario || '/img/semUsuario.svg'}
+                            alt={`Foto de ${usuario.nomeUsuario}`}
                             className='fotoPerfilHeader'
                         />
                     </NavLink>
-                    <span>Olá, {usuario.nome.split(' ')[0]}</span>
+                    <span>Olá, {usuario.nomeUsuario.split(' ')[0]}</span>
                     {menuAberto && (
                         <div className='menuPerfilHeader'>
                             <NavLink to='/perfil-cliente' className='perfilMenu'>Perfil</NavLink>

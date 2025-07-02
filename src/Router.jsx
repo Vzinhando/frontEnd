@@ -1,13 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState, lazy, Suspense } from "react";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { useState, lazy, Suspense, useEffect } from "react";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-// Componentes carregados estaticamente (necessários em todas as páginas)
 import Header from "./assets/Components/Header/Header";
 import Footer from "./assets/Components/Footer/Footer";
 import NaoEncontrado from "./assets/Components/NaoEncontrado/NaoEncontrado";
-// Conversão de todos os componentes de rota para lazy loading
+
 const PaginaPrincipal = lazy(() => import("./assets/Components/PaginaPrincipal/PaginaPrincipal"));
 const Termos = lazy(() => import("./assets/Components/TermosDeUso/Termos/Termos"));
 const PaginaLogin = lazy(() => import("./assets/Components/PaginaLogin/PaginaLogin"));
@@ -27,7 +25,6 @@ const PaginaPerfilPrestador = lazy(() => import("./assets/Components/PaginaPerfi
 const PaginaPerfilCliente = lazy(() => import("./assets/Components/PaginaPerfilCliente/PaginaPerfilCliente"));
 const InformacoesPessoais = lazy(() => import("./assets/Components/InformacoesPessoais/InformacoesPesoais"));
 
-// Um componente de loading para usar no Suspense (opcional, mas recomendado)
 const LoadingSpinner = () => (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh', color: '#200c80' }}>
     <h2>Carregando...</h2>
@@ -36,31 +33,39 @@ const LoadingSpinner = () => (
 
 
 function Router() {
+  const navigate = useNavigate();
+
   const [usuarioLogado, setUsuarioLogado] = useState(() => {
     const savedUser = localStorage.getItem('usuarioLogado');
     return savedUser ? JSON.parse(savedUser) : null;
   });
-
   const handleUserUpdate = (userData) => {
-    if (!userData) {
-      localStorage.removeItem('usuarioLogado');
-      setUsuarioLogado(null);
-    } else {
+    if (userData) {
       localStorage.setItem('usuarioLogado', JSON.stringify(userData));
       setUsuarioLogado(userData);
+
+      navigate('/perfil-cliente');
+    } else {
+      handleLogout();
     }
+  };
+  const handleLogout = () => {
+    localStorage.removeItem('usuarioLogado');
+    localStorage.removeItem('authToken');
+    setUsuarioLogado(null);
+
+    navigate('/');
   };
 
   return (
-    <BrowserRouter>
-      <Header usuario={usuarioLogado} onLogout={() => handleUserUpdate(null)} />
-      
-      {/* PASSO 3: Envolver as rotas com Suspense */}
+    <>
+      <Header usuario={usuarioLogado} onLogout={handleLogout} />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
           <Route path="/" element={<PaginaPrincipal />} />
           <Route path="/termos" element={<Termos />} />
           <Route path="/login" element={<PaginaLogin onLoginSuccess={handleUserUpdate} />} />
+
           <Route path="/cadastro" element={<PaginaCadastro />} />
           <Route path="/sobre" element={<PaginaSobre />} />
           <Route path="/pagina-pagamento" element={<FormaPagamento />} />
@@ -71,11 +76,15 @@ function Router() {
           <Route path="*" element={<NaoEncontrado />} />
           <Route path="/confirmar-pagamento" element={<ConfirmarPagamento />} />
           <Route path="/pagamento-boleto" element={<PagamentoBoleto />} />
-          <Route path="/confirmacao-pagamento" element={<ConfirmacaoPagamento />}/>
+          <Route path="/confirmacao-pagamento" element={<ConfirmacaoPagamento />} />
           <Route path="/pesquisar-servico" element={<BuscaPrestador />} />
-          <Route 
-            path="/perfil-cliente" 
-            element={<PaginaPerfilCliente usuario={usuarioLogado} onUserUpdate={handleUserUpdate} />} 
+          <Route
+            path="/perfil-cliente"
+            element={<PaginaPerfilCliente
+              usuario={usuarioLogado}
+              onUserUpdate={handleUserUpdate}
+              onLogout={handleLogout}
+            />}
           />
           <Route path="/pre-cadastro-prestador" element={<PaginaPreCadastro />} />
           <Route path="/pagina-servico" element={<PaginaServico />} />
@@ -83,10 +92,10 @@ function Router() {
           <Route path="/informacoes-pessoais" element={<InformacoesPessoais />} />
         </Routes>
       </Suspense>
-      
+
       <Footer />
       <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} />
-    </BrowserRouter>
+    </>
   );
 }
 
