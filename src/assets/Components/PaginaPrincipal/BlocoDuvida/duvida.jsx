@@ -10,7 +10,7 @@ function Duvida() {
                     O que estão dizendo
                     <br /> sobre o vizinhando ?
                 </h2>
-                <img 
+                <img  
                     src={ImagemMulher} 
                     alt="Ilustração de uma mulher com um balão de fala, representando a opinião de um cliente."
                     // 6. Adicionado lazy loading para performance
