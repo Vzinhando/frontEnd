@@ -84,7 +84,6 @@
   transform: scale(1.15);
 }
 
-/* --- Informações e Avaliações --- */
 .informacoesPerfilPrestador {
   width: 100%;
   display: flex;
@@ -192,7 +191,6 @@
   height: 20px;
 }
 
-/* --- Dúvidas --- */
 .duvidasPerfilPrestador {
   margin-top: 2rem;
   text-align: center;
