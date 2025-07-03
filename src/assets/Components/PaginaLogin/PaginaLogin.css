@@ -33,14 +33,16 @@
 }
 
 .cadastroClick {
+  text-decoration: none;
   font-weight: 600;
   font-style: normal;
   color: #200C80;
 }
-
 .cadastroClick:hover {
-  text-decoration: underline;
+  transition: 0.3s;
+  color: #FF7900;
 }
+
 
 .imagem, .imagemLogox {
   max-width: 100%;
@@ -137,12 +139,22 @@ input::placeholder {
 }
 
 .esquecerSenha {
-  margin: 1rem 0 0 0;
+  text-decoration: none;
   display: flex;
   justify-content: flex-end;
   font-weight: 500;
   font-style: normal;
   color: #200C80;
+}
+.botaoEsquecerSenha{
+  text-decoration: none;
+  color: #200C80;
+  font-weight: 500;
+  font-style: normal;
+}
+.botaoEsquecerSenha:hover {
+  transition: 0.3s;
+  color: #FF7900
 }
 
 span {

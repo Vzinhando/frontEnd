@@ -26,6 +26,8 @@ const PaginaServico = lazy(() => import("./assets/Components/PaginaServico/Pagin
 const PaginaPerfilPrestador = lazy(() => import("./assets/Components/PaginaPerfilPrestador/PaginaPerfilPrestador"));
 const PaginaPerfilCliente = lazy(() => import("./assets/Components/PaginaPerfilCliente/PaginaPerfilCliente"));
 const InformacoesPessoais = lazy(() => import("./assets/Components/InformacoesPessoais/InformacoesPesoais"));
+const PaginaEsqueceuSenha = lazy(() => import("./assets/Components/PaginaEsqueceuSenha/PaginaEsqueceuSenha"));
+const PaginaRedefinirSenha = lazy(() => import("./assets/Components/PaginaRedefinirSenha/PaginaRedefinirSenha"));
 
 const LoadingSpinner = () => (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh', color: '#200c80' }}>
@@ -61,7 +63,7 @@ function Router() {
 
   return (
     <>
-     <ScrollNoTopo/>
+      <ScrollNoTopo />
       <Header usuario={usuarioLogado} onLogout={handleLogout} />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
@@ -79,6 +81,8 @@ function Router() {
           <Route path="*" element={<NaoEncontrado />} />
           <Route path="/confirmar-pagamento" element={<ConfirmarPagamento />} />
           <Route path="/pagamento-boleto" element={<PagamentoBoleto />} />
+          <Route path="/esqueceu-senha" element={<PaginaEsqueceuSenha />} />
+          <Route path="/redefinir-senha" element={<PaginaRedefinirSenha />} />
           <Route path="/confirmacao-pagamento" element={<ConfirmacaoPagamento />} />
           <Route path="/pesquisar-servico" element={<BuscaPrestador />} />
           <Route
