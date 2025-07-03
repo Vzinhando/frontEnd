@@ -55,13 +55,10 @@ function PaginaPerfilCliente({ usuario, onUserUpdate, onLogout }) {
       }
     }
   };
-  // Adicione/Substitua esta função dentro do seu componente PaginaPerfilCliente.jsx
 
   const handleFotoChange = async (event) => {
     const file = event.target.files[0];
     if (!file) return;
-
-    // Validações (opcional, mas recomendado)
     if (file.size > 5 * 1024 * 1024) { // 5MB
       toast.error("O arquivo é muito grande! O limite é de 5MB.");
       return;
@@ -106,17 +103,6 @@ function PaginaPerfilCliente({ usuario, onUserUpdate, onLogout }) {
 
         {modoEdicao ? (
           <form className="infosCliente" onSubmit={handleSalvar}>
-            {/* PARTE PARA SER EDITADA */}
-            {/* PARTE PARA SER EDITADA */}
-            {/* PARTE PARA SER EDITADA */}
-            {/* PARTE PARA SER EDITADA */}
-            {/* PARTE PARA SER EDITADA */}
-            {/* PARTE PARA SER EDITADA */}
-            {/* PARTE PARA SER EDITADA */}
-            {/* PARTE PARA SER EDITADA */}
-            {/* PARTE PARA SER EDITADA */}
-            {/* PARTE PARA SER EDITADA */}
-            {/* PARTE PARA SER EDITADA */}
             <div className="camposEdicaoCliente">
               <label htmlFor="nomeEditado">Nome:</label>
               <input
@@ -128,7 +114,6 @@ function PaginaPerfilCliente({ usuario, onUserUpdate, onLogout }) {
                 id="cepEditado" type="text" className="inputEdicaoCep"
                 value={cepEditado} onChange={(e) => setCepEditado(e.target.value)}//inputEdicaoCep
               />
-              {/* ATÉ AQUI SOMENTE */}
             </div>
             <div className="botoesAcao">
               <button type="submit" className="btn btn-acao-primaria">Salvar</button>

@@ -1,57 +1,12 @@
 {
-  "usuarios": [
-    {
-      "id": "a039",
-      "nome": "Jose",
-      "email": "jose123@email.com",
-      "senha": "jose123",
-      "cep": "23287835"
-    },
-    {
-      "id": "82dc",
-      "nome": "Felipe",
-      "email": "negreirosfelipe337@gmail.com",
-      "senha": "240306",
-      "cep": "03977016"
-    },
-    {
-      "id": "d6f3",
-      "nome": "Carlos Eduardo",
-      "email": "carloseduardo@gmail.com",
-      "senha": "carloseduardo123",
-      "cep": "02855512"
-    }
+  "usuarios": [{
+
+  }
   ],
   "prestadores": [
     {},
     {
-      "id": "ab46",
-      "nome": "Carlos Eduardo",
-      "telefone": "1112345678",
-      "email": "carloseduardo@gmail.com",
-      "dataNascimento": "1993-03-16",
-      "genero": "",
-      "cep": "02855512",
-      "cidade": "São Paulo",
-      "rua": "Rua Dália",
-      "numero": "14",
-      "bairro": "Parque Brasilândia",
-      "tipoLocal": "",
-      "imagemPerfil": "/img/avatar_placeholder.svg",
-      "servicosRealizados": 0,
-      "dataCriacaoConta": "2025-06-23T23:32:50.446Z",
-      "descricao": "Prestador de serviços recém-cadastrado.",
-      "redesSociais": {
-        "instagram": "",
-        "facebook": "",
-        "tiktok": ""
-      },
-      "avaliacoesGerais": {
-        "servico": 0,
-        "atendimento": 0,
-        "agilidade": 0
-      },
-      "comentarios": []
-    }
-  ]
+      
+    }]
 }
+  
