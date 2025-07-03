@@ -1,0 +1,104 @@
+.containerEsqueceuSenha,
+.containerRedefinirSenha {
+  margin: 5rem;
+  display: flex;
+  border-radius: 12px;
+  padding: 0; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff; 
+}
+
+.formContainer {
+  flex: 1;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer h2 {
+  color: #200C80;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.formContainer p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.formContainer label {
+  font-weight: 600;
+  font-style: normal;
+  color: #200C80;
+  margin-bottom: 0.5rem;
+}
+
+.formContainer input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f0c087;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.76);
+  box-sizing: border-box;
+}
+
+.formContainer button {
+  all: unset;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #FF7900;
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.formContainer button:disabled {
+  background-color: #ff9800;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.formContainer button:hover:not(:disabled) {
+  color: #FF7900;
+  background-color: #200C80;
+  transform: scale(0.98);
+}
+
+@media (max-width: 1024px) {
+  .containerEsqueceuSenha,
+  .containerRedefinirSenha {
+    margin: 2rem;
+  }
+
+  .formContainer,
+  .logoBemVindo {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerEsqueceuSenha,
+  .containerRedefinirSenha {
+    flex-direction: column;
+    margin: 2rem 1rem;
+    padding: 20px;
+  }
+
+  .formContainer {
+    padding: 20px 0;
+  }
+}

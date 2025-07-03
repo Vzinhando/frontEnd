@@ -65,8 +65,8 @@ function PaginaLogin({ onLoginSuccess }) {
                     required
                 />
 
-                <p className='esquecerSenha'>Esqueceu a senha? <a>Clique aqui</a></p><br />
-                <p className='textoCadastrar'>Ainda não possui uma conta? <NavLink className={'cadastroClick'} to="/cadastro">Cadastre-se</NavLink> </p>
+                <p className='esquecerSenha'>Esqueceu a senha? <NavLink className={'botaoEsquecerSenha'} to="/esqueceu-senha"> Clique aqui</NavLink></p><br />
+                <p className='textoCadastrar'>Ainda não possui uma conta? <NavLink className={'cadastroClick'} to="/cadastro"> Cadastre-se</NavLink> </p>
                 <div className='grupoBotoesLogin'>
                     <button type='submit' className='botaoEntrarLogin' disabled={isLoading}>
                         {isLoading ? 'Entrando...' : 'Avançar'}
