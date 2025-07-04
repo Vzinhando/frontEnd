@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Carrossel.css';
+import { NavLink } from 'react-router-dom';
 
 const slides = [
     {
@@ -50,9 +51,9 @@ function Carrossel() {
             <div className="textosCarrossel">
                 <h2 style={{ color: slideAtual.corBotao }}>{slideAtual.titulo}</h2>
                 <p>{slideAtual.texto}</p>
-                <button style={{ backgroundColor: slideAtual.corBotao }}>
+                <NavLink to = "pre-cadastro-prestador" className = "preCadastroBotao"style={{ backgroundColor: slideAtual.corBotao }}>
                     Clique Aqui
-                </button>
+                </NavLink>
             </div>
             <div className="imgCarrossel">
                 <img

@@ -28,7 +28,6 @@ function Footer() {
         </section>
 
         <section className='termosDePolitica'>
-          <p className='politica'>Politica de privacidade</p>
           <NavLink className='termosFooter' to = "/termos">Termos de uso</NavLink>
         </section>
 

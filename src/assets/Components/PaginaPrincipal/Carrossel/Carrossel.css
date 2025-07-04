@@ -8,6 +8,7 @@
   margin: 0 auto;
   margin-top: 160px;
 }
+
 .textosCarrossel {
   width: 50%;
   height: 75%;
@@ -31,21 +32,23 @@
   margin-top: 1rem;
 }
 
-.textosCarrossel button {
+.textosCarrossel .preCadastroBotao {
   margin-top: 2rem;
+  text-align: center;
+  justify-content: center;
   width: 65%;
-  height: 15%;
+  height: 10%;
   background-color: #d97706;
   color: white;
   cursor: pointer;
   font-size: 1.2rem;
   border-radius: 20px;
-  font-family: "Poppins" sans-serif;
   padding: 10px;
-   box-shadow: 5px 6px 4px 0px rgba(0, 0, 0, 0.34);
-   text-decoration: none;
-   border: none;
+  box-shadow: 5px 6px 4px 0px rgba(0, 0, 0, 0.34);
+  text-decoration: none;
+  border: none;
 }
+
 
 .imgCarrossel {
   width: 60%;
@@ -149,8 +152,8 @@
   }
 }
 
-@media (max-width: 480px){
-    .carrossel {
+@media (max-width: 480px) {
+  .carrossel {
     display: flex;
     flex-direction: column;
     max-width: 600px;
